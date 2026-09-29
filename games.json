@@ -1,0 +1,307 @@
+[
+  {
+    "name": "Subway Surfers Series",
+    "img": "images/SubwaySurfersLogoRemastered.jpg",
+    "url": "/subwaysurfers.html"
+  },
+  {
+    "name": "Tetris",
+    "img": "https://files.catbox.moe/l4nobo.jpg",
+    "url": "https://shrimplab.vercel.app/projects/tetris/index.html"
+  },
+  {
+    "name": "Slope",
+    "img": "https://files.catbox.moe/9um2tc.jpg",
+    "url": "/g/slope.html"
+  },
+  {
+    "name": "Slope 2 Player",
+    "img": "https://files.catbox.moe/xc860m.jpg",
+    "url": "/g/slope-2.html"
+  },
+  {
+    "name": "Slope 3",
+    "img": "https://files.catbox.moe/ea327u.png",
+    "url": "/g/slope3.html"
+  },
+  {
+    "name": "Run 3",
+    "img": "images/Run3Logo.jpg",
+    "url": "/g/run3.html"
+  },
+  {
+    "name": "1v1 Lol",
+    "img": "images/1v1.lol.jpeg",
+    "url": "/g/1v1.html"
+  },
+  {
+    "name": "Minecraft",
+    "img": "images/MinecraftLogo.jpg",
+    "url": "/g/minecraft.html"
+  },
+  {
+    "name": "Block Blast",
+    "img": "images/BlockBlastappicon.jpg",
+    "url": "/g/block-blast.html"
+  },
+  {
+    "name": "Pixel Panic",
+    "img": "images/pixel-panic.png",
+    "url": "/g/pixel-panic.html"
+  },
+  {
+    "name": "Neon Warp",
+    "img": "images/NEON-WARP.png",
+    "url": "/g/neonwarp.html"
+  },
+  {
+    "name": "Crossy Road",
+    "img": "https://files.catbox.moe/h00vy5",
+    "url": "/g/Crossy%20Road.html"
+  },
+  {
+    "name": "Retro Bowl",
+    "img": "images/Retro-Bowl.jpg",
+    "url": "/g/Retro_Bowl.html"
+  },
+  {
+    "name": "Retro Bowl College",
+    "img": "https://files.catbox.moe/geez24",
+    "url": "/g/Retro_Bowl_College.html"
+  },
+  {
+    "name": "Tiny Fishing",
+    "img": "https://files.catbox.moe/i3anhd.webp",
+    "url": "/g/tiny-fishing.html"
+  },
+  {
+    "name": "Fruit Ninja",
+    "img": "images/FruitNinja.jpg",
+    "url": "/g/fruit-ninja.html"
+  },
+  {
+    "name": "Paper.io 2",
+    "img": "https://files.catbox.moe/fhhv3d",
+    "url": "/g/paper-io-2.html"
+  },
+  {
+    "name": "Basket Random",
+    "img": "https://files.catbox.moe/xq62ka",
+    "url": "/g/basket-random.html"
+  },
+  {
+    "name": "Soccer Random",
+    "img": "https://files.catbox.moe/lnk6go",
+    "url": "/g/soccerrandom.html"
+  },
+  {
+    "name": "Volley Random",
+    "img": "https://files.catbox.moe/4c91xd.png",
+    "url": "/g/volleyrandom.html"
+  },
+  {
+    "name": "Boxing Random",
+    "img": "https://files.catbox.moe/0nb7uh",
+    "url": "/g/boxingrandom.html"
+  },
+  {
+    "name": "BTD 1",
+    "img": "images/BTD1.webp",
+    "url": "/g/clbloonsTD1.html"
+  },
+  {
+    "name": "BTD 2",
+    "img": "images/BTD2.webp",
+    "url": "/g/clbloonsTD2.html"
+  },
+  {
+    "name": "BTD 3",
+    "img": "https://files.catbox.moe/z5azm0",
+    "url": "/g/clbloonsTD3.html"
+  },
+  {
+    "name": "BTD 4",
+    "img": "https://files.catbox.moe/mel29y.jpg",
+    "url": "/g/clbloonsTD4.html"
+  },
+  {
+    "name": "BTD 5",
+    "img": "https://files.catbox.moe/bxp2jl",
+    "url": "/g/clbloonsTD5.html"
+  },
+  {
+    "name": "TrollPulse",
+    "img": "images/TrollPulseLogo.png",
+    "url": "/g/trollpulse.html"
+  },
+  {
+    "name": "Escape Road",
+    "img": "https://files.catbox.moe/mpahmq",
+    "url": "/g/Escape Road.html"
+  },
+  {
+    "name": "Escape Road 2",
+    "img": "https://files.catbox.moe/2k0h43.png",
+    "url": "/g/Escape Road 2.html"
+  },
+  {
+    "name": "Escape Road 3",
+    "img": "https://idolsash.io/data/image/game/escape-road-3.png",
+    "url": "/g/escaperoad3.html"
+  },
+  {
+    "name": "Snow Rider",
+    "img": "https://files.catbox.moe/rr7apg.png",
+    "url": "/g/Snow Rider 3D.html"
+  },
+  {
+    "name": "Bubble Shooter",
+    "img": "https://files.catbox.moe/91u459.jpg",
+    "url": "/g/bubble-shooter.html"
+  },
+  {
+    "name": "Granny",
+    "img": "https://files.catbox.moe/nr5jcu.png",
+    "url": "/g/granny.html"
+  },
+  {
+    "name": "Granny 2",
+    "img": "https://files.catbox.moe/q1sxm7",
+    "url": "/g/granny2.html"
+  },
+  {
+    "name": "Baldi's Basics plus",
+    "img": "https://files.catbox.moe/0oc44j.png",
+    "url": "/g/baldis-plus.html"
+  },
+  {
+    "name": "Baldi's Basics Remastered",
+    "img": "https://files.catbox.moe/r59dna.png",
+    "url": "/g/baldis-remaster.html"
+  },
+  {
+    "name": "Super Hot",
+    "img": "https://files.catbox.moe/0z8kkg.png",
+    "url": "/g/super-hot.html"
+  },
+  {
+    "name": "Drift Hunters",
+    "img": "https://files.catbox.moe/l3yxxi.png",
+    "url": "/g/drift-hunters.html"
+  },
+  {
+    "name": "Drift Boss",
+    "img": "https://files.catbox.moe/yvcb0a",
+    "url": "/g/drift-boss.html"
+  },
+  {
+    "name": "Dreader",
+    "img": "https://files.catbox.moe/dcdggb.jpg",
+    "url": "/g/dreader.html"
+  },
+  {
+    "name": "DRIVE MAD",
+    "img": "https://files.catbox.moe/lybd4x.png",
+    "url": "/g/drive-mad.html"
+  },
+  {
+    "name": "Monster Tracks",
+    "img": "https://files.catbox.moe/4dw29n.png",
+    "url": "/g/Monster_Tracks.html"
+  },
+  {
+    "name": "wbwwb",
+    "img": "https://files.catbox.moe/drzjlp",
+    "url": "/g/wbwwb.html"
+  },
+  {
+    "name": "Hole.io",
+    "img": "https://files.catbox.moe/jy89of.jpg",
+    "url": "/g/hole-io.html"
+  },
+  {
+    "name": "Geometry Dash",
+    "img": "https://files.catbox.moe/ty93rb.svg",
+    "url": "/g/geometry-dash.html"
+  },
+  {
+    "name": "Basketball Stars",
+    "img": "https://files.catbox.moe/3gfm2l",
+    "url": "/g/basketball-stars.html"
+  },
+  {
+    "name": "Slither.io",
+    "img": "https://files.catbox.moe/za2ki9",
+    "url": "/g/slither-io.html"
+  },
+  {
+    "name": "Snowball.io",
+    "img": "https://files.catbox.moe/y8dlxd",
+    "url": "/g/snowball-io.html"
+  },
+  {
+    "name": "Just Fall.io",
+    "img": "https://files.catbox.moe/pnwe5y.png",
+    "url": "/g/just-fall-io.html"
+  },
+  {
+    "name": "Glahdihoppers",
+    "img": "https://files.catbox.moe/156y2g",
+    "url": "/g/Gladihoppers.html"
+  },
+  {
+    "name": "Jetpack Joyride",
+    "img": "https://files.catbox.moe/yygt3c.png",
+    "url": "/g/Jetpack_Joyride.html"
+  },
+  {
+    "name": "Friday Night Funkin",
+    "img": "https://files.catbox.moe/brst6x",
+    "url": "/g/Friday_Night_Funkin.html"
+  },
+  {
+    "name": "Temple Run 2",
+    "img": "https://upload.wikimedia.org/wikipedia/en/9/98/Temple_Run_2.png",
+    "url": "/g/Temple_Run_2.html"
+  },
+  {
+    "name": "Stickman Hook",
+    "img": "https://files.catbox.moe/yfv8i8.png",
+    "url": "/g/Stickman_Hook.html"
+  },
+  {
+    "name": "Attack Hole",
+    "img": "https://play-lh.googleusercontent.com/r8TsKF6VY6FC74IDuX8qAe0iOoQpsIY2cPzm-6PIvk3qv7rtpZleZqZ2b7t9N5EYHwjY=w240-h480-rw",
+    "url": "/g/Attack_Hole.html"
+  },
+  {
+    "name": "Bridge Race",
+    "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645460/70e29b759f45fb0cc6645fc439528b0c2accbee2/header.jpg?t=1757698729",
+    "url": "/g/Bridge_Race.html"
+  },
+  {
+    "name": "Color Water Sort 3D",
+    "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000082016/8a5f6fcd8bf4334347d04076d34a42c96ea09bcc9a738f6821a3a873710d38cc",
+    "url": "/g/Color_Water_Sort_3D.html"
+  },
+  {
+    "name": "Hide 'N Seek",
+    "img": "https://files.catbox.moe/06s9e5",
+    "url": "/g/Hide_N_Seek.html"
+  },
+  {
+    "name": "Magic Tiles 3",
+    "img": "https://files.catbox.moe/rkwe59.png",
+    "url": "/g/Magic_Tiles_3.html"
+  },
+  {
+    "name": "Amaze",
+    "img": "https://files.catbox.moe/91r42g.png",
+    "url": "/g/Amaze.html"
+  },
+  {
+    "name": "FNAF Series",
+    "img": "https://files.catbox.moe/o0hffv.jpg",
+    "url": "/fnaf.html"
+  }
+]
