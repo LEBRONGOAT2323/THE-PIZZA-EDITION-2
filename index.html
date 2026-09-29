@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Edition 2</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pz: {
+                            accent: '#f0d210',
+                            hot: '#fc5849',
+                            bg: '#161616',
+                            panel: '#1f1f1f',
+                            panel2: '#262626',
+                            muted: '#a7a7a7',
+                            text: '#ffffff',
+                        }
+                    },
+                    fontFamily: {
+                        rubik: ['Rubik', 'sans-serif'],
+                        bebas: ['Bebas Neue', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Customizations and Custom Smooth Scrolling Layout Rules */
+        body {
+            background-color: #161616;
+            color: #ffffff;
+            font-family: 'Rubik', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Beautiful Dynamic Mosaic Grid Layout mapping exactly to original design styles */
+        .mosaic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            grid-auto-rows: 110px;
+            gap: 16px;
+        }
+
+        /* Specialized card sizing styles */
+        .tile-featured {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #161616;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 999px;
+            border: 2px solid #161616;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f0d210;
+        }
+
+        /* Tile badge adjustments matching original look */
+        .tile-badge {
+            position: absolute;
+            top: 8px;
+            left: -6px;
+            z-index: 10;
+            padding: 2px 8px;
+            border-radius: 3px 14px 14px 0px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+        }
+        .tile-badge::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            background: inherit;
+            filter: brightness(0.6);
+        }
+
+        /* Custom Transitions for Smooth Filter Activations */
+        .game-card {
+            transition: all 0.30s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen pt-20">
+
+    <!-- Top Navigation Bar Header Component -->
+    <nav class="fixed top-0 left-0 right-0 h-16 bg-[#141414]/80 backdrop-blur-md border-b border-white/10 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto h-full px-4 flex items-center justify-between gap-4">
+            
+            <!-- Brand Logo and Title -->
+            <a href="#" onclick="filterCategory('all')" class="flex items-center gap-3 active:scale-95 transition-transform flex-shrink-0">
+                <div class="w-10 h-10 bg-pz-accent rounded-xl flex items-center justify-center shadow-lg shadow-pz-accent/20">
+                    <svg class="w-6 h-6 text-pz-bg" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3a9 9 0 110 18 9 9 0 010-18z"/>
+                        <circle cx="8" cy="8" r="1" fill="currentColor"/>
+                        <circle cx="16" cy="10" r="1" fill="currentColor"/>
+                        <circle cx="10" cy="15" r="1" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="font-bebas text-2xl tracking-wider text-white hidden sm:block"><b class="text-pz-accent font-normal">PIZZA</b> EDITION 2</span>
+            </a>
+
+            <!-- Search Bar Element -->
+            <div class="relative flex-1 max-w-md mx-4">
+                <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-pz-muted">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+                <input type="text" id="gameSearch" oninput="handleSearch(this.value)" placeholder="Search games list..." 
+                       class="w-full h-10 pl-11 pr-10 rounded-xl bg-pz-panel2 border border-white/10 text-white placeholder-pz-muted focus:border-pz-accent focus:bg-neutral-900 focus:ring-4 focus:ring-pz-accent/20 transition-all outline-none font-rubik text-sm">
+                <button id="searchClearBtn" onclick="clearSearch()" class="hidden absolute inset-y-0 right-3 items-center text-pz-muted hover:text-white">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Profile and Options Buttons Menu -->
+            <div class="flex items-center gap-2">
+                <button onclick="triggerRandomGame()" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pz-accent hover:text-pz-bg transition-all active:scale-95 group" title="Random Game">
+                    <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/>
+                    </svg>
+                </button>
+                <button onclick="toggleAccountSidebar()" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition-all active:scale-95 relative" id="profileNavBtn">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                    </svg>
+                    <span class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-green-500 border-2 border-pz-bg rounded-full hidden" id="onlineIndicator"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Interactive Account Drawer Side Panel Component -->
+    <div id="accountScrim" onclick="toggleAccountSidebar()" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="accountSidebar" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-pz-panel border-l border-white/10 z-[101] shadow-2xl translate-x-full transition-transform duration-300 cubic-bezier(0.2, 0.8, 0.25, 1) p-6 flex flex-col justify-between overflow-y-auto">
+        <div>
+            <!-- Close Button -->
+            <button onclick="toggleAccountSidebar()" class="absolute -left-5 top-6 w-10 h-10 bg-pz-panel2 border border-white/10 rounded-full flex items-center justify-center text-white hover:bg-pz-accent hover:text-pz-bg transition-colors shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+
+            <!-- Signed Out User State Profile Layout -->
+            <div id="profileSignedOut" class="space-y-6 pt-8">
+                <div class="text-center space-y-2">
+                    <div class="w-20 h-20 bg-white/5 rounded-3xl border border-white/10 mx-auto flex items-center justify-center text-pz-accent">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.963-2.275M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-tight mt-4">Create an Account</h2>
+                    <p class="text-pz-muted text-sm px-6">Sign up to sync game progress across multiple browsers and school workstations natively.</p>
+                </div>
+                <button onclick="simulateLogin()" class="w-full h-14 rounded-full border-2 border-pz-accent text-pz-accent font-bold text-base hover:bg-pz-accent/10 active:scale-95 transition-all flex items-center justify-center gap-3">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.866-3.577-7.866-8s3.536-8 7.866-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.165 1 1.25 5.925 1.25 12s4.915 11 10.99 11c6.335 0 10.535-4.43 10.535-10.714 0-.724-.075-1.275-.165-1.715H12.24z"/>
+                    </svg>
+                    Continue with Google
+                </button>
+            </div>
+
+            <!-- Signed In User State Profile Layout -->
+            <div id="profileSignedIn" class="hidden space-y-6 pt-8">
+                <div class="relative bg-pz-panel2 border border-white/5 rounded-3xl p-6 flex items-center gap-4 shadow-inner">
+                    <div class="w-16 h-16 rounded-2xl bg-pz-accent text-pz-bg font-bold flex items-center justify-center text-xl shadow-lg relative">
+                        P
+                        <span class="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 border-4 border-pz-panel2 rounded-full"></span>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h3 class="text-lg font-bold text-white truncate">PizzaGamer2026</h3>
+                        <p class="text-xs text-pz-muted truncate">pizzagamer@gmail.com</p>
+                        <span class="inline-block mt-2 px-2.5 py-0.5 rounded-full bg-pz-accent/10 border border-pz-accent/20 text-xs text-pz-accent font-semibold">Pro Member</span>
+                    </div>
+                </div>
+
+                <!-- Live Dashboard Quick Progress Tracking Metrics -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-neutral-900 border border-white/5 p-4 rounded-2xl text-center">
+                        <span class="text-xs text-pz-muted font-medium block uppercase tracking-wider">Games Played</span>
+                        <span class="text-2xl font-bold text-white block mt-1">12</span>
+                    </div>
+                    <div class="bg-neutral-900 border border-white/5 p-4 rounded-2xl text-center">
+                        <span class="text-xs text-pz-muted font-medium block uppercase tracking-wider">Total Time</span>
+                        <span class="text-2xl font-bold text-white block mt-1">2.4h</span>
+                    </div>
+                </div>
+
+                <!-- Custom Saved Local History Grid Stack -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Recently Played</h4>
+                    <div class="space-y-2 max-h-[220px] overflow-y-auto pr-1" id="recentHistoryList">
+                        <!-- Populated programmatically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Base Actions and Session Security Notices -->
+        <div class="pt-6 border-t border-white/10 space-y-4 text-center">
+            <div id="sidebarAccountActions" class="hidden">
+                <button onclick="simulateLogout()" class="w-full h-11 text-sm font-medium bg-neutral-900 hover:bg-pz-hot/10 hover:text-pz-hot border border-white/10 rounded-xl transition-all">Sign Out of Account</button>
+            </div>
+            <p class="text-[11px] text-neutral-500 leading-normal">By continuing you confirm adherence to our standard terms of use agreements. <br>&copy; 2026 Pizza Edition 2</p>
+        </div>
+    </div>
+
+    <!-- Category Header Navigation Track System Component -->
+    <header class="max-w-7xl mx-auto px-4 mt-6">
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 border-b border-white/5 scroll-smooth" id="categoryTrack">
+            <button onclick="filterCategory('all')" data-category="all" class="cat-tab-btn px-5 h-10 rounded-xl bg-pz-accent text-pz-bg font-bold text-sm tracking-wide whitespace-nowrap active:scale-95 transition-all shadow-md shadow-pz-accent/5">All Games</button>
+            <button onclick="filterCategory('action')" data-category="action" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Action</button>
+            <button onclick="filterCategory('casual')" data-category="casual" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Casual</button>
+            <button onclick="filterCategory('sports')" data-category="sports" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Sports</button>
+            <button onclick="filterCategory('puzzle')" data-category="puzzle" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Puzzle</button>
+            <button onclick="filterCategory('racing')" data-category="racing" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Racing</button>
+        </div>
+    </header>
+
+    <!-- Main Active Arcade Display Module Dashboard Section -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Live Mosaic Interactive Grid Interface -->
+        <div class="mosaic-grid" id="gamesContainer">
+            <!-- Game Tiles injected dynamically via initialization script -->
+        </div>
+
+        <!-- No Results Warning Banner Holder -->
+        <div id="noResultsSection" class="hidden py-24 text-center max-w-md mx-auto space-y-4">
+            <div class="w-16 h-16 bg-pz-hot/10 text-pz-hot rounded-2xl flex items-center justify-center mx-auto">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">No games found match your query</h3>
+            <p class="text-sm text-pz-muted">Try checking for typos or clear your filter constraints to continue exploration.</p>
+            <button onclick="clearSearch()" class="px-5 h-10 bg-white/5 border border-white/10 text-white rounded-xl text-sm font-medium hover:bg-white/10 transition-colors">Reset Filter View</button>
+        </div>
+
+        <!-- Descriptive Copy / Information Block Section -->
+        <section class="mt-16 bg-pz-panel border border-white/10 rounded-3xl p-6 sm:p-10 space-y-8">
+            <div class="border-l-4 border-pz-accent pl-4">
+                <h1 class="font-bebas text-4xl sm:text-5xl tracking-wide text-white">Pizza Edition 2</h1>
+                <p class="text-base sm:text-lg text-pz-muted mt-2">Curated library of free unblocked pixel browser games built entirely around quick mechanics, fast loading speeds, and locked-down network compatibility.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pz-accent"></span> School Station Deployment Ready
+                    </h3>
+                    <p class="text-sm text-pz-muted leading-relaxed">Runs entirely in active memory buffers inside standard web components without requesting local disk access configurations, making it compatible with managed school environments and device systems like Chromebooks.</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pz-accent"></span> Cloud Persistence Mechanics
+                    </h3>
+                    <p class="text-sm text-pz-muted leading-relaxed">Integrated cross-workstation authorization engines ensure your custom score high-scores, unlocked rewards lists, and state achievements follow you across active environments perfectly.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Accordion Frequently Asked Questions Module Block -->
+            <div class="space-y-4 pt-4 border-t border-white/5">
+                <h2 class="text-2xl font-bold text-white tracking-tight">Frequently Asked Questions</h2>
+                
+                <div class="space-y-2" id="faqAccordionGroup">
+                    <div class="border border-white/5 rounded-2xl bg-pz-panel2 overflow-hidden transition-all duration-200">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-base text-white hover:text-pz-accent outline-none">
+                            <span>Can I play these games safely at school?</span>
+                            <span class="text-xl text-pz-accent transition-transform duration-200">+</span>
+                        </button>
+                        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-sm text-pz-muted">
+                            <p class="pb-4">Yes! Every title executes straight within standard layout containers without demanding server system extensions or installations. If our landing domain passes your regional local server rules, games will boot instantly.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/5 rounded-2xl bg-pz-panel2 overflow-hidden transition-all duration-200">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-base text-white hover:text-pz-accent outline-none">
+                            <span>Is creating a user authentication profile mandatory?</span>
+                            <span class="text-xl text-pz-accent transition-transform duration-200">+</span>
+                        </button>
+                        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-sm text-pz-muted">
+                            <p class="pb-4">No. Account setups are entirely optional. Local profile storage maps directly to current browser cache systems. Note that clearing local cached settings will erase state data unless cloud authorization is connected.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/5 rounded-2xl bg-pz-panel2 overflow-hidden transition-all duration-200">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-base text-white hover:text-pz-accent outline-none">
+                            <span>Are there options for multi-user local matches?</span>
+                            <span class="text-xl text-pz-accent transition-transform duration-200">+</span>
+                        </button>
+                        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-sm text-pz-muted">
+                            <p class="pb-4">Yes. We host multiple titles supporting shared-keyboard inputs directly, alongside global web multiplayer configurations like Paper.io 2 to connect with friends globally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area Block Container Structure -->
+    <footer class="bg-pz-panel border-t border-white/10 mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-pz-accent rounded-lg flex items-center justify-center text-pz-bg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                        </svg>
+                    </div>
+                    <span class="font-bebas text-xl tracking-wider text-white">PIZZA EDITION 2</span>
+                </div>
+                <p class="text-xs text-pz-muted max-w-sm leading-relaxed">Hot picks, fast loading speeds, zero platform hassle. Designed for immediate gaming engagement securely in single environment configurations.</p>
+            </div>
+            
+            <div class="flex flex-wrap gap-x-16 gap-y-6 md:justify-self-end">
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold text-pz-muted uppercase tracking-widest">Popular Categories</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><button onclick="filterCategory('racing')" class="text-white/80 hover:text-pz-accent transition-colors">Racing Games</button></li>
+                        <li><button onclick="filterCategory('sports')" class="text-white/80 hover:text-pz-accent transition-colors">Sports Matches</button></li>
+                        <li><button onclick="filterCategory('action')" class="text-white/80 hover:text-pz-accent transition-colors">Action & Reflex</button></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold text-pz-muted uppercase tracking-widest">Legal Matters</h5>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li><a href="#" class="hover:text-pz-accent transition-colors">Privacy Terms</a></li>
+                        <li><a href="#" class="hover:text-pz-accent transition-colors">Copyright Guidelines</a></li>
+                        <li><a href="#" class="hover:text-pz-accent transition-colors">Service Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 pt-8 border-t border-white/5 text-xs text-pz-muted flex flex-col sm:flex-row justify-between items-center gap-4">
+                <span>&copy; 2026 Pizza Edition 2. Grounded Interactive Application. All structural rights reserved.</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md border border-white/5">v4.8.2-Stable</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Action Back to Top Utility Button -->
+    <button id="backToTopBtn" onclick="scrollToTop()" class="fixed right-6 bottom-6 w-12 h-12 rounded-full bg-pz-accent text-pz-bg flex items-center justify-center shadow-xl opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-white hover:text-pz-bg active:scale-90 z-40">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/>
+        </svg>
+    </button>
+
+    <!-- Native Logical Controller Script Engine -->
+    <script>
+        // Comprehensive Dataset Mock mapping exactly to your new games.json specification file list
+        const gamesDataset = [
+            { id: 1, name: "Subway Surfers Series", category: "action", isHot: true, size: 2, img: "images/SubwaySurfersLogoRemastered.jpg", url: "/subwaysurfers.html" },
+            { id: 2, name: "Tetris", category: "puzzle", isHot: true, size: 1, img: "https://files.catbox.moe/l4nobo.jpg", url: "https://shrimplab.vercel.app/projects/tetris/index.html" },
+            { id: 3, name: "Slope", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/9um2tc.jpg", url: "/g/slope.html" },
+            { id: 4, name: "Slope 2 Player", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/xc860m.jpg", url: "/g/slope-2.html" },
+            { id: 5, name: "Slope 3", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/ea327u.png", url: "/g/slope3.html" },
+            { id: 6, name: "Run 3", category: "arcade", isHot: false, size: 1, img: "images/Run3Logo.jpg", url: "/g/run3.html" },
+            { id: 7, name: "1v1 Lol", category: "multiplayer", isHot: true, size: 1, img: "images/1v1.lol.jpeg", url: "/g/1v1.html" },
+            { id: 8, name: "Minecraft", category: "casual", isHot: false, size: 2, img: "images/MinecraftLogo.jpg", url: "/g/minecraft.html" },
+            { id: 9, name: "Block Blast", category: "puzzle", isHot: false, size: 1, img: "images/BlockBlastappicon.jpg", url: "/g/block-blast.html" },
+            { id: 10, name: "Pixel Panic", category: "arcade", isHot: false, size: 1, img: "images/pixel-panic.png", url: "/g/pixel-panic.html" },
+            { id: 11, name: "Neon Warp", category: "puzzle", isHot: false, size: 1, img: "images/NEON-WARP.png", url: "/g/neonwarp.html" },
+            { id: 12, name: "Crossy Road", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/h00vy5", url: "/g/Crossy%20Road.html" },
+            { id: 13, name: "Retro Bowl", category: "sports", isHot: true, size: 1, img: "images/Retro-Bowl.jpg", url: "/g/Retro_Bowl.html" },
+            { id: 14, name: "Retro Bowl College", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/geez24", url: "/g/Retro_Bowl_College.html" },
+            { id: 15, name: "Tiny Fishing", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/i3anhd.webp", url: "/g/tiny-fishing.html" },
+            { id: 16, name: "Fruit Ninja", category: "casual", isHot: false, size: 1, img: "images/FruitNinja.jpg", url: "/g/fruit-ninja.html" },
+            { id: 17, name: "Paper.io 2", category: "multiplayer", isHot: true, size: 1, img: "https://files.catbox.moe/fhhv3d", url: "/g/paper-io-2.html" },
+            { id: 18, name: "Basket Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/xq62ka", url: "/g/basket-random.html" },
+            { id: 19, name: "Soccer Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/lnk6go", url: "/g/soccerrandom.html" },
+            { id: 20, name: "Volley Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/4c91xd.png", url: "/g/volleyrandom.html" },
+            { id: 21, name: "Boxing Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/0nb7uh", url: "/g/boxingrandom.html" },
+            { id: 22, name: "BTD 1", category: "puzzle", isHot: false, size: 1, img: "images/BTD1.webp", url: "/g/clbloonsTD1.html" },
+            { id: 23, name: "BTD 2", category: "puzzle", isHot: false, size: 1, img: "images/BTD2.webp", url: "/g/clbloonsTD2.html" },
+            { id: 24, name: "BTD 3", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/z5azm0", url: "/g/clbloonsTD3.html" },
+            { id: 25, name: "BTD 4", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/mel29y.jpg", url: "/g/clbloonsTD4.html" },
+            { id: 26, name: "BTD 5", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/bxp2jl", url: "/g/clbloonsTD5.html" },
+            { id: 27, name: "TrollPulse", category: "casual", isHot: false, size: 1, img: "images/TrollPulseLogo.png", url: "/g/trollpulse.html" },
+            { id: 28, name: "Escape Road", category: "racing", isHot: true, size: 1, img: "https://files.catbox.moe/mpahmq", url: "/g/Escape Road.html" },
+            { id: 29, name: "Escape Road 2", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/2k0h43.png", url: "/g/Escape Road 2.html" },
+            { id: 30, name: "Escape Road 3", category: "racing", isHot: true, size: 2, img: "https://idolsash.io/data/image/game/escape-road-3.png", url: "/g/escaperoad3.html" },
+            { id: 31, name: "Snow Rider", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/rr7apg.png", url: "/g/Snow Rider 3D.html" },
+            { id: 32, name: "Bubble Shooter", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/91u459.jpg", url: "/g/bubble-shooter.html" },
+            { id: 33, name: "Granny", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/nr5jcu.png", url: "/g/granny.html" },
+            { id: 34, name: "Granny 2", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/q1sxm7", url: "/g/granny2.html" },
+            { id: 35, name: "Baldi's Basics plus", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/0oc44j.png", url: "/g/baldis-plus.html" },
+            { id: 36, name: "Baldi's Basics Remastered", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/r59dna.png", url: "/g/baldis-remaster.html" },
+            { id: 37, name: "Super Hot", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/0z8kkg.png", url: "/g/super-hot.html" },
+            { id: 38, name: "Drift Hunters", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/l3yxxi.png", url: "/g/drift-hunters.html" },
+            { id: 39, name: "Drift Boss", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/yvcb0a", url: "/g/drift-boss.html" },
+            { id: 40, name: "Dreader", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/dcdggb.jpg", url: "/g/dreader.html" },
+            { id: 41, name: "DRIVE MAD", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/lybd4x.png", url: "/g/drive-mad.html" },
+            { id: 42, name: "Monster Tracks", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/4dw29n.png", url: "/g/Monster_Tracks.html" },
+            { id: 43, name: "wbwwb", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/drzjlp", url: "/g/wbwwb.html" },
+            { id: 44, name: "Hole.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/jy89of.jpg", url: "/g/hole-io.html" },
+            { id: 45, name: "Geometry Dash", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/ty93rb.svg", url: "/g/geometry-dash.html" },
+            { id: 46, name: "Basketball Stars", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/3gfm2l", url: "/g/basketball-stars.html" },
+            { id: 47, name: "Slither.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/za2ki9", url: "/g/slither-io.html" },
+            { id: 48, name: "Snowball.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/y8dlxd", url: "/g/snowball-io.html" },
+            { id: 49, name: "Just Fall.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/pnwe5y.png", url: "/g/just-fall-io.html" },
+            { id: 50, name: "Glahdihoppers", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/156y2g", url: "/g/Gladihoppers.html" },
+            { id: 51, name: "Jetpack Joyride", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/yygt3c.png", url: "/g/Jetpack_Joyride.html" },
+            { id: 52, name: "Friday Night Funkin", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/brst6x", url: "/g/Friday_Night_Funkin.html" },
+            { id: 53, name: "Temple Run 2", category: "action", isHot: false, size: 1, img: "https://upload.wikimedia.org/wikipedia/en/9/98/Temple_Run_2.png", url: "/g/Temple_Run_2.html" },
+            { id: 54, name: "Stickman Hook", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/yfv8i8.png", url: "/g/Stickman_Hook.html" },
+            { id: 55, name: "Attack Hole", category: "casual", isHot: false, size: 1, img: "https://play-lh.googleusercontent.com/r8TsKF6VY6FC74IDuX8qAe0iOoQpsIY2cPzm-6PIvk3qv7rtpZleZqZ2b7t9N5EYHwjY=w240-h480-rw", url: "/g/Attack_Hole.html" },
+            { id: 56, name: "Bridge Race", category: "racing", isHot: false, size: 1, img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645460/70e29b759f45fb0cc6645fc439528b0c2accbee2/header.jpg?t=1757698729", url: "/g/Bridge_Race.html" },
+            { id: 57, name: "Color Water Sort 3D", category: "puzzle", isHot: false, size: 1, img: "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000082016/8a5f6fcd8bf4334347d04076d34a42c96ea09bcc9a738f6821a3a873710d38cc", url: "/g/Color_Water_Sort_3D.html" },
+            { id: 58, name: "Hide 'N Seek", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/06s9e5", url: "/g/Hide_N_Seek.html" },
+            { id: 59, name: "Magic Tiles 3", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/rkwe59.png", url: "/g/Magic_Tiles_3.html" },
+            { id: 60, name: "Amaze", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/91r42g.png", url: "/g/Amaze.html" },
+            { id: 61, name: "FNAF Series", category: "casual", isHot: true, size: 1, img: "https://files.catbox.moe/o0hffv.jpg", url: "/fnaf.html" }
+        ];
+
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let userSessionState = { isLoggedIn: false };
+
+        // Initialize App View Grid Loop
+        window.addEventListener('DOMContentLoaded', () => {
+            renderGrid();
+            window.addEventListener('scroll', handleWindowScroll);
+        });
+
+        // Mosaic Layout Renderer Function
+        function renderGrid() {
+            const container = document.getElementById('gamesContainer');
+            const noResults = document.getElementById('noResultsSection');
+            container.innerHTML = '';
+
+            // Apply Multi-layered Filters
+            const processedList = gamesDataset.filter(game => {
+                const matchCat = (activeCategory === 'all' || game.category === activeCategory);
+                const matchSearch = game.name.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchCat && matchSearch;
+            });
+
+            if (processedList.length === 0) {
+                container.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            container.classList.remove('hidden');
+            noResults.classList.add('hidden');
+
+            // Constructing Verified Component Strings securely with valid relative/absolute redirect destinations
+            processedList.forEach(game => {
+                const isBig = game.size === 2;
+                const tileAnchor = document.createElement('a');
+                tileAnchor.href = game.url;
+                tileAnchor.className = `game-card relative overflow-hidden bg-pz-panel2 border border-white/5 rounded-2xl group cursor-pointer aspect-square ${isBig ? 'tile-featured' : ''}`;
+                
+                let hotBadgeMarkup = game.isHot ? `
+                    <div class="tile-badge bg-pz-accent text-pz-bg font-extrabold text-[10px] tracking-widest uppercase">
+                        HOT
+                    </div>
+                ` : '';
+
+                tileAnchor.innerHTML = `
+                    ${hotBadgeMarkup}
+                    <img src="${game.img}" alt="${game.name}" class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 text-center pointer-events-none">
+                        <span class="text-sm font-bold text-white truncate drop-shadow-md">${game.name}</span>
+                        <span class="text-[11px] text-pz-accent uppercase tracking-widest mt-0.5">${game.category}</span>
+                    </div>
+                `;
+                
+                // Track simulated record action directly on selection click
+                tileAnchor.addEventListener('click', () => {
+                    registerHistoryPlayback(game.id);
+                });
+
+                container.appendChild(tileAnchor);
+            });
+        }
+
+        // Live Category Activation Swapper
+        function filterCategory(catName) {
+            activeCategory = catName;
+            
+            // Render active button tracks nicely
+            document.querySelectorAll('.cat-tab-btn').forEach(btn => {
+                if (btn.getAttribute('data-category') === catName) {
+                    btn.className = "cat-tab-btn px-5 h-10 rounded-xl bg-pz-accent text-pz-bg font-bold text-sm tracking-wide whitespace-nowrap active:scale-95 transition-all shadow-md shadow-pz-accent/5";
+                } else {
+                    btn.className = "cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all";
+                }
+            });
+
+            renderGrid();
+        }
+
+        // Search Processing Event Controller Logic 
+        function handleSearch(val) {
+            searchQuery = val.trim();
+            const clearBtn = document.getElementById('searchClearBtn');
+            
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove('hidden');
+                clearBtn.classList.add('flex');
+            } else {
+                clearBtn.classList.remove('flex');
+                clearBtn.classList.add('hidden');
+            }
+            renderGrid();
+        }
+
+        function clearSearch() {
+            const searchInput = document.getElementById('gameSearch');
+            searchInput.value = '';
+            searchQuery = '';
+            document.getElementById('searchClearBtn').classList.add('hidden');
+            renderGrid();
+        }
+
+        // Toggle Account Drawer Sidebar View
+        function toggleAccountSidebar() {
+            const side = document.getElementById('accountSidebar');
+            const scrim = document.getElementById('accountScrim');
+            
+            if (side.classList.contains('translate-x-full')) {
+                side.classList.remove('translate-x-full');
+                scrim.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                side.classList.add('translate-x-full');
+                scrim.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // Simulate Login
+        function simulateLogin() {
+            userSessionState.isLoggedIn = true;
+            document.getElementById('profileSignedOut').classList.add('hidden');
+            document.getElementById('profileSignedIn').classList.remove('hidden');
+            document.getElementById('sidebarAccountActions').classList.remove('hidden');
+            document.getElementById('onlineIndicator').classList.remove('hidden');
+            document.getElementById('profileNavBtn').classList.add('border-pz-accent');
+            
+            renderHistoryView();
+        }
+
+        // Simulate Logout
+        function simulateLogout() {
+            userSessionState.isLoggedIn = false;
+            document.getElementById('profileSignedIn').classList.add('hidden');
+            document.getElementById('profileSignedOut').classList.remove('hidden');
+            document.getElementById('sidebarAccountActions').classList.add('hidden');
+            document.getElementById('onlineIndicator').classList.add('hidden');
+            document.getElementById('profileNavBtn').classList.remove('border-pz-accent');
+        }
+
+        // History Registry Tracker Sync Engine Simulation
+        let playbackSessionHistory = [1, 2, 30]; // Injected Default Seed records matching new indices
+
+        function registerHistoryPlayback(id) {
+            if (!playbackSessionHistory.includes(id)) {
+                playbackSessionHistory.unshift(id);
+                if (playbackSessionHistory.length > 4) playbackSessionHistory.pop();
+            }
+            if (userSessionState.isLoggedIn) {
+                renderHistoryView();
+            }
+        }
+
+        function renderHistoryView() {
+            const container = document.getElementById('recentHistoryList');
+            container.innerHTML = '';
+
+            playbackSessionHistory.forEach(id => {
+                const gameMatch = gamesDataset.find(g => g.id === id) || gamesDataset[0];
+                const row = document.createElement('div');
+                row.className = "flex items-center gap-3 bg-neutral-900/60 p-2 rounded-xl border border-white/5 hover:border-white/10 transition-colors";
+                row.innerHTML = `
+                    <img src="${gameMatch.img}" alt="${gameMatch.name}" class="w-10 h-10 object-cover rounded-lg">
+                    <div class="min-w-0 flex-1">
+                        <span class="text-xs font-bold text-white block truncate">${gameMatch.name}</span>
+                        <span class="text-[10px] text-pz-muted uppercase tracking-wider block">${gameMatch.category}</span>
+                    </div>
+                    <span class="text-[11px] text-pz-accent font-semibold px-2 py-0.5 bg-pz-accent/5 rounded border border-pz-accent/10">Sync'd</span>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        // Interactive FAQ Accordion Trigger Toggle Component
+        function toggleFaq(btn) {
+            const body = btn.nextElementSibling;
+            const marker = btn.querySelector('span:last-child');
+            const parent = btn.parentElement;
+
+            if (body.style.maxHeight && body.style.maxHeight !== '0px') {
+                body.style.maxHeight = '0px';
+                marker.style.transform = 'none';
+                parent.classList.remove('border-pz-accent/50');
+            } else {
+                // Collapse sibling accordion bars first
+                document.querySelectorAll('#faqAccordionGroup > div').forEach(item => {
+                    item.querySelector('div').style.maxHeight = '0px';
+                    item.querySelector('button span:last-child').style.transform = 'none';
+                    item.classList.remove('border-pz-accent/50');
+                });
+                
+                body.style.maxHeight = body.scrollHeight + 'px';
+                marker.style.transform = 'rotate(45deg)';
+                parent.classList.add('border-pz-accent/50');
+            }
+        }
+
+        // Random Arcade Selector Action Engine Trigger
+        function triggerRandomGame() {
+            const index = Math.floor(Math.random() * gamesDataset.length);
+            const selectedGame = gamesDataset[index];
+            
+            // Spark a dynamic user selection notice overlay or simulation
+            const searchInput = document.getElementById('gameSearch');
+            searchInput.value = selectedGame.name;
+            handleSearch(selectedGame.name);
+            
+            // Briefly pulse smooth window target coordinates down to grid focus
+            document.getElementById('gamesContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Back to top scrolling handles
+        function handleWindowScroll() {
+            const btn = document.getElementById('backToTopBtn');
+            if (window.scrollY > 400) {
+                btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            } else {
+                btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
