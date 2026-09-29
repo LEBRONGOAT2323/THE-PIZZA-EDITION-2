@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Edition 2</title>
+    <title>Pizza Edition 2 - Free Online Games</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
     
-
+    <!-- Tailwind CSS for modern dashboard structure -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -119,7 +119,7 @@
                         <circle cx="10" cy="15" r="1" fill="currentColor"/>
                     </svg>
                 </div>
-                <span class="font-bebas text-2xl tracking-wider text-white hidden sm:block"><b class="text-pz-accent font-normal">PIZZA</b> EDITION 2</span>
+                <span class="font-bebas text-2xl tracking-wider text-white hidden sm:block">THE <b class="text-pz-accent font-normal">PIZZA</b> EDITION 2</span>
             </a>
 
             <!-- Search Bar Element -->
@@ -226,7 +226,7 @@
             <div id="sidebarAccountActions" class="hidden">
                 <button onclick="simulateLogout()" class="w-full h-11 text-sm font-medium bg-neutral-900 hover:bg-pz-hot/10 hover:text-pz-hot border border-white/10 rounded-xl transition-all">Sign Out of Account</button>
             </div>
-            <p class="text-[11px] text-neutral-500 leading-normal">By continuing you confirm adherence to our standard terms of use agreements. <br>&copy; 2026 Pizza Edition 2</p>
+            <p class="text-[11px] text-neutral-500 leading-normal">By continuing you confirm adherence to our standard terms of use agreements. <br>&copy; 2026 Pizza Edition 2 Platform.</p>
         </div>
     </div>
 
@@ -235,10 +235,12 @@
         <div class="flex items-center gap-2 overflow-x-auto pb-3 border-b border-white/5 scroll-smooth" id="categoryTrack">
             <button onclick="filterCategory('all')" data-category="all" class="cat-tab-btn px-5 h-10 rounded-xl bg-pz-accent text-pz-bg font-bold text-sm tracking-wide whitespace-nowrap active:scale-95 transition-all shadow-md shadow-pz-accent/5">All Games</button>
             <button onclick="filterCategory('action')" data-category="action" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Action</button>
-            <button onclick="filterCategory('casual')" data-category="casual" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Casual</button>
+            <button onclick="filterCategory('arcade')" data-category="arcade" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Arcade</button>
+            <button onclick="filterCategory('racing')" data-category="racing" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Racing</button>
             <button onclick="filterCategory('sports')" data-category="sports" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Sports</button>
             <button onclick="filterCategory('puzzle')" data-category="puzzle" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Puzzle</button>
-            <button onclick="filterCategory('racing')" data-category="racing" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Racing</button>
+            <button onclick="filterCategory('multiplayer')" data-category="multiplayer" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Multiplayer</button>
+            <button onclick="filterCategory('casual')" data-category="casual" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">Casual</button>
         </div>
     </header>
 
@@ -247,7 +249,10 @@
         
         <!-- Live Mosaic Interactive Grid Interface -->
         <div class="mosaic-grid" id="gamesContainer">
-            <!-- Game Tiles injected dynamically via initialization script -->
+            <!-- Game Tiles injected dynamically via async JSON fetching engine -->
+            <div class="col-span-full py-12 text-center text-pz-muted animate-pulse font-medium">
+                Loading Pizza Edition 2 catalog data...
+            </div>
         </div>
 
         <!-- No Results Warning Banner Holder -->
@@ -265,7 +270,7 @@
         <!-- Descriptive Copy / Information Block Section -->
         <section class="mt-16 bg-pz-panel border border-white/10 rounded-3xl p-6 sm:p-10 space-y-8">
             <div class="border-l-4 border-pz-accent pl-4">
-                <h1 class="font-bebas text-4xl sm:text-5xl tracking-wide text-white">Pizza Edition 2</h1>
+                <h1 class="font-bebas text-4xl sm:text-5xl tracking-wide text-white">Pizza Edition 2 - Free Online Games</h1>
                 <p class="text-base sm:text-lg text-pz-muted mt-2">Curated library of free unblocked pixel browser games built entirely around quick mechanics, fast loading speeds, and locked-down network compatibility.</p>
             </div>
 
@@ -333,7 +338,7 @@
                             <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
                         </svg>
                     </div>
-                    <span class="font-bebas text-xl tracking-wider text-white">PIZZA EDITION 2</span>
+                    <span class="font-bebas text-xl tracking-wider text-white">THE PIZZA EDITION 2</span>
                 </div>
                 <p class="text-xs text-pz-muted max-w-sm leading-relaxed">Hot picks, fast loading speeds, zero platform hassle. Designed for immediate gaming engagement securely in single environment configurations.</p>
             </div>
@@ -359,7 +364,7 @@
 
             <div class="col-span-1 md:col-span-2 pt-8 border-t border-white/5 text-xs text-pz-muted flex flex-col sm:flex-row justify-between items-center gap-4">
                 <span>&copy; 2026 Pizza Edition 2. Grounded Interactive Application. All structural rights reserved.</span>
-                <span class="px-3 py-1 bg-white/5 rounded-md border border-white/5">v4.8.2-Stable</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md border border-white/5">v5.0.0-Dynamic</span>
             </div>
         </div>
     </footer>
@@ -373,80 +378,65 @@
 
     <!-- Native Logical Controller Script Engine -->
     <script>
-        // Comprehensive Dataset Mock mapping exactly to your new games.json specification file list
-        const gamesDataset = [
-            { id: 1, name: "Subway Surfers Series", category: "action", isHot: true, size: 2, img: "images/SubwaySurfersLogoRemastered.jpg", url: "/subwaysurfers.html" },
-            { id: 2, name: "Tetris", category: "puzzle", isHot: true, size: 1, img: "https://files.catbox.moe/l4nobo.jpg", url: "https://shrimplab.vercel.app/projects/tetris/index.html" },
-            { id: 3, name: "Slope", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/9um2tc.jpg", url: "/g/slope.html" },
-            { id: 4, name: "Slope 2 Player", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/xc860m.jpg", url: "/g/slope-2.html" },
-            { id: 5, name: "Slope 3", category: "arcade", isHot: false, size: 1, img: "https://files.catbox.moe/ea327u.png", url: "/g/slope3.html" },
-            { id: 6, name: "Run 3", category: "arcade", isHot: false, size: 1, img: "images/Run3Logo.jpg", url: "/g/run3.html" },
-            { id: 7, name: "1v1 Lol", category: "multiplayer", isHot: true, size: 1, img: "images/1v1.lol.jpeg", url: "/g/1v1.html" },
-            { id: 8, name: "Minecraft", category: "casual", isHot: false, size: 2, img: "images/MinecraftLogo.jpg", url: "/g/minecraft.html" },
-            { id: 9, name: "Block Blast", category: "puzzle", isHot: false, size: 1, img: "images/BlockBlastappicon.jpg", url: "/g/block-blast.html" },
-            { id: 10, name: "Pixel Panic", category: "arcade", isHot: false, size: 1, img: "images/pixel-panic.png", url: "/g/pixel-panic.html" },
-            { id: 11, name: "Neon Warp", category: "puzzle", isHot: false, size: 1, img: "images/NEON-WARP.png", url: "/g/neonwarp.html" },
-            { id: 12, name: "Crossy Road", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/h00vy5", url: "/g/Crossy%20Road.html" },
-            { id: 13, name: "Retro Bowl", category: "sports", isHot: true, size: 1, img: "images/Retro-Bowl.jpg", url: "/g/Retro_Bowl.html" },
-            { id: 14, name: "Retro Bowl College", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/geez24", url: "/g/Retro_Bowl_College.html" },
-            { id: 15, name: "Tiny Fishing", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/i3anhd.webp", url: "/g/tiny-fishing.html" },
-            { id: 16, name: "Fruit Ninja", category: "casual", isHot: false, size: 1, img: "images/FruitNinja.jpg", url: "/g/fruit-ninja.html" },
-            { id: 17, name: "Paper.io 2", category: "multiplayer", isHot: true, size: 1, img: "https://files.catbox.moe/fhhv3d", url: "/g/paper-io-2.html" },
-            { id: 18, name: "Basket Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/xq62ka", url: "/g/basket-random.html" },
-            { id: 19, name: "Soccer Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/lnk6go", url: "/g/soccerrandom.html" },
-            { id: 20, name: "Volley Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/4c91xd.png", url: "/g/volleyrandom.html" },
-            { id: 21, name: "Boxing Random", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/0nb7uh", url: "/g/boxingrandom.html" },
-            { id: 22, name: "BTD 1", category: "puzzle", isHot: false, size: 1, img: "images/BTD1.webp", url: "/g/clbloonsTD1.html" },
-            { id: 23, name: "BTD 2", category: "puzzle", isHot: false, size: 1, img: "images/BTD2.webp", url: "/g/clbloonsTD2.html" },
-            { id: 24, name: "BTD 3", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/z5azm0", url: "/g/clbloonsTD3.html" },
-            { id: 25, name: "BTD 4", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/mel29y.jpg", url: "/g/clbloonsTD4.html" },
-            { id: 26, name: "BTD 5", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/bxp2jl", url: "/g/clbloonsTD5.html" },
-            { id: 27, name: "TrollPulse", category: "casual", isHot: false, size: 1, img: "images/TrollPulseLogo.png", url: "/g/trollpulse.html" },
-            { id: 28, name: "Escape Road", category: "racing", isHot: true, size: 1, img: "https://files.catbox.moe/mpahmq", url: "/g/Escape Road.html" },
-            { id: 29, name: "Escape Road 2", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/2k0h43.png", url: "/g/Escape Road 2.html" },
-            { id: 30, name: "Escape Road 3", category: "racing", isHot: true, size: 2, img: "https://idolsash.io/data/image/game/escape-road-3.png", url: "/g/escaperoad3.html" },
-            { id: 31, name: "Snow Rider", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/rr7apg.png", url: "/g/Snow Rider 3D.html" },
-            { id: 32, name: "Bubble Shooter", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/91u459.jpg", url: "/g/bubble-shooter.html" },
-            { id: 33, name: "Granny", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/nr5jcu.png", url: "/g/granny.html" },
-            { id: 34, name: "Granny 2", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/q1sxm7", url: "/g/granny2.html" },
-            { id: 35, name: "Baldi's Basics plus", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/0oc44j.png", url: "/g/baldis-plus.html" },
-            { id: 36, name: "Baldi's Basics Remastered", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/r59dna.png", url: "/g/baldis-remaster.html" },
-            { id: 37, name: "Super Hot", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/0z8kkg.png", url: "/g/super-hot.html" },
-            { id: 38, name: "Drift Hunters", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/l3yxxi.png", url: "/g/drift-hunters.html" },
-            { id: 39, name: "Drift Boss", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/yvcb0a", url: "/g/drift-boss.html" },
-            { id: 40, name: "Dreader", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/dcdggb.jpg", url: "/g/dreader.html" },
-            { id: 41, name: "DRIVE MAD", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/lybd4x.png", url: "/g/drive-mad.html" },
-            { id: 42, name: "Monster Tracks", category: "racing", isHot: false, size: 1, img: "https://files.catbox.moe/4dw29n.png", url: "/g/Monster_Tracks.html" },
-            { id: 43, name: "wbwwb", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/drzjlp", url: "/g/wbwwb.html" },
-            { id: 44, name: "Hole.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/jy89of.jpg", url: "/g/hole-io.html" },
-            { id: 45, name: "Geometry Dash", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/ty93rb.svg", url: "/g/geometry-dash.html" },
-            { id: 46, name: "Basketball Stars", category: "sports", isHot: false, size: 1, img: "https://files.catbox.moe/3gfm2l", url: "/g/basketball-stars.html" },
-            { id: 47, name: "Slither.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/za2ki9", url: "/g/slither-io.html" },
-            { id: 48, name: "Snowball.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/y8dlxd", url: "/g/snowball-io.html" },
-            { id: 49, name: "Just Fall.io", category: "multiplayer", isHot: false, size: 1, img: "https://files.catbox.moe/pnwe5y.png", url: "/g/just-fall-io.html" },
-            { id: 50, name: "Glahdihoppers", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/156y2g", url: "/g/Gladihoppers.html" },
-            { id: 51, name: "Jetpack Joyride", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/yygt3c.png", url: "/g/Jetpack_Joyride.html" },
-            { id: 52, name: "Friday Night Funkin", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/brst6x", url: "/g/Friday_Night_Funkin.html" },
-            { id: 53, name: "Temple Run 2", category: "action", isHot: false, size: 1, img: "https://upload.wikimedia.org/wikipedia/en/9/98/Temple_Run_2.png", url: "/g/Temple_Run_2.html" },
-            { id: 54, name: "Stickman Hook", category: "action", isHot: false, size: 1, img: "https://files.catbox.moe/yfv8i8.png", url: "/g/Stickman_Hook.html" },
-            { id: 55, name: "Attack Hole", category: "casual", isHot: false, size: 1, img: "https://play-lh.googleusercontent.com/r8TsKF6VY6FC74IDuX8qAe0iOoQpsIY2cPzm-6PIvk3qv7rtpZleZqZ2b7t9N5EYHwjY=w240-h480-rw", url: "/g/Attack_Hole.html" },
-            { id: 56, name: "Bridge Race", category: "racing", isHot: false, size: 1, img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645460/70e29b759f45fb0cc6645fc439528b0c2accbee2/header.jpg?t=1757698729", url: "/g/Bridge_Race.html" },
-            { id: 57, name: "Color Water Sort 3D", category: "puzzle", isHot: false, size: 1, img: "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000082016/8a5f6fcd8bf4334347d04076d34a42c96ea09bcc9a738f6821a3a873710d38cc", url: "/g/Color_Water_Sort_3D.html" },
-            { id: 58, name: "Hide 'N Seek", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/06s9e5", url: "/g/Hide_N_Seek.html" },
-            { id: 59, name: "Magic Tiles 3", category: "casual", isHot: false, size: 1, img: "https://files.catbox.moe/rkwe59.png", url: "/g/Magic_Tiles_3.html" },
-            { id: 60, name: "Amaze", category: "puzzle", isHot: false, size: 1, img: "https://files.catbox.moe/91r42g.png", url: "/g/Amaze.html" },
-            { id: 61, name: "FNAF Series", category: "casual", isHot: true, size: 1, img: "https://files.catbox.moe/o0hffv.jpg", url: "/fnaf.html" }
-        ];
-
+        // Global variables initialized dynamically via games.json fetching workflow
+        let gamesDataset = [];
         let activeCategory = 'all';
         let searchQuery = '';
         let userSessionState = { isLoggedIn: false };
+        let playbackSessionHistory = [1, 2]; // Injected initial Seed indices placeholder
 
-        // Initialize App View Grid Loop
+        // Initialize application workflow upon layout completion
         window.addEventListener('DOMContentLoaded', () => {
-            renderGrid();
+            fetchGamesCatalog();
             window.addEventListener('scroll', handleWindowScroll);
         });
+
+        // Asynchronous retrieval workflow mapping directly to your external root file: games.json
+        async function fetchGamesCatalog() {
+            const container = document.getElementById('gamesContainer');
+            try {
+                const response = await fetch('games.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP status verification error: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                // Programmatically map elements to enforce uniform properties and structured query indices securely
+                gamesDataset = data.map((game, index) => ({
+                    id: game.id || (index + 1),
+                    name: game.name || "Unknown Game",
+                    img: game.img || "https://placehold.co/150x150/1e1e1e/ffffff?text=Game",
+                    url: game.url || "#",
+                    category: game.category || deduceCategoryByName(game.name),
+                    isHot: game.isHot !== undefined ? game.isHot : (index % 7 === 0), // seed hot badges dynamically if missing
+                    size: game.size || (index % 12 === 0 ? 2 : 1) // preserve distinct layout sizes safely
+                }));
+
+                renderGrid();
+            } catch (error) {
+                console.error("Critical failure during catalog loading operational sequence:", error);
+                container.innerHTML = `
+                    <div class="col-span-full py-16 text-center text-pz-hot border border-pz-hot/20 bg-pz-hot/5 rounded-2xl p-6">
+                        <svg class="w-10 h-10 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <h4 class="font-bold text-lg text-white mb-1">Failed to load games.json database configuration</h4>
+                        <p class="text-sm text-pz-muted max-w-sm mx-auto">Ensure 'games.json' resides in the same root directory as index.html and is accurately structured as a valid JSON file array.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Helper framework to auto-assign categorizations if missing from raw files database structure
+        function deduceCategoryByName(name) {
+            const lower = name.toLowerCase();
+            if (lower.includes('slope') || lower.includes('escape') || lower.includes('drift') || lower.includes('ride') || lower.includes('track')) return 'racing';
+            if (lower.includes('btd') || lower.includes('tetris') || lower.includes('dash') || lower.includes('blast') || lower.includes('warp')) return 'puzzle';
+            if (lower.includes('bowl') || lower.includes('random') || lower.includes('star')) return 'sports';
+            if (lower.includes('io') || lower.includes('1v1')) return 'multiplayer';
+            if (lower.includes('surf') || lower.includes('run') || lower.includes('hook') || lower.includes('ninja') || lower.includes('hot')) return 'action';
+            return 'casual';
+        }
 
         // Mosaic Layout Renderer Function
         function renderGrid() {
@@ -470,7 +460,7 @@
             container.classList.remove('hidden');
             noResults.classList.add('hidden');
 
-            // Constructing Verified Component Strings securely with valid relative/absolute redirect destinations
+            // Constructing Grid Mosaic anchors mapping cleanly to dynamic urls securely
             processedList.forEach(game => {
                 const isBig = game.size === 2;
                 const tileAnchor = document.createElement('a');
@@ -485,7 +475,7 @@
 
                 tileAnchor.innerHTML = `
                     ${hotBadgeMarkup}
-                    <img src="${game.img}" alt="${game.name}" class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                    <img src="${game.img}" alt="${game.name}" class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/150x150/1f1f1f/ffffff?text=${encodeURIComponent(game.name)}'">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 text-center pointer-events-none">
                         <span class="text-sm font-bold text-white truncate drop-shadow-md">${game.name}</span>
                         <span class="text-[11px] text-pz-accent uppercase tracking-widest mt-0.5">${game.category}</span>
@@ -576,9 +566,6 @@
             document.getElementById('profileNavBtn').classList.remove('border-pz-accent');
         }
 
-        // History Registry Tracker Sync Engine Simulation
-        let playbackSessionHistory = [1, 2, 30]; // Injected Default Seed records matching new indices
-
         function registerHistoryPlayback(id) {
             if (!playbackSessionHistory.includes(id)) {
                 playbackSessionHistory.unshift(id);
@@ -594,11 +581,13 @@
             container.innerHTML = '';
 
             playbackSessionHistory.forEach(id => {
-                const gameMatch = gamesDataset.find(g => g.id === id) || gamesDataset[0];
+                const gameMatch = gamesDataset.find(g => g.id === id);
+                if (!gameMatch) return;
+                
                 const row = document.createElement('div');
                 row.className = "flex items-center gap-3 bg-neutral-900/60 p-2 rounded-xl border border-white/5 hover:border-white/10 transition-colors";
                 row.innerHTML = `
-                    <img src="${gameMatch.img}" alt="${gameMatch.name}" class="w-10 h-10 object-cover rounded-lg">
+                    <img src="${gameMatch.img}" alt="${gameMatch.name}" class="w-10 h-10 object-cover rounded-lg" onerror="this.src='https://placehold.co/40x40/1f1f1f/ffffff?text=G'">
                     <div class="min-w-0 flex-1">
                         <span class="text-xs font-bold text-white block truncate">${gameMatch.name}</span>
                         <span class="text-[10px] text-pz-muted uppercase tracking-wider block">${gameMatch.category}</span>
@@ -635,15 +624,14 @@
 
         // Random Arcade Selector Action Engine Trigger
         function triggerRandomGame() {
+            if (gamesDataset.length === 0) return;
             const index = Math.floor(Math.random() * gamesDataset.length);
             const selectedGame = gamesDataset[index];
             
-            // Spark a dynamic user selection notice overlay or simulation
             const searchInput = document.getElementById('gameSearch');
             searchInput.value = selectedGame.name;
             handleSearch(selectedGame.name);
             
-            // Briefly pulse smooth window target coordinates down to grid focus
             document.getElementById('gamesContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
