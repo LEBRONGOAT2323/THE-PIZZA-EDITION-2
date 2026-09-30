@@ -1,74 +1,83 @@
 [
   {
-    "name": "Red Ball 4",
+    "name": "Red Ball 4", 
     "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/242.png",
     "url": "g/red-ball-4.html"
   },
   {
-    "name": "Tetris",
-    "img": "https://files.catbox.moe/l4nobo.jpg",
-    "url": "https://shrimplab.vercel.app/projects/tetris/index.html"
+    "name": "Basket Random",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/66.png",
+    "url": "g/basket-random.html"
   },
   {
-    "name": "Slope",
-    "img": "https://files.catbox.moe/9um2tc.jpg",
+    "name": "Slope", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/198.png",
     "url": "/g/slope.html"
   },
   {
-    "name": "Slope 2 Player",
-    "img": "https://files.catbox.moe/xc860m.jpg",
+    "name": "Slope 2 Player", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/368.png",
     "url": "/g/slope-2.html"
   },
   {
-    "name": "Slope 3",
-    "img": "https://files.catbox.moe/ea327u.png",
-    "url": "/g/slope3.html"
+    "name": "Slope 3", 
+    "img": "https://slope3.com/storage/website/logo-slope.jpg",
+    "url": "/g/slope3.html" 
   },
   {
     "name": "Run 3",
-    "img": "images/Run3Logo.jpg",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/177.png",
     "url": "/g/run3.html"
   },
   {
-    "name": "1v1 Lol",
-    "img": "images/1v1.lol.jpeg",
+    "name": "Tetris", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/733.png",
+    "url": "https://shrimplab.vercel.app/projects/tetris/index.html"
+  },
+  {
+    "name": "1v1 Lol", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/58.png",
     "url": "/g/1v1.html"
   },
   {
-    "name": "Minecraft",
-    "img": "images/MinecraftLogo.jpg",
+    "name": "Minecraft", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/182.png",
     "url": "/g/minecraft.html"
   },
   {
     "name": "Block Blast",
-    "img": "images/BlockBlastappicon.jpg",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/6.png",
     "url": "/g/block-blast.html"
   },
   {
-    "name": "Pixel Panic",
-    "img": "images/pixel-panic.png",
+    "name": "Pixel Panic", 
+    "img": "https://raw.githubusercontent.com/LEBRONGOAT2323/unbleeked/refs/heads/main/images/pixel-panic.png?token=GHSAT0AAAAAAEHQGUGQVKADPA72GAT2W7WO2V5PQ5A",
     "url": "/g/pixel-panic.html"
   },
   {
-    "name": "Neon Warp",
-    "img": "images/NEON-WARP.png",
+    "name": "Neon Warp", 
+    "img": "https://raw.githubusercontent.com/LEBRONGOAT2323/unbleeked/refs/heads/main/images/NEON-WARP.png?token=GHSAT0AAAAAAEHQGUGQ3LCF5CBM5B72YGKQ2V5PSHQ",
     "url": "/g/neonwarp.html"
   },
   {
-    "name": "Crossy Road",
-    "img": "https://files.catbox.moe/h00vy5",
-    "url": "/g/Crossy%20Road.html"
+    "name": "Crossy Road", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/24.png",
+    "url": "/g/Crossy-Road.html"
   },
   {
-    "name": "Retro Bowl",
-    "img": "images/Retro-Bowl.jpg",
+    "name": "Retro Bowl", 
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/33.png",
     "url": "/g/Retro_Bowl.html"
   },
   {
     "name": "Retro Bowl College",
-    "img": "https://files.catbox.moe/geez24",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/34.png",
     "url": "/g/Retro_Bowl_College.html"
   },
+
+
+
+  
   {
     "name": "Tiny Fishing",
     "img": "https://files.catbox.moe/i3anhd.webp",
