@@ -50,56 +50,36 @@
             overflow-x: hidden;
         }
 
-     
+        .mosaic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            grid-auto-rows: 110px;
+            gap: 16px;
+        }
 
+        .tile-featured {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
 
-.mosaic-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(16, minmax(0, 1fr));
-    grid-auto-rows: calc((100vw - 46px) / 16);
-    grid-auto-flow: dense;
-    gap: 10px;
-}
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
 
-.game-card {
-    min-width: 0;
-    min-height: 0;
-    overflow: hidden;
-    border-radius: 13px;
-    aspect-ratio: auto !important;
-}
+        ::-webkit-scrollbar-track {
+            background: #161616;
+        }
 
-.tile-small {
-    grid-column: span 1;
-    grid-row: span 1;
-}
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 999px;
+            border: 2px solid #161616;
+        }
 
-.tile-featured {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.tile-mega {
-    grid-column: span 3;
-    grid-row: span 3;
-}
-
-.game-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-@media (max-width: 700px) {
-    .mosaic-grid {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-auto-rows: calc((100vw - 46px) / 6);
-        gap: 7px;
-    }
-}
-
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f0d210;
+        }
 
         .tile-badge {
             position: absolute;
@@ -378,7 +358,7 @@
     </header>
 
     <!-- Main -->
-    <main class="w-full max-w-none mx-0 px-3 py-3">
+    <main class="max-w-7xl mx-auto px-4 py-8">
 
         <div class="mosaic-grid" id="gamesContainer">
             <div class="col-span-full py-12 text-center text-pz-muted animate-pulse font-medium">
@@ -650,12 +630,8 @@
                     img: game.img || "https://placehold.co/150x150/1e1e1e/ffffff?text=Game",
                     url: game.url || "#",
                     category: game.category || deduceCategoryByName(game.name),
-                    isHot: game.isHot !== undefined ? game.isHot : (index % 7 === 0),            
-                    size: game.size || (
-                    index % 17 === 0 ? "mega" :
-                    index % 5 === 0 ? "featured" :
-                    "small"
-)
+                    isHot: game.isHot !== undefined ? game.isHot : (index % 7 === 0),
+                    size: game.size || (index % 12 === 0 ? 2 : 1)
                 }));
 
                 renderGrid();
@@ -753,21 +729,16 @@
             container.classList.remove('hidden');
             noResults.classList.add('hidden');
 
-              
-    processedList.forEach(game => {
+            processedList.forEach(game => {
 
-    const sizeClass = {
-        small: "tile-small",
-        featured: "tile-featured",
-        mega: "tile-mega"
-    };
+                const isBig = game.size === 2;
 
-    const tileAnchor = document.createElement("a");
-    tileAnchor.href = game.url;
-    tileAnchor.className =
-        `game-card relative bg-pz-panel2 border border-white/5 group cursor-pointer ${
-            sizeClass[game.size] || "tile-small"
-        }`;
+                const tileAnchor = document.createElement('a');
+
+                tileAnchor.href = game.url;
+
+                tileAnchor.className =
+                    `game-card relative overflow-hidden bg-pz-panel2 border border-white/5 rounded-2xl group cursor-pointer aspect-square ${isBig ? 'tile-featured' : ''}`;
 
                 const hotBadgeMarkup = game.isHot ? `
                     <div class="tile-badge bg-pz-accent text-pz-bg font-extrabold text-[10px] tracking-widest uppercase">
