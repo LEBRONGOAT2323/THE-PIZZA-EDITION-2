@@ -56,7 +56,7 @@
   },
   {
     "name": "Neon Warp", 
-    "img": "https://imglink.cc/cdn/ujyzf1vOhe.png",
+    "img": "https://imglink.cc/cdn/tjUAy2cqBX.png",
     "url": "/g/neonwarp.html"
   },
   {
@@ -249,63 +249,70 @@
     "img": "https://files.catbox.moe/156y2g",
     "url": "/g/Gladihoppers.html"
   },
-
-
-
-  
   {
-    "name": "Jetpack Joyride",
-    "img": "https://files.catbox.moe/yygt3c.png",
-    "url": "/g/Jetpack_Joyride.html"
+    "name": "Tomb of the Mask",
+    "img": "https://imglink.cc/cdn/-ZRZAoT8YQ.jpeg",
+    "url": "/g/tomb-of-the-mask.html"
   },
   {
-    "name": "Friday Night Funkin",
-    "img": "https://files.catbox.moe/brst6x",
-    "url": "/g/Friday_Night_Funkin.html"
-  },
-  {
-    "name": "Temple Run 2",
-    "img": "https://upload.wikimedia.org/wikipedia/en/9/98/Temple_Run_2.png",
-    "url": "/g/Temple_Run_2.html"
-  },
-  {
-    "name": "Stickman Hook",
+    "name": "Stickman Hook", 
     "img": "https://files.catbox.moe/yfv8i8.png",
     "url": "/g/Stickman_Hook.html"
   },
   {
-    "name": "Attack Hole",
-    "img": "https://play-lh.googleusercontent.com/r8TsKF6VY6FC74IDuX8qAe0iOoQpsIY2cPzm-6PIvk3qv7rtpZleZqZ2b7t9N5EYHwjY=w240-h480-rw",
-    "url": "/g/Attack_Hole.html"
+    "name": "Idle Ants", 
+    "img": "https://imglink.cc/cdn/F2wYUjoN_-.jpeg",
+    "url": "/g/idle-ants-main/"
   },
   {
-    "name": "Bridge Race",
-    "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645460/70e29b759f45fb0cc6645fc439528b0c2accbee2/header.jpg?t=1757698729",
-    "url": "/g/Bridge_Race.html"
+    "name": "Ragdoll Archers", 
+    "img": "https://imglink.cc/cdn/WlwKx9VCsP.png",
+    "url": "/g/ragdoll-archers.html"
   },
   {
-    "name": "Color Water Sort 3D",
-    "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000082016/8a5f6fcd8bf4334347d04076d34a42c96ea09bcc9a738f6821a3a873710d38cc",
-    "url": "/g/Color_Water_Sort_3D.html"
+    "name": "Cookie Clicker", 
+    "img": "https://imglink.cc/cdn/cDibrTTyd4.jpeg",
+    "url": "/g/cookie-clicker.html"
   },
   {
-    "name": "Hide 'N Seek",
-    "img": "https://files.catbox.moe/06s9e5",
-    "url": "/g/Hide_N_Seek.html"
+    "name": "Level Devil", 
+    "img": "level-devil.png",
+    "url": "/g/level-devil.html"
   },
   {
-    "name": "Magic Tiles 3",
-    "img": "https://files.catbox.moe/rkwe59.png",
-    "url": "/g/Magic_Tiles_3.html"
+    "name": "Gunspin ",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/91.png",
+    "url": "/g/gunspin.html"
   },
   {
-    "name": "Amaze",
-    "img": "https://files.catbox.moe/91r42g.png",
-    "url": "/g/Amaze.html"
+    "name": "Sandtris",
+    "img": "https://imglink.cc/cdn/C3a7CLkLxu.jpeg",
+    "url": "/g/sandtris.html"
   },
   {
-    "name": "FNAF Series",
-    "img": "https://files.catbox.moe/o0hffv.jpg",
-    "url": "/fnaf.html"
+    "name": "Sausage Flip",
+    "img": "https://imglink.cc/cdn/7-VzfaPLQV.png",
+    "url": "/g/sausage-flip.html"
+  },
+  {
+    "name": "Deadly Descent",
+    "img": "https://imglink.cc/cdn/EfJVFkpcWA.jpeg",
+    "url": "/g/deadly-descent.html"
+  },
+  {
+    "name": "Polytrack",
+    "img": "https://imglink.cc/cdn/va-RaT9IzE.png",
+    "url": "/g/polytrack.html"
+  },
+  {
+    "name": "Ragdoll Hit",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/44.png",
+    "url": "/g/ragdoll-hit.html"
+  },
+  {
+    "name": "Happy Wheels",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/624.png",
+    "url": "/g/happy-wheel.html"
   }
+  
 ]

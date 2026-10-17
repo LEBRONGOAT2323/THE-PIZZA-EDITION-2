@@ -229,11 +229,11 @@
                     </div>
 
                     <h2 class="text-2xl font-bold text-white tracking-tight mt-4">
-                        Create an Account
+                        This feature is currently not supported.
                     </h2>
 
                     <p class="text-pz-muted text-sm px-6">
-                        Sign up to sync game progress across multiple browsers and school workstations natively.
+                        This site is in very early development, officaly being roled out in beta. Therefore this feature is not supported yet.
                     </p>
                 </div>
 
@@ -337,6 +337,10 @@
 
             <button onclick="filterCategory('racing')" data-category="racing" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
                 Racing
+            </button>
+
+            <button onclick="filterCategory('shooting')" data-category="shooting" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
+                Shooting
             </button>
 
             <button onclick="filterCategory('sports')" data-category="sports" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
@@ -545,6 +549,12 @@
                                 Action & Reflex
                             </button>
                         </li>
+
+                        <li>
+                            <button onclick="filterCategory('shooting')" class="text-white/80 hover:text-pz-accent transition-colors">
+                                Shooting
+                            </button>
+                        </li>
                     </ul>
                 </div>
 
@@ -582,7 +592,7 @@
                 </span>
 
                 <span class="px-3 py-1 bg-white/5 rounded-md border border-white/5">
-                    v1.0.0-Dynamic
+                    beta - 1.0.0
                 </span>
             </div>
         </div>
@@ -668,15 +678,14 @@
                 lower.includes('escape') ||
                 lower.includes('drift') ||
                 lower.includes('ride') ||
+                lower.includes('drive') ||
                 lower.includes('track')
             ) return 'racing';
 
             if (
                 lower.includes('btd') ||
-                lower.includes('tetris') ||
-                lower.includes('dash') ||
-                lower.includes('blast') ||
-                lower.includes('warp')
+                lower.includes('maze') ||
+                lower.includes('blast')
             ) return 'puzzle';
 
             if (
@@ -689,6 +698,15 @@
                 lower.includes('io') ||
                 lower.includes('1v1')
             ) return 'multiplayer';
+
+            if (
+                lower.includes('archer') ||
+                lower.includes('gun') 
+            ) return 'shooting';
+
+            if (
+                lower.includes('tetris') 
+            ) return 'arcade';
 
             if (
                 lower.includes('surf') ||
