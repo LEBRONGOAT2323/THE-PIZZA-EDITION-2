@@ -42,86 +42,17 @@
         }
     </script>
 
-    <style>
-        body {
-            background-color: #161616;
-            color: #ffffff;
-            font-family: 'Rubik', sans-serif;
-            overflow-x: hidden;
-        }
-
-        .mosaic-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            grid-auto-rows: 110px;
-            gap: 16px;
-        }
-
-        .tile-featured {
-            grid-row: span 2;
-            grid-column: span 2;
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #161616;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #262626;
-            border-radius: 999px;
-            border: 2px solid #161616;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #f0d210;
-        }
-
-        .tile-badge {
-            position: absolute;
-            top: 8px;
-            left: -6px;
-            z-index: 10;
-            padding: 2px 8px;
-            border-radius: 3px 14px 14px 0px;
-            box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .tile-badge::before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 4px;
-            height: 4px;
-            background: inherit;
-            filter: brightness(0.6);
-        }
-
-        .game-card {
-            transition: all 0.30s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        /* Pizza Edition branding logo */
-        .pizza-logo {
-            object-fit: contain;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="antialiased min-h-screen pt-20">
+<body data-page="home" class="antialiased min-h-screen pt-[58px]">
 
     <!-- Top Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 h-16 bg-[#141414]/80 backdrop-blur-md border-b border-white/10 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto h-full px-4 flex items-center justify-between gap-4">
+    <nav class="fixed top-0 left-0 right-0 h-[58px] bg-[#141414]/30 backdrop-blur-2xl backdrop-saturate-150 z-50">
+        <div class="h-full max-w-[1460px] mx-auto px-4 flex items-center">
             
             <!-- Brand Logo and Title -->
-            <a href="#" onclick="filterCategory('all')" class="flex items-center gap-3 active:scale-95 transition-transform flex-shrink-0">
+            <a href="index.html" class="flex items-center gap-3 active:scale-95 transition-transform flex-shrink-0">
 
                 <!-- YOUR PIZZA LOGO -->
                 <div class="w-10 h-10 flex items-center justify-center">
@@ -132,13 +63,50 @@
                     >
                 </div>
 
-                <span class="font-bebas text-2xl tracking-wider text-white hidden sm:block">
-                    THE <b class="text-pz-accent font-normal">PIZZA</b> EDITION 2
-                </span>
+                <span class="font-bebas text-[30px] leading-none tracking-wide text-white hidden sm:block">THE PIZZA EDITION 2</span>
             </a>
 
+            <!-- Nav Links -->
+            <div class="flex items-center gap-1 sm:gap-3 ml-3 sm:ml-8 flex-shrink-0">
+
+                <button
+                    onclick="window.location.href='index.html'"
+                    data-category="all"
+                    class="px-2 h-10 font-bebas text-[21px] leading-none tracking-wide text-white hover:text-pz-accent active:scale-95 transition-all flex items-center gap-1.5"
+                >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+                    <span class="hidden sm:inline">ALL GAMES</span>
+                </button>
+
+                <!-- Categories hover dropdown -->
+                <div class="relative group">
+                    <button
+                        id="catToggleBtn"
+                        type="button"
+                        class="px-2 h-10 font-bebas text-[21px] leading-none tracking-wide text-white hover:text-pz-accent transition-all flex items-center gap-1.5"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-5 5a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/></svg>
+                        <span class="hidden sm:inline">CATEGORIES</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+
+                    <!-- pt-2 keeps the hover area continuous between button and menu -->
+                    <div class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 z-50">
+                        <div id="catDropdownList" class="bg-[#141414]/80 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl p-2"></div>
+                    </div>
+                </div>
+
+                <button
+                    onclick="triggerRandomGame()"
+                    class="px-2 h-10 font-bebas text-[21px] leading-none tracking-wide text-white hover:text-pz-accent active:scale-95 transition-all flex items-center gap-1.5"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+                    <span class="hidden sm:inline">RANDOM</span>
+                </button>
+            </div>
+
             <!-- Search Bar -->
-            <div class="relative flex-1 max-w-md mx-4">
+            <div class="relative flex-1 max-w-[420px] ml-auto">
                 <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-pz-muted">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -149,8 +117,8 @@
                     type="text"
                     id="gameSearch"
                     oninput="handleSearch(this.value)"
-                    placeholder="Search games list..."
-                    class="w-full h-10 pl-11 pr-10 rounded-xl bg-pz-panel2 border border-white/10 text-white placeholder-pz-muted focus:border-pz-accent focus:bg-neutral-900 focus:ring-4 focus:ring-pz-accent/20 transition-all outline-none font-rubik text-sm"
+                    placeholder="Search games"
+                    class="w-full h-[42px] pl-11 pr-12 rounded-xl bg-black/35 border border-white/10 text-white placeholder-pz-muted focus:border-white/30 focus:bg-black/50 transition-all outline-none font-rubik font-medium text-[15px]"
                 >
 
                 <button
@@ -162,32 +130,27 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
+
+                <span
+                    id="searchKbd"
+                    class="absolute top-1/2 -translate-y-1/2 right-3 w-6 h-6 rounded-md border border-white/20 bg-white/5 text-xs font-medium text-pz-muted flex items-center justify-center pointer-events-none"
+                >/</span>
             </div>
 
-            <!-- Profile and Options Buttons -->
-            <div class="flex items-center gap-2">
-
-                <button
-                    onclick="triggerRandomGame()"
-                    class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pz-accent hover:text-pz-bg transition-all active:scale-95 group"
-                    title="Random Game"
-                >
-                    <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/>
-                    </svg>
-                </button>
+            <!-- Profile and Options Buttons --> <div class="flex items-center gap-2 ml-3">
 
                 <button
                     onclick="toggleAccountSidebar()"
-                    class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition-all active:scale-95 relative"
+                    class="w-10 h-10 flex items-center justify-center text-white hover:text-pz-accent transition-all active:scale-95 relative"
                     id="profileNavBtn"
                 >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                     </svg>
 
-                    <span
-                        class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-green-500 border-2 border-pz-bg rounded-full hidden"
+                    <span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-pz-hot rounded-full"></span>
+
+                    <span class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-green-500 border-2 border-pz-bg rounded-full hidden"
                         id="onlineIndicator"
                     ></span>
                 </button>
@@ -317,52 +280,11 @@
         </div>
     </div>
 
-    <!-- Category Header -->
-    <header class="max-w-7xl mx-auto px-4 mt-6">
-        <div
-            class="flex items-center gap-2 overflow-x-auto pb-3 border-b border-white/5 scroll-smooth"
-            id="categoryTrack"
-        >
-            <button onclick="filterCategory('all')" data-category="all" class="cat-tab-btn px-5 h-10 rounded-xl bg-pz-accent text-pz-bg font-bold text-sm tracking-wide whitespace-nowrap active:scale-95 transition-all shadow-md shadow-pz-accent/5">
-                All Games
-            </button>
-
-            <button onclick="filterCategory('action')" data-category="action" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Action
-            </button>
-
-            <button onclick="filterCategory('arcade')" data-category="arcade" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Arcade
-            </button>
-
-            <button onclick="filterCategory('racing')" data-category="racing" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Racing
-            </button>
-
-            <button onclick="filterCategory('shooting')" data-category="shooting" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Shooting
-            </button>
-
-            <button onclick="filterCategory('sports')" data-category="sports" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Sports
-            </button>
-
-            <button onclick="filterCategory('puzzle')" data-category="puzzle" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Puzzle
-            </button>
-
-            <button onclick="filterCategory('multiplayer')" data-category="multiplayer" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Multiplayer
-            </button>
-
-            <button onclick="filterCategory('casual')" data-category="casual" class="cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all">
-                Casual
-            </button>
-        </div>
-    </header>
-
     <!-- Main -->
-    <main class="max-w-7xl mx-auto px-4 py-8">
+    <main id="mainEl" class="px-8 py-8">
+
+        <!-- Category pill bar (only shown on /g/<category> pages) -->
+        <div id="categoryBar" class="hidden items-center gap-3 mb-6 overflow-x-auto pb-1"></div>
 
         <div class="mosaic-grid" id="gamesContainer">
             <div class="col-span-full py-12 text-center text-pz-muted animate-pulse font-medium">
@@ -398,7 +320,7 @@
         </div>
 
         <!-- Information -->
-        <section class="mt-16 bg-pz-panel border border-white/10 rounded-3xl p-6 sm:p-10 space-y-8">
+        <section id="infoSection" class="max-w-7xl mx-auto mt-16 bg-pz-panel border border-white/10 rounded-3xl p-6 sm:p-10 space-y-8">
 
             <div class="border-l-4 border-pz-accent pl-4">
                 <h1 class="font-bebas text-4xl sm:text-5xl tracking-wide text-white">
@@ -592,7 +514,7 @@
                 </span>
 
                 <span class="px-3 py-1 bg-white/5 rounded-md border border-white/5">
-                    beta - 1.0.0
+                    v1.0.0
                 </span>
             </div>
         </div>
@@ -610,483 +532,7 @@
     </button>
 
     <!-- JavaScript -->
-    <script>
-        let gamesDataset = [];
-        let activeCategory = 'all';
-        let searchQuery = '';
-        let userSessionState = { isLoggedIn: false };
-        let playbackSessionHistory = [1, 2];
-
-        window.addEventListener('DOMContentLoaded', () => {
-            fetchGamesCatalog();
-            window.addEventListener('scroll', handleWindowScroll);
-        });
-
-        async function fetchGamesCatalog() {
-            const container = document.getElementById('gamesContainer');
-
-            try {
-                const response = await fetch('games.json');
-
-                if (!response.ok) {
-                    throw new Error(`HTTP status verification error: ${response.status}`);
-                }
-
-                const data = await response.json();
-
-                gamesDataset = data.map((game, index) => ({
-                    id: game.id || (index + 1),
-                    name: game.name || "Unknown Game",
-                    img: game.img || "https://placehold.co/150x150/1e1e1e/ffffff?text=Game",
-                    url: game.url || "#",
-                    category: game.category || deduceCategoryByName(game.name),
-                    isHot: game.isHot !== undefined ? game.isHot : (index % 7 === 0),
-                    size: game.size || (index % 12 === 0 ? 2 : 1)
-                }));
-
-                renderGrid();
-
-            } catch (error) {
-                console.error(
-                    "Critical failure during catalog loading operational sequence:",
-                    error
-                );
-
-                container.innerHTML = `
-                    <div class="col-span-full py-16 text-center text-pz-hot border border-pz-hot/20 bg-pz-hot/5 rounded-2xl p-6">
-                        <svg class="w-10 h-10 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
-                        </svg>
-
-                        <h4 class="font-bold text-lg text-white mb-1">
-                            Failed to load games.json database configuration
-                        </h4>
-
-                        <p class="text-sm text-pz-muted max-w-sm mx-auto">
-                            Ensure 'games.json' resides in the same root directory as index.html and is accurately structured as a valid JSON file array.
-                        </p>
-                    </div>
-                `;
-            }
-        }
-
-        function deduceCategoryByName(name) {
-            const lower = name.toLowerCase();
-
-            if (
-                lower.includes('slope') ||
-                lower.includes('escape') ||
-                lower.includes('drift') ||
-                lower.includes('ride') ||
-                lower.includes('drive') ||
-                lower.includes('track')
-            ) return 'racing';
-
-            if (
-                lower.includes('btd') ||
-                lower.includes('maze') ||
-                lower.includes('blast')
-            ) return 'puzzle';
-
-            if (
-                lower.includes('bowl') ||
-                lower.includes('random') ||
-                lower.includes('star')
-            ) return 'sports';
-
-            if (
-                lower.includes('io') ||
-                lower.includes('1v1')
-            ) return 'multiplayer';
-
-            if (
-                lower.includes('archer') ||
-                lower.includes('gun') 
-            ) return 'shooting';
-
-            if (
-                lower.includes('tetris') 
-            ) return 'arcade';
-
-            if (
-                lower.includes('surf') ||
-                lower.includes('run') ||
-                lower.includes('hook') ||
-                lower.includes('ninja') ||
-                lower.includes('hot')
-            ) return 'action';
-
-            return 'casual';
-        }
-
-        function renderGrid() {
-            const container = document.getElementById('gamesContainer');
-            const noResults = document.getElementById('noResultsSection');
-
-            container.innerHTML = '';
-
-            const processedList = gamesDataset.filter(game => {
-                const matchCat =
-                    activeCategory === 'all' ||
-                    game.category === activeCategory;
-
-                const matchSearch =
-                    game.name
-                        .toLowerCase()
-                        .includes(searchQuery.toLowerCase());
-
-                return matchCat && matchSearch;
-            });
-
-            if (processedList.length === 0) {
-                container.classList.add('hidden');
-                noResults.classList.remove('hidden');
-                return;
-            }
-
-            container.classList.remove('hidden');
-            noResults.classList.add('hidden');
-
-            processedList.forEach(game => {
-
-                const isBig = game.size === 2;
-
-                const tileAnchor = document.createElement('a');
-
-                tileAnchor.href = game.url;
-
-                tileAnchor.className =
-                    `game-card relative overflow-hidden bg-pz-panel2 border border-white/5 rounded-2xl group cursor-pointer aspect-square ${isBig ? 'tile-featured' : ''}`;
-
-                const hotBadgeMarkup = game.isHot ? `
-                    <div class="tile-badge bg-pz-accent text-pz-bg font-extrabold text-[10px] tracking-widest uppercase">
-                        HOT
-                    </div>
-                ` : '';
-
-                tileAnchor.innerHTML = `
-                    ${hotBadgeMarkup}
-
-                    <img
-                        src="${game.img}"
-                        alt="${game.name}"
-                        class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                        onerror="this.src='https://placehold.co/150x150/1f1f1f/ffffff?text=${encodeURIComponent(game.name)}'"
-                    >
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 text-center pointer-events-none">
-                        <span class="text-sm font-bold text-white truncate drop-shadow-md">
-                            ${game.name}
-                        </span>
-
-                        <span class="text-[11px] text-pz-accent uppercase tracking-widest mt-0.5">
-                            ${game.category}
-                        </span>
-                    </div>
-                `;
-
-                tileAnchor.addEventListener('click', () => {
-                    registerHistoryPlayback(game.id);
-                });
-
-                container.appendChild(tileAnchor);
-            });
-        }
-
-        function filterCategory(catName) {
-            activeCategory = catName;
-
-            document.querySelectorAll('.cat-tab-btn').forEach(btn => {
-
-                if (btn.getAttribute('data-category') === catName) {
-
-                    btn.className =
-                        "cat-tab-btn px-5 h-10 rounded-xl bg-pz-accent text-pz-bg font-bold text-sm tracking-wide whitespace-nowrap active:scale-95 transition-all shadow-md shadow-pz-accent/5";
-
-                } else {
-
-                    btn.className =
-                        "cat-tab-btn px-5 h-10 rounded-xl bg-white/5 border border-white/5 text-white font-medium text-sm tracking-wide whitespace-nowrap hover:bg-white/10 active:scale-95 transition-all";
-                }
-            });
-
-            renderGrid();
-        }
-
-        function handleSearch(val) {
-            searchQuery = val.trim();
-
-            const clearBtn =
-                document.getElementById('searchClearBtn');
-
-            if (searchQuery.length > 0) {
-                clearBtn.classList.remove('hidden');
-                clearBtn.classList.add('flex');
-            } else {
-                clearBtn.classList.remove('flex');
-                clearBtn.classList.add('hidden');
-            }
-
-            renderGrid();
-        }
-
-        function clearSearch() {
-            const searchInput =
-                document.getElementById('gameSearch');
-
-            searchInput.value = '';
-            searchQuery = '';
-
-            document
-                .getElementById('searchClearBtn')
-                .classList.add('hidden');
-
-            renderGrid();
-        }
-
-        function toggleAccountSidebar() {
-            const side =
-                document.getElementById('accountSidebar');
-
-            const scrim =
-                document.getElementById('accountScrim');
-
-            if (side.classList.contains('translate-x-full')) {
-
-                side.classList.remove('translate-x-full');
-
-                scrim.classList.remove(
-                    'opacity-0',
-                    'pointer-events-none'
-                );
-
-            } else {
-
-                side.classList.add('translate-x-full');
-
-                scrim.classList.add(
-                    'opacity-0',
-                    'pointer-events-none'
-                );
-            }
-        }
-
-        function simulateLogin() {
-            userSessionState.isLoggedIn = true;
-
-            document
-                .getElementById('profileSignedOut')
-                .classList.add('hidden');
-
-            document
-                .getElementById('profileSignedIn')
-                .classList.remove('hidden');
-
-            document
-                .getElementById('sidebarAccountActions')
-                .classList.remove('hidden');
-
-            document
-                .getElementById('onlineIndicator')
-                .classList.remove('hidden');
-
-            document
-                .getElementById('profileNavBtn')
-                .classList.add('border-pz-accent');
-
-            renderHistoryView();
-        }
-
-        function simulateLogout() {
-            userSessionState.isLoggedIn = false;
-
-            document
-                .getElementById('profileSignedIn')
-                .classList.add('hidden');
-
-            document
-                .getElementById('profileSignedOut')
-                .classList.remove('hidden');
-
-            document
-                .getElementById('sidebarAccountActions')
-                .classList.add('hidden');
-
-            document
-                .getElementById('onlineIndicator')
-                .classList.add('hidden');
-
-            document
-                .getElementById('profileNavBtn')
-                .classList.remove('border-pz-accent');
-        }
-
-        function registerHistoryPlayback(id) {
-
-            if (!playbackSessionHistory.includes(id)) {
-
-                playbackSessionHistory.unshift(id);
-
-                if (playbackSessionHistory.length > 4) {
-                    playbackSessionHistory.pop();
-                }
-            }
-
-            if (userSessionState.isLoggedIn) {
-                renderHistoryView();
-            }
-        }
-
-        function renderHistoryView() {
-            const container =
-                document.getElementById('recentHistoryList');
-
-            container.innerHTML = '';
-
-            playbackSessionHistory.forEach(id => {
-
-                const gameMatch =
-                    gamesDataset.find(g => g.id === id);
-
-                if (!gameMatch) return;
-
-                const row = document.createElement('div');
-
-                row.className =
-                    "flex items-center gap-3 bg-neutral-900/60 p-2 rounded-xl border border-white/5 hover:border-white/10 transition-colors";
-
-                row.innerHTML = `
-                    <img
-                        src="${gameMatch.img}"
-                        alt="${gameMatch.name}"
-                        class="w-10 h-10 object-cover rounded-lg"
-                        onerror="this.src='https://placehold.co/40x40/1f1f1f/ffffff?text=G'"
-                    >
-
-                    <div class="min-w-0 flex-1">
-                        <span class="text-xs font-bold text-white block truncate">
-                            ${gameMatch.name}
-                        </span>
-
-                        <span class="text-[10px] text-pz-muted uppercase tracking-wider block">
-                            ${gameMatch.category}
-                        </span>
-                    </div>
-
-                    <span class="text-[11px] text-pz-accent font-semibold px-2 py-0.5 bg-pz-accent/5 rounded border border-pz-accent/10">
-                        Sync'd
-                    </span>
-                `;
-
-                container.appendChild(row);
-            });
-        }
-
-        function toggleFaq(btn) {
-
-            const body = btn.nextElementSibling;
-            const marker = btn.querySelector('span:last-child');
-            const parent = btn.parentElement;
-
-            if (
-                body.style.maxHeight &&
-                body.style.maxHeight !== '0px'
-            ) {
-
-                body.style.maxHeight = '0px';
-                marker.style.transform = 'none';
-
-                parent.classList.remove(
-                    'border-pz-accent/50'
-                );
-
-            } else {
-
-                document
-                    .querySelectorAll('#faqAccordionGroup > div')
-                    .forEach(item => {
-
-                        item.querySelector('div').style.maxHeight =
-                            '0px';
-
-                        item.querySelector(
-                            'button span:last-child'
-                        ).style.transform = 'none';
-
-                        item.classList.remove(
-                            'border-pz-accent/50'
-                        );
-                    });
-
-                body.style.maxHeight =
-                    body.scrollHeight + 'px';
-
-                marker.style.transform =
-                    'rotate(45deg)';
-
-                parent.classList.add(
-                    'border-pz-accent/50'
-                );
-            }
-        }
-
-        function triggerRandomGame() {
-
-            if (gamesDataset.length === 0) return;
-
-            const index =
-                Math.floor(Math.random() * gamesDataset.length);
-
-            const selectedGame =
-                gamesDataset[index];
-
-            const searchInput =
-                document.getElementById('gameSearch');
-
-            searchInput.value =
-                selectedGame.name;
-
-            handleSearch(selectedGame.name);
-
-            document
-                .getElementById('gamesContainer')
-                .scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-        }
-
-        function handleWindowScroll() {
-
-            const btn =
-                document.getElementById('backToTopBtn');
-
-            if (window.scrollY > 400) {
-
-                btn.classList.remove(
-                    'opacity-0',
-                    'pointer-events-none',
-                    'translate-y-4'
-                );
-
-            } else {
-
-                btn.classList.add(
-                    'opacity-0',
-                    'pointer-events-none',
-                    'translate-y-4'
-                );
-            }
-        }
-
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 
 </body>
 </html>
