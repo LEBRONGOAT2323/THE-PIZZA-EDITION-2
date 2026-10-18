@@ -195,8 +195,12 @@ async function fetchGamesCatalog() {
         document.getElementById('gameSearch').placeholder =
             `Search ${Math.floor(gamesDataset.length / 10) * 10}+ games`;
 
-        if (IS_PLAY_PAGE) renderPlayPage();
-        else renderGrid();
+        if (IS_PLAY_PAGE) {
+            await loadPartners();
+            renderPlayPage();
+        } else {
+            renderGrid();
+        }
 
     } catch (error) {
         console.error(
@@ -719,10 +723,20 @@ function renderPlayPage() {
         ...others.filter(g => g.category !== game.category)
     ];
 
-    const LEFT = 14;    // 2 columns x 7 rows
-    const RIGHT = 15;   // one 2x2 tile + 14 small ones fill a 3 x 6 block
-    const left = related.slice(0, LEFT);
-    const right = related.slice(LEFT, LEFT + RIGHT);
+    // Left column = 14 slots (2 x 7). Partner sites (partners.json) come first,
+    // and regular games fill every slot that's left over.
+    const LEFT_SLOTS = 14;
+    const adLeft = pickPartners(LEFT_SLOTS, 0);
+    const partnerCells = adLeft.length + (adLeft.length % 2);   // odd last card spans 2 cells
+    const leftGames = related.slice(0, LEFT_SLOTS - partnerCells);
+
+    // Real games beside the player: fills all 6 rows next to the player
+    const RIGHT = 15;
+    const right = related.slice(leftGames.length, leftGames.length + RIGHT);
+
+    // Bottom grid: everything not already shown in the side columns on wide screens
+    const shownInSides = leftGames.length + RIGHT;
+    const moreTiles = related.map((g, i) => miniTile(g, i < shownInSides ? 'more-hide-xl' : ''));
 
     const name = escapeHtml(game.name);
     const byLine = game.author ? 'BY: ' + escapeHtml(game.author) : escapeHtml(game.category);
@@ -737,9 +751,15 @@ function renderPlayPage() {
 
     root.innerHTML = `
         <div class="play-layout">
-
             <div class="side-left">
-                ${left.map(g => miniTile(g)).join('')}
+                ${adLeft.length ? `
+                    <div class="ad-grid-2">
+                        ${adLeft.map((p, i) => partnerTile(p, (adLeft.length % 2 && i === adLeft.length - 1) ? 'partner-wide' : '')).join('')}
+                    </div>
+                    <p class="ad-label">${AD_LABEL}</p>` : ''}
+                <div class="ad-grid-2 ${adLeft.length ? 'mt-3' : ''}">
+                    ${leftGames.map(g => miniTile(g)).join('')}
+                </div>
             </div>
 
             <div class="min-w-0">
@@ -776,13 +796,15 @@ function renderPlayPage() {
             </div>
 
             <div class="side-right">
-                ${right.map((g, i) => miniTile(g, i === 0 ? 'span-2' : '', true)).join('')}
+                <div class="mosaic-right">
+                    ${right.map((g, i) => miniTile(g, i === 0 ? 'span-2' : '', true)).join('')}
+                </div>
             </div>
         </div>
 
         <!-- Everything else. Items already shown in the side columns are hidden on wide screens. -->
         <div class="more-grid mt-6">
-            ${related.map((g, i) => miniTile(g, i < LEFT + RIGHT ? 'more-hide-xl' : '')).join('')}
+            ${moreTiles.join('')}
         </div>`;
 
     updateVoteButtons();
@@ -824,4 +846,58 @@ function updateVoteButtons() {
     up.classList.toggle('text-white', vote !== 'up');
     down.classList.toggle('text-pz-hot', vote === 'down');
     down.classList.toggle('text-white', vote !== 'down');
+}
+
+
+// ---------- Partner sites (free cross-promotion) ----------
+// Tiles that link out to other game SITES (their homepage, not a specific game).
+// Add them in partners.json:
+//   { "name": "Their Site", "url": "https://theirsite.com", "img": "partners/theirsite.png" }
+const AD_LABEL = 'Partner sites';
+let partnersData = [];
+
+async function loadPartners() {
+    try {
+        const res = await fetch('partners.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const list = await res.json();
+
+        // keep only complete entries, then shuffle so every partner gets shown over time
+        const valid = list.filter(p => p && p.url && p.img);
+        for (let i = valid.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [valid[i], valid[j]] = [valid[j], valid[i]];
+        }
+        partnersData = valid;
+    } catch (e) {
+        partnersData = [];   // no partners.json -> no partner slots
+    }
+}
+
+// Up to n partners, starting at an offset so different slots show different partners
+function pickPartners(n, offset) {
+    const len = partnersData.length;
+    const count = Math.min(n, len);
+    const out = [];
+    for (let i = 0; i < count; i++) out.push(partnersData[(offset + i) % len]);
+    return out;
+}
+
+// Only allow normal web links
+function safeUrl(url) {
+    return /^https?:\/\//i.test(url) ? url : '#';
+}
+
+function partnerTile(p, extraClass = '') {
+    const label = p.name || p.site || 'Partner site';
+    const name = escapeHtml(label);
+
+    return `
+        <a href="${escapeHtml(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer"
+           title="${name}" class="partner-tile partner-card ${extraClass}">
+            <img src="${escapeHtml(p.img)}" alt="${name}" loading="lazy"
+                 onerror="this.src='https://placehold.co/150x150/1f1f1f/ffffff?text=${encodeURIComponent(label)}'">
+            <span class="partner-name">${name}</span>
+            <svg class="partner-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>`;
 }

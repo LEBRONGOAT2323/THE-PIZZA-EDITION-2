@@ -117,6 +117,7 @@ body {
     gap: 16px;
 }
 
+/* side columns only exist on wide screens */
 .side-left,
 .side-right {
     display: none;
@@ -133,6 +134,43 @@ body {
     grid-row: span 2;
 }
 
+.mosaic-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 94px;
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+/* ---------- Partner sites (cross-promo) ---------- */
+.ad-label {
+    margin-top: 6px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6f6f6f;
+}
+
+.ad-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 80px;
+    gap: 10px;
+}
+
+.ad-grid-2 .partner-tile {
+    aspect-ratio: 1 / 1;
+}
+
+/* odd partner count: the last card stretches across both columns */
+.ad-grid-2 .partner-wide {
+    grid-column: span 2;
+    aspect-ratio: auto;
+    height: 100%;
+}
+
 @media (min-width: 1280px) {
     .play-layout {
         grid-template-columns: 170px minmax(0, 924px) 314px;
@@ -140,22 +178,88 @@ body {
         align-items: start;
     }
 
+
     .side-left {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        align-content: start;
+        display: block;
     }
 
     .side-right {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 98px;
-        gap: 10px;
-        grid-auto-flow: dense;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
+
 
     .more-hide-xl {
         display: none !important;
     }
+}
+
+/* ---------- Partner site cards ---------- */
+.partner-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #262626;
+}
+
+/* image fills the whole card */
+.partner-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.partner-card:hover img {
+    transform: scale(1.05);
+}
+
+.partner-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 6px 5px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.partner-card:hover .partner-name {
+    opacity: 1;
+}
+
+/* small "opens another site" arrow on hover */
+.partner-ext {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    box-sizing: content-box;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    border-radius: 999px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.partner-card:hover .partner-ext {
+    opacity: 1;
 }
