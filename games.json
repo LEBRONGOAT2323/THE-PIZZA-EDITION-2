@@ -276,7 +276,7 @@
   },
   {
     "name": "Level Devil", 
-    "img": "level-devil.png",
+    "img": "assets/level-devil.png",
     "url": "/g/level-devil.html"
   },
   {
@@ -295,14 +295,14 @@
     "url": "/g/sausage-flip.html"
   },
   {
-    "name": "Deadly Descent",
-    "img": "https://imglink.cc/cdn/EfJVFkpcWA.jpeg",
-    "url": "/g/deadly-descent.html"
-  },
-  {
     "name": "Polytrack",
     "img": "https://imglink.cc/cdn/va-RaT9IzE.png",
     "url": "/g/polytrack.html"
+  },
+  {
+    "name": "Deadly Descent",
+    "img": "https://imglink.cc/cdn/EfJVFkpcWA.jpeg",
+    "url": "/g/deadly-descent.html"
   },
   {
     "name": "Ragdoll Hit",
@@ -313,6 +313,41 @@
     "name": "Happy Wheels",
     "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/624.png",
     "url": "/g/happy-wheel.html"
+  },
+  {
+    "name": "Cluster Rush",
+    "img": "https://imglink.cc/cdn/sXrgXkW9Io.jpeg",
+    "url": "/g/cluster-rush.html"
+  },
+  {
+    "name": "Bitlife",
+    "img": "https://imglink.cc/cdn/_78cTZ0dhp.jpg",
+    "url": "/g/bitlife.html"
+  },
+  {
+    "name": "Space Waves",
+    "img": "https://imglink.cc/cdn/x0WUjAuR6b.png",
+    "url": "/g/space-waves.html"
+  },
+  {
+    "name": "Slow Roads",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/369.png",
+    "url": "/g/slow-roads.html"
+  },
+  {
+    "name": "Hill Climb Racing",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/157.png",
+    "url": "/g/hill-climb-racing.html"
+  },
+  {
+    "name": "Murder",
+    "img": "assets/murder.png",
+    "url": "/g/murder-story.html"
+  },
+  {
+    "name": "FNAF",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/38.png",
+    "url": "/g/fnaf-1.html"
   }
   
 ]
