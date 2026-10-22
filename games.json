@@ -86,17 +86,17 @@
   },
   {
     "name": "Paper.io 2", 
-    "img": "https://files.catbox.moe/fhhv3d",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/102.png",
     "url": "/g/paper-io-2.html"
   },
   {
     "name": "Basket Random", 
-    "img": "https://files.catbox.moe/xq62ka",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/66.png",
     "url": "/g/basket-random.html"
   },
   {
     "name": "Soccer Random", 
-    "img": "https://files.catbox.moe/lnk6go",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/739.png",
     "url": "/g/soccerrandom.html"
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "name": "Boxing Random", 
-    "img": "https://files.catbox.moe/0nb7uh",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/77.png",
     "url": "/g/boxingrandom.html"
   },
   {
@@ -121,17 +121,17 @@
   },
   {
     "name": "BTD 3",
-    "img": "https://files.catbox.moe/z5azm0",
+    "img": "https://imglink.cc/cdn/KnhdKH8Trb.png",
     "url": "/g/clbloonsTD3.html"
   },
   {
     "name": "BTD 4",
-    "img": "https://files.catbox.moe/mel29y.jpg",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/74.png",
     "url": "/g/clbloonsTD4.html"
   },
   {
     "name": "BTD 5", 
-    "img": "https://files.catbox.moe/bxp2jl",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/75.png",
     "url": "/g/clbloonsTD5.html"
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "Snow Rider", 
-    "img": "https://files.catbox.moe/rr7apg.png",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/119.png",
     "url": "/g/Snow-Rider-3D.html"
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "name": "Snowball.io",
-    "img": "https://files.catbox.moe/y8dlxd",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/207.png",
     "url": "/g/snowball-io.html"
   },
   {
@@ -348,6 +348,28 @@
     "name": "FNAF",
     "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/38.png",
     "url": "/g/fnaf-1.html"
+  },
+  {
+    "name": "FNAF 3",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/40.png",
+    "url": "/g/fnaf-3.html"
+  },
+  {
+    "name": "FNAF 2",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/39.png",
+    "url": "/g/fnaf-2.html"
+  },
+  {
+    "name": "FNAF 4",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/41.png",
+    "url": "/g/fnaf-4.html"
+  },
+  {
+    "name": "Sister Location",
+    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/185.png",
+    "url": "/g/sl.html"
   }
+
+
   
 ]
