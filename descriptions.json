@@ -1,0 +1,2111 @@
+{
+  "DRIVE MAD": {
+    "rating": 4.4,
+    "votes": 4696,
+    "intro": [
+      "Drive Mad is a physics driving game with two inputs. Your car sits at the left of a short course; accelerating pushes it over whatever is in the way, and braking or reversing lets you back off and try again. The cars are top-heavy and the courses are built to flip them, so the real skill is throttle control: too much speed over a ramp and you land on the roof, too little and you stall on the climb.",
+      "Every level is a self-contained gadget: seesaws, loops, breakable bridges, launchers, sometimes a car that changes shape mid-level. Reaching the flag unlocks the next level, and the level picker lets you jump back to any you have cleared. It is made in Fancade, so it plays identically in the browser and in the Fancade app."
+    ],
+    "howTo": "Feather the accelerator instead of holding it; most flips come from carrying speed into a ramp you did not need to take fast. If the car tips backwards, tap reverse to bring the nose down. When a level looks impossible, watch what the machinery does once before committing, since many of them have a timing window.",
+    "controls": "Desktop: right arrow or D to accelerate, left arrow or A to brake and reverse. Touch screens: tap and hold the right or left side of the screen.",
+    "unblocked": "Drive Mad runs right here in the browser with nothing to install, so it plays on school Chromebooks and other locked-down networks.",
+    "similar": [
+      {
+        "name": "Eggy Car",
+        "why": "is the other throttle-control game where overdriving loses the cargo."
+      },
+      {
+        "name": "Hill Climb Racing",
+        "why": "is the classic gas-and-brake hill physics game."
+      },
+      {
+        "name": "Monster Tracks",
+        "why": "is the Fancade monster-truck cousin with the same two inputs."
+      }
+    ],
+    "creator": "Drive Mad was created by Martin Magni and is built in Fancade; this page hosts the Fancade web build.",
+    "devices": "Yes. Two inputs make it equally playable with a keyboard or with touch.",
+    "tags": [
+      "Racing"
+    ]
+  },
+  "Red Ball 4": {
+    "displayName": "Redball 4",
+    "tags": [
+      "Platformer"
+    ],
+    "rating": 4.4,
+    "votes": 260,
+    "intro": [
+      "Red Ball 4 is a physics platformer where you are a rolling ball rather than a running character, and that changes everything about how it plays. You build momentum by rolling, you squash and stretch on impact, and you cannot stop on a sixpence — most deaths come from carrying speed into something rather than from failing a jump.",
+      "The hazard set is broad and specific: thorns, hammer presses that come down on a timer, electric traps, conveyors that fight your momentum, ladders to climb, and a battering-ram box and a ninja box among the objects you have to push, ride or avoid. Checkpoints are placed through each level so a mistake costs seconds rather than the stage.",
+      "It also has proper boss fights, which is unusual for the genre and is the part the game is remembered for. There is a four-category achievement system tracking the rest. Red Ball 4 was made by Yohoho Games."
+    ],
+    "howTo": "Control your speed before an obstacle rather than during it, because a rolling ball has almost no air control once it has committed. Use the squash on landing as a timing cue for the next jump — the rebound is consistent, and chaining off it clears gaps a standing jump will not. On bosses, learn the pattern from a distance for one full cycle before trying to do damage; they all telegraph, and the arena is usually the bigger threat.",
+    "controls": "Desktop: Use the left and right arrow keys or A and D to move. Press Up or W to jump.",
+    "unblockedTitle": "Redball 4 unblocked in your browser",
+    "unblocked": "Redball 4 runs unblocked in any modern browser — just load the page and play. No download or setup is needed, which means it works even on school and office networks that block gaming sites.",
+    "similar": [
+      {
+        "name": "OvO",
+        "why": "is a smooth movement platformer where route knowledge and precise timing make the difference."
+      },
+      {
+        "name": "Dreadhead Parkour",
+        "why": "is a faster runner that makes flowing through obstacles feel especially satisfying."
+      }
+    ],
+    "creator": "Redball 4 was created by FDG.",
+    "devices": "Redball 4 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers."
+  },
+  "Subway Surfers": {
+    "tags": [
+      "Action",
+      "Casual"
+    ],
+    "rating": 4.3,
+    "votes": 2611,
+    "intro": [
+      "Subway Surfers is the endless runner that made lane-dodging mainstream: you play a graffiti artist being chased by an inspector and his dog after being caught tagging a train yard, sprinting down the tracks while dodging oncoming trains, barriers, and tunnels. It's a three-lane runner at its core, but the constant train traffic coming from both directions is what makes it distinct from other runners in the genre.",
+      "The loop is simple to describe and hard to master: swipe (or press arrow keys) to switch lanes, jump onto and over train cars, roll under barriers, and use the hoverboard when you have one to survive a single crash instead of ending the run. Coins scattered along the track let you unlock characters and boards, and power-ups like the jetpack, sneakers, or coin magnet temporarily change how you have to read the track. Score climbs the longer you survive and the more coins you grab along the way.",
+      "Mechanically the game leans on lane reading more than raw reflexes. Trains often run in parallel on multiple lanes at once, so the real skill is scanning two or three lanes ahead and deciding your route early rather than reacting at the last second. Jumping onto a train roof is often safer than staying on the ground when a barrier and a train arrive at the same time, and rolling has a brief recovery window where you can't immediately jump again, which catches new players off guard.",
+      "A genuinely useful habit is to treat the hoverboard as a save rather than something to activate on cooldown — it absorbs one hit, so it's most valuable right when the track gets chaotic (multiple trains merging, a sudden barrier after a jump) rather than burned early for safety. Coin magnets and score multipliers are worth prioritizing over jetpacks if your goal is a high score rather than just surviving, since they stack value across the whole run instead of one brief window.",
+      "Subway Surfers also refreshes its map periodically with different city themes, which changes scenery but keeps the core dodge-and-collect loop identical, so skills you build in one city carry over directly to the next."
+    ],
+    "howTo": "Switch lanes with the left and right arrow keys, jump over obstacles and onto train roofs with the up arrow, and slide under barriers with the down arrow. Watch two lanes ahead rather than the obstacle directly in front of you, save power-ups for genuinely dangerous stretches, and prioritize a clear lane over grabbing every coin.",
+    "controls": "Desktop: Use the left and right arrow keys to change lanes, Up to jump, and Down to roll.",
+    "unblockedTitle": "Subway Surfers unblocked, no download",
+    "unblocked": "No download, no install, no waiting: Subway Surfers plays unblocked straight from your browser. That includes school Chromebooks and other networks where typical game sites are filtered.",
+    "similar": [
+      {
+        "name": "Tiny Fishing",
+        "why": "is a compact progression game that stays compelling because upgrades clearly change each run."
+      },
+      {
+        "name": "Run 3",
+        "why": "is a long-running platform favorite built around momentum, route reading, and repeat attempts."
+      },
+      {
+        "name": "Monkey Mart",
+        "why": "is a management game where small efficiency upgrades steadily transform the whole loop."
+      }
+    ],
+    "creator": "Subway Surfers was created by SYBO.",
+    "devices": "Subway Surfers runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers."
+  },
+  "Slope": {
+    "tags": [
+      "Action"
+    ],
+    "rating": 4.1,
+    "votes": 1858,
+    "intro": [
+      "Slope is one long fall. You steer a ball down a neon course that keeps tilting away beneath you, and you have exactly two inputs: left and right. There is no jump, no brake and no checkpoint. A run lasts until you clip a red block or miss the track entirely, and then it begins again at zero.",
+      "The difficulty is acceleration. Speed climbs continuously for as long as you stay alive, so the course is not really getting harder — your reaction window is getting shorter. The same gap you drifted through comfortably at the start becomes something you have to commit to a full second early, and steering inputs that felt gentle begin to throw you off the edge.",
+      "Your score is distance, which makes every run directly comparable to the last one. The build guards that number: it saves through Unity's ObscuredPrefs, an anti-cheat wrapper that stops the stored high score being edited locally. Slope was published by Y8."
+    ],
+    "howTo": "Steer in short taps rather than holding a direction, because at speed a held input turns into a much bigger movement than you intended. Favour the middle of the track when you are not actively avoiding something, so you have room to correct in either direction. Look at the far end of the course rather than at the ball — by the time an obstacle is near the ball, the decision about it has already been made.",
+    "controls": "Desktop: Use the left and right arrow keys or A and D to steer.",
+    "unblockedTitle": "Play Slope unblocked free",
+    "unblocked": "Slope is free and unblocked on Pizza Edition — open the page and it runs in your browser. There's no download, so restricted networks like school Chromebooks handle it without trouble.",
+    "similar": [
+      {
+        "name": "OvO",
+        "why": "is a smooth movement platformer where route knowledge and precise timing make the difference."
+      },
+      {
+        "name": "Dreadhead Parkour",
+        "why": "is a faster runner that makes flowing through obstacles feel especially satisfying."
+      }
+    ],
+    "creator": "Slope was created by Y8.",
+    "devices": "Slope runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers."
+  },
+  "Slope 2 Player": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Slope 2 Player takes the one-way neon fall of Slope and puts two balls on the track at once. Each player steers their own ball down a tilting course with just left and right, and a run ends when you clip a red block or roll off the edge. Speed keeps climbing for as long as you survive, so a calm start turns into a test of nerve within seconds.",
+      "The second player changes how you play. You are no longer only chasing your own best distance — you are racing someone sitting next to you, and every crash is public. Because it is built for two people on one keyboard, it works as a pass-and-play game with no accounts, lobbies or setup: load the page, pick your keys and go.",
+      "Like the original, there is no jump, no brake and no checkpoint, so the whole game is reading the course early and committing to a line. Rounds are short, which makes rematches the natural way to play."
+    ],
+    "howTo": "Steer in short taps rather than holding a direction, and keep to the middle of the track so you can correct either way. Watch your own ball, not your opponent's — glancing across to see how they are doing is how most players clip a red block. Look far down the course, since the decision about an obstacle has to be made well before it reaches the ball.",
+    "controls": "Desktop: Player 1 steers with A and D, and Player 2 steers with the left and right arrow keys. Both players share one keyboard, so sit close.",
+    "unblockedTitle": "Play Slope 2 Player unblocked",
+    "unblocked": "Slope 2 Player runs straight in your browser with nothing to download, so it works on school Chromebooks and other networks where game sites are usually filtered.",
+    "similar": [
+      {
+        "name": "Slope",
+        "why": "is the original single-player version with the same two-input steering."
+      },
+      {
+        "name": "Slope 3",
+        "why": "keeps the neon ball and rising speed in a fresh course."
+      },
+      {
+        "name": "Run 3",
+        "why": "is a long-running favorite built around momentum and route reading."
+      }
+    ],
+    "creator": "Slope 2 Player was created by Y8.",
+    "devices": "Slope 2 Player is meant for desktop, since two people share one keyboard. It will load on phones and tablets, but two players on a touchscreen is awkward."
+  },
+  "Slope 3": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Slope 3 keeps the idea that made Slope popular: a neon ball, a track that tilts away beneath it, and two inputs. You steer left and right, the ball never stops accelerating, and a run ends the moment you hit a red obstacle or leave the track.",
+      "If you have played the original you already know the rules, which is the point. The challenge is the same steady squeeze — the course does not change, your reaction window shrinks as speed climbs — and the reward is distance. The game tracks your best score, so every run is a direct attempt to beat the last.",
+      "Short runs and instant restarts make it easy to pick up for a minute and hard to put down."
+    ],
+    "howTo": "Keep the ball near the center of the track so you have room to correct in either direction, and use short taps instead of holding a key. Scan the far end of the course rather than the ball — at speed, the decision about an obstacle has to be made early. When the pace feels too fast, steer less, not more.",
+    "controls": "Desktop: Use the left and right arrow keys or A and D to steer.",
+    "unblockedTitle": "Play Slope 3 unblocked",
+    "unblocked": "Slope 3 plays unblocked in your browser with no download or install, so it works on school Chromebooks and other restricted networks.",
+    "similar": [
+      {
+        "name": "Slope",
+        "why": "is the original neon ball runner where this style began."
+      },
+      {
+        "name": "Slope 2 Player",
+        "why": "puts two players on the track at once for head-to-head runs."
+      },
+      {
+        "name": "Run 3",
+        "why": "is a momentum platformer built around reading the route ahead."
+      }
+    ],
+    "creator": "Slope 3 was created by Y8.",
+    "devices": "Slope 3 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers."
+  },
+  "Run 3": {
+    "tags": [
+      "Platformer"
+    ],
+    "rating": 4.4,
+    "votes": 445,
+    "intro": [
+      "Run 3 is a running game set inside a tunnel in space, and its trick is that gravity follows whatever surface you are standing on. Run onto a wall and the wall becomes the floor — the tunnel rotates around you, and the hole you were about to fall through is now something you are running along.",
+      "There is much more structure to it than the running suggests. Explore mode maps a branching route through the tunnels, Infinite mode runs forever for score, and there is a level editor built in for making your own. Cutscenes carry a surprising amount of story between the two.",
+      "The cast is the reason people stay with it. Angel, Bunny, Child, Duplicator, Gentleman, Ghost, Ice Skater, Lizard and Ninja all move differently rather than looking different — the Skater cannot stop easily, the Lizard climbs walls — and unlocking them changes which routes are viable. Crumbling and ice tiles, a currency and a long achievement list fill out the rest."
+    ],
+    "howTo": "Turn the tunnel deliberately rather than treating gaps as things to jump: stepping onto a wall to avoid a hole is the intended solution far more often than a jump is. Match the character to the route, since several passages in Explore mode are effectively impossible for one character and straightforward for another. Watch for crumbling tiles on a second pass — they are still gone from where your first attempt broke them.",
+    "controls": "Desktop: Use the arrow keys or WASD to move and jump.",
+    "unblockedTitle": "Play Run 3 unblocked",
+    "unblocked": "This version of Run 3 is unblocked and runs entirely in your browser — no download, no install, and no extensions. It works on school Chromebooks and on library or workplace networks where game sites are usually restricted.",
+    "similar": [
+      {
+        "name": "OvO",
+        "why": "is a smooth movement platformer where route knowledge and precise timing make the difference."
+      },
+      {
+        "name": "Dreadhead Parkour",
+        "why": "is a faster runner that makes flowing through obstacles feel especially satisfying."
+      }
+    ],
+    "creator": "Run 3 was created by Joseph Cloutier.",
+    "devices": "Run 3 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers."
+  },
+  "Tetris": {
+    "tags": [
+      "Puzzle"
+    ],
+    "intro": [
+      "Tetris is the block-stacking puzzle game that most other puzzle games are measured against. Seven shapes, called tetrominoes, fall into a narrow well one at a time, and you rotate and slide each one into place. Fill a row completely and it disappears; clear four rows at once and you have scored a Tetris, which is where the biggest points are.",
+      "The rules never change, but the pressure does. The pieces fall faster as your level rises, mistakes leave gaps that are hard to reach, and the game ends when the stack touches the top. The skill is not speed so much as planning: where this piece goes matters less than where the next three will fit.",
+      "Tetris was created in 1984 by Alexey Pajitnov while he was working at the Soviet Academy of Sciences in Moscow, and it has since become one of the most widely ported games ever made."
+    ],
+    "howTo": "Keep your stack as flat as you can and avoid leaving holes under blocks, since a single buried gap can cost you several rows. Leave one column open at the side for the long I piece so you can clear four rows at a time. Use the next-piece preview to decide where the current piece goes, and place it before it falls too fast to think.",
+    "controls": "Desktop: In most versions, use the left and right arrow keys to move, Up to rotate, Down for a soft drop, and Space for a hard drop.",
+    "similar": [
+      {
+        "name": "Block Blast",
+        "why": "is a block-fitting puzzle where planning placements ahead keeps a run alive."
+      },
+      {
+        "name": "Sandtris",
+        "why": "mixes falling blocks with sand that settles, changing how you clear the board."
+      },
+      {
+        "name": "Bubble Shooter",
+        "why": "is a calmer puzzle game built around matching colors and clearing clusters."
+      }
+    ],
+    "creator": "Tetris was created by Alexey Pajitnov in 1984. This page hosts a browser version of the classic falling-block game."
+  },
+  "1v1 Lol": {
+    "tags": [
+      "Shooting",
+      "Multiplayer"
+    ],
+    "intro": [
+      "1v1.LOL is a free third-person shooter that mixes gunfights with Fortnite-style building. You place walls, ramps and floors on the fly to take high ground and block incoming shots, and you win a duel by landing more hits than your opponent while keeping your own structures standing.",
+      "The game offers several modes: 1v1 duels, battle royale, team modes such as 2v2, box fights in a small enclosed arena, and a practice mode for building without combat. That makes it easy to sharpen one skill at a time before you jump into a real match.",
+      "1v1.LOL was made by the studio JustPlay.LOL and is playable in a browser as well as on mobile. Matches are short, which is why it is so easy to go for one more round."
+    ],
+    "howTo": "Build first and shoot second: a wall in front of you buys time, and a ramp gets you above your opponent, where the shot is easier. Keep moving while you shoot instead of standing still behind your walls. If your version has a building practice or aim training mode, spend a few minutes there before ranked-style matches, because building speed is the skill that improves fastest with practice.",
+    "controls": "Desktop: Use WASD to move, Space to jump, the mouse to aim and the left mouse button to shoot. Each building piece (wall, ramp, floor and cone) has its own key; check the controls menu in the game, where you can also rebind them.",
+    "unblockedTitle": "Play 1v1 LOL unblocked",
+    "unblocked": "1v1 LOL runs in your browser with nothing to download, so it plays on school Chromebooks and other networks where game sites are usually filtered.",
+    "similar": [
+      {
+        "name": "Ragdoll Hit",
+        "why": "is a quick physics shooter built around short, chaotic fights."
+      },
+      {
+        "name": "Ragdoll Archers",
+        "why": "is a duel game where aiming and timing decide every round."
+      },
+      {
+        "name": "Gunspin",
+        "why": "is a one-button shooter that rewards controlling recoil."
+      }
+    ],
+    "creator": "1v1.LOL was created by JustPlay.LOL, a studio founded by brothers Boris and Lior Alterman and acquired by Playtika in 2022.",
+    "devices": "1v1.LOL also has official mobile apps. This browser version is best on desktop with a mouse and keyboard, since aiming and building both need quick, precise input."
+  },
+  "Minecraft": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Minecraft is a sandbox game built from blocks. You start in a generated world, punch trees for wood, craft tools, and then build, dig and explore however you like. Survival mode adds hunger, health and monsters that come out at night, while Creative mode gives you unlimited blocks to build with.",
+      "It was created by Markus \"Notch\" Persson and is developed by Mojang, with a full release in 2011 and Microsoft ownership since 2014. The version here runs in your browser, so some features of the full game may be missing or work a little differently."
+    ],
+    "howTo": "Spend the first few minutes gathering wood, craft a pickaxe, and build a simple shelter before night falls. Dig carefully rather than straight down, keep some blocks on hand to bridge gaps, and place torches so monsters can't spawn in the dark.",
+    "controls": "Desktop: WASD to move, Space to jump, mouse to look, left click to break blocks and right click to place them. Press E to open your inventory and use the number keys to pick items.",
+    "similar": [
+      {
+        "name": "Tiny Fishing",
+        "why": "is a relaxed progression game where every upgrade changes the next run."
+      },
+      {
+        "name": "Cookie Clicker",
+        "why": "is the classic incremental game built around steady growth and upgrades."
+      },
+      {
+        "name": "Idle Ants",
+        "why": "is a calm management game where your colony keeps growing on its own."
+      }
+    ],
+    "creator": "Minecraft was created by Markus \"Notch\" Persson and is developed by Mojang Studios. This page hosts a browser version."
+  },
+  "Tiny Fishing": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Tiny Fishing is an idle-style fishing game with a very simple loop: cast your line, let the hook sink, then reel it back up and collect every fish you touch on the way. Each catch pays out money, and the money goes straight back into your next run.",
+      "The upgrades are what keep it moving. A longer line lets you reach deeper water, better reeling catches more fish per trip, and higher fish value turns each catch into a bigger payout. Every upgrade is visible in the very next cast, which is why one more run is so easy to say yes to."
+    ],
+    "howTo": "Spend your first earnings on line length so you can reach deeper, richer fish, then balance it with catch value so each trip pays more. Steer the hook toward clusters of fish instead of chasing single ones.",
+    "controls": "Desktop: Click to cast, then move the mouse to steer the hook as it sinks and rises. Touch screens: tap to cast and drag to steer.",
+    "similar": [
+      {
+        "name": "Cookie Clicker",
+        "why": "is the classic incremental game built around steady growth and upgrades."
+      },
+      {
+        "name": "Idle Ants",
+        "why": "is a colony-building game that keeps working while you plan the next upgrade."
+      },
+      {
+        "name": "Subway Surfers",
+        "why": "is a longer, faster run-based game where coins unlock new items."
+      }
+    ]
+  },
+  "Idle Ants": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Idle Ants is an incremental game: you grow an ant colony, collect resources, and spend them on upgrades that make the colony earn faster. The core is the idle part, so progress keeps building even while you are not actively clicking.",
+      "Short sessions pay off here. Each upgrade gives a clear boost, and the fun comes from planning which one will speed things up the most."
+    ],
+    "howTo": "Put early earnings into whatever boosts income the most, and check back often to spend what has built up. Compare upgrades by how quickly they pay for themselves, not by how big they look.",
+    "controls": "Desktop: Use the mouse to click and buy upgrades. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "Cookie Clicker",
+        "why": "is the best-known incremental game, built around buying upgrades."
+      },
+      {
+        "name": "Tiny Fishing",
+        "why": "is a short, upgrade-driven fishing game."
+      },
+      {
+        "name": "Bitlife",
+        "why": "is a text-driven life simulator where small choices add up."
+      }
+    ]
+  },
+  "Cookie Clicker": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Cookie Clicker starts with a single cookie and a mouse. Click the cookie to bake, spend your cookies on cursors, grandmas, farms and factories, and watch the numbers climb from a handful of cookies to absurdly large figures.",
+      "It was created by Julien \"Orteil\" Thiennot in 2013 and became the template for the incremental genre. Upgrades, golden cookies and achievements keep adding new reasons to keep going."
+    ],
+    "howTo": "Buy buildings early because their output compounds, and click golden cookies the moment they appear since they give big temporary boosts. Check upgrades regularly; some of them double the output of a building.",
+    "controls": "Desktop: Click the big cookie to bake, and click items in the store to buy them. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "Idle Ants",
+        "why": "is a calm incremental game where a colony earns on its own."
+      },
+      {
+        "name": "Tiny Fishing",
+        "why": "is a quick upgrade loop built around casting and reeling."
+      },
+      {
+        "name": "Bitlife",
+        "why": "is another game where steady choices build into a long story."
+      }
+    ],
+    "creator": "Cookie Clicker was created by Julien \"Orteil\" Thiennot in 2013."
+  },
+  "Bitlife": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "BitLife is a text-based life simulator. You are born into a randomly generated life and make choices year by year: school, careers, relationships, money and health. Each decision changes what happens next, so no two lives play out the same way.",
+      "The game is built around surprise. A small choice early on can echo for decades, and you can try for a normal life or take it somewhere very different. BitLife was made by Candywriter, and is best played for the stories it produces."
+    ],
+    "howTo": "Think about where you want your life to end up and make school and career choices that point there. Keep an eye on health and happiness as well as money, since a single low stat can end a run early.",
+    "controls": "Desktop: Use the mouse to click choices and the Age button to move forward a year. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "Cookie Clicker",
+        "why": "is a long-term progression game built on small choices adding up."
+      },
+      {
+        "name": "Idle Ants",
+        "why": "is a relaxed game where patience pays off."
+      },
+      {
+        "name": "Murder",
+        "why": "is another story-driven game that leans on choices."
+      }
+    ],
+    "creator": "BitLife was created by Candywriter."
+  },
+  "wbwwb": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "We Become What We Behold is a short point-and-click game about news cycles and how small misunderstandings grow. You play a news photographer: you drag the camera around the screen and click to take pictures of whatever is happening between a crowd of circles and a crowd of squares.",
+      "What you choose to photograph changes how the crowds see each other, and the story escalates from there. It takes about five minutes to play, and it was created by Nicky Case in 2016. The game has dark humor and ends violently, so it is not suited to younger players."
+    ],
+    "howTo": "Treat it as an experience rather than a challenge. Try photographing different things and see how the story responds. It is short, so playing it more than once is the best way to see what your choices change.",
+    "controls": "Desktop: Move the mouse to drag the camera, and click to take a photograph. Touch screens: tap to take a picture.",
+    "similar": [
+      {
+        "name": "Murder",
+        "why": "is another story-driven game where what you do shapes what happens."
+      },
+      {
+        "name": "Bitlife",
+        "why": "is a text game where choices change the outcome."
+      },
+      {
+        "name": "Idle Ants",
+        "why": "is a calm, low-pressure game for a quick break."
+      }
+    ],
+    "creator": "We Become What We Behold was created by Nicky Case.",
+    "displayName": "We Become What We Behold"
+  },
+  "Murder": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Murder is a story-driven game where you work through a crime and make choices along the way. Instead of fast reflexes it asks for attention, so reading carefully and thinking about what each person says matters more than speed.",
+      "Short sessions work well here. You can make a choice, see what changes, and go back for another run to find a different ending."
+    ],
+    "howTo": "Read each scene carefully and notice details that don't add up. If a choice leads somewhere you don't like, start over and try a different one, since the story can branch.",
+    "controls": "Desktop: Use the mouse to click on choices and move through the story. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "We Become What We Behold",
+        "why": "is another short story game that rewards paying attention."
+      },
+      {
+        "name": "Bitlife",
+        "why": "is a choice-based game where every decision shapes the outcome."
+      },
+      {
+        "name": "Idle Ants",
+        "why": "is a quiet game for a short break."
+      }
+    ]
+  },
+  "Sausage Flip": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "Sausage Flip is a physics-based casual game where you flip a sausage through each level and try to land it where it needs to go. The silly premise hides a real timing challenge, since a flip that is slightly too early or too late sends the sausage the wrong way.",
+      "Levels are short, and a failed flip restarts instantly, so the game is about small adjustments and trying again."
+    ],
+    "howTo": "Pay attention to how hard each flip launches the sausage and adjust a little each time instead of changing everything. Watch how it rotates in the air so you know when to land.",
+    "controls": "Desktop: Click or press the key shown in the game to flip. Touch screens: tap the screen.",
+    "similar": [
+      {
+        "name": "Stickman Hook",
+        "why": "is another one-input physics game built around timing."
+      },
+      {
+        "name": "Tiny Fishing",
+        "why": "is a relaxed casual game with quick runs."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a short-round arcade game where small mistakes cost you."
+      }
+    ]
+  },
+  "Block Blast": {
+    "tags": [
+      "Puzzle"
+    ],
+    "intro": [
+      "Block Blast is a block puzzle that keeps the row-clearing idea of Tetris and removes the falling. You are given a few shapes at a time and place them anywhere on an 8x8 board; fill a whole row or column and it clears. There is no timer, so the pressure comes from running out of room.",
+      "Clearing several lines at once builds combos and scores far more, so strong players leave space open instead of clearing the first line they see. The game ends when none of the shapes you hold can fit anywhere. Block Blast became popular as a mobile game from Hungry Studio."
+    ],
+    "howTo": "Keep the board as open as you can and avoid scattering single blocks that nothing will fit. Look at all three pieces before placing the first one, and plan for combos.",
+    "controls": "Desktop: Click and drag a shape onto the board. Touch screens: drag with your finger. Shapes can't be rotated.",
+    "similar": [
+      {
+        "name": "Tetris",
+        "why": "is the classic falling-block puzzle that started the genre."
+      },
+      {
+        "name": "Sandtris",
+        "why": "mixes falling blocks with sand that settles."
+      },
+      {
+        "name": "Bubble Shooter",
+        "why": "is a calmer puzzle game built around matching colors."
+      }
+    ]
+  },
+  "Sandtris": {
+    "tags": [
+      "Puzzle"
+    ],
+    "intro": [
+      "Sandtris takes the falling-block idea of Tetris and makes each block out of sand. When a block lands it breaks into grains that settle into the pile, so the stack flows instead of sitting in neat squares.",
+      "To clear sand you connect a continuous band of the same color across the width of the screen. That changes how you plan: placing a piece is less about where it fits and more about which colors it will touch."
+    ],
+    "howTo": "Think about colors, not just shapes. Aim to build a single color across the board and avoid dropping a different color into the middle of it. Keep the pile low so you have time to react.",
+    "controls": "Desktop: Use the left and right arrow keys to move, Up to rotate, and Down to drop faster. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Tetris",
+        "why": "is the original falling-block puzzle game."
+      },
+      {
+        "name": "Block Blast",
+        "why": "is a no-timer block puzzle built on planning."
+      },
+      {
+        "name": "Bubble Shooter",
+        "why": "is a calmer game of matching colors."
+      }
+    ]
+  },
+  "Bubble Shooter": {
+    "tags": [
+      "Puzzle"
+    ],
+    "intro": [
+      "Bubble Shooter is a color-matching puzzle. A cluster of bubbles hangs at the top of the screen, and you fire bubbles from the bottom to match three or more of the same color and pop them. Bubbles that lose their support fall down with them.",
+      "The idea goes back to the arcade game Puzzle Bobble from 1994, and it has stayed popular because the rules take a few seconds to learn. The challenge is angles: you can bounce shots off the walls to reach bubbles you can't hit directly."
+    ],
+    "howTo": "Aim for the bubbles that hold up the largest groups so a single pop brings many down at once. Use wall bounces to reach tricky spots, and don't let the cluster creep too close to the bottom.",
+    "controls": "Desktop: Move the mouse to aim and click to shoot. Touch screens: tap where you want to fire.",
+    "similar": [
+      {
+        "name": "Block Blast",
+        "why": "is another puzzle game that rewards planning ahead."
+      },
+      {
+        "name": "Tetris",
+        "why": "is the classic puzzle game of stacking and clearing."
+      },
+      {
+        "name": "Sandtris",
+        "why": "is a color-based take on falling blocks."
+      }
+    ]
+  },
+  "BTD 1": {
+    "tags": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "intro": [
+      "Bloons Tower Defense is the series where you stop waves of colored balloons, called bloons, from reaching the end of a track. You place monkey towers along the path, earn cash for every bloon you pop, and spend it on more towers and upgrades before the next wave arrives.",
+      "The first game is the simplest of the series: a handful of towers, a few maps, and a clear route from the first round to the last. It was made by Ninja Kiwi."
+    ],
+    "howTo": "Place cheap towers early at spots where they can see a long stretch of track, then save for upgrades instead of spreading your money across lots of weak towers. Check what the next wave contains, because some bloons need a specific kind of tower.",
+    "controls": "Desktop: Use the mouse to pick a tower, click to place it, and click a placed tower to upgrade it. Press the start button to begin each round. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "BTD 2",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 3",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 4",
+        "why": "is another game in the Bloons Tower Defense series."
+      }
+    ],
+    "creator": "Bloons Tower Defense was created by Ninja Kiwi."
+  },
+  "BTD 2": {
+    "tags": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "intro": [
+      "Bloons Tower Defense is the series where you stop waves of colored balloons, called bloons, from reaching the end of a track. You place monkey towers along the path, earn cash for every bloon you pop, and spend it on more towers and upgrades before the next wave arrives.",
+      "BTD 2 builds on the original with more tower types and upgrade paths, which gives you more ways to deal with each wave. It was made by Ninja Kiwi."
+    ],
+    "howTo": "Place cheap towers early at spots where they can see a long stretch of track, then save for upgrades instead of spreading your money across lots of weak towers. Check what the next wave contains, because some bloons need a specific kind of tower.",
+    "controls": "Desktop: Use the mouse to pick a tower, click to place it, and click a placed tower to upgrade it. Press the start button to begin each round. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "BTD 1",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 3",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 4",
+        "why": "is another game in the Bloons Tower Defense series."
+      }
+    ],
+    "creator": "Bloons Tower Defense was created by Ninja Kiwi."
+  },
+  "BTD 3": {
+    "tags": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "intro": [
+      "Bloons Tower Defense is the series where you stop waves of colored balloons, called bloons, from reaching the end of a track. You place monkey towers along the path, earn cash for every bloon you pop, and spend it on more towers and upgrades before the next wave arrives.",
+      "BTD 3 adds more towers, more bloon types and more maps, so strategies that worked in earlier games need some adjusting. It was made by Ninja Kiwi."
+    ],
+    "howTo": "Place cheap towers early at spots where they can see a long stretch of track, then save for upgrades instead of spreading your money across lots of weak towers. Check what the next wave contains, because some bloons need a specific kind of tower.",
+    "controls": "Desktop: Use the mouse to pick a tower, click to place it, and click a placed tower to upgrade it. Press the start button to begin each round. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "BTD 1",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 2",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 4",
+        "why": "is another game in the Bloons Tower Defense series."
+      }
+    ],
+    "creator": "Bloons Tower Defense was created by Ninja Kiwi."
+  },
+  "BTD 4": {
+    "tags": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "intro": [
+      "Bloons Tower Defense is the series where you stop waves of colored balloons, called bloons, from reaching the end of a track. You place monkey towers along the path, earn cash for every bloon you pop, and spend it on more towers and upgrades before the next wave arrives.",
+      "BTD 4 refines the series with a bigger selection of maps and towers and stronger upgrades, and many fans consider it a favorite. It was made by Ninja Kiwi."
+    ],
+    "howTo": "Place cheap towers early at spots where they can see a long stretch of track, then save for upgrades instead of spreading your money across lots of weak towers. Check what the next wave contains, because some bloons need a specific kind of tower.",
+    "controls": "Desktop: Use the mouse to pick a tower, click to place it, and click a placed tower to upgrade it. Press the start button to begin each round. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "BTD 1",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 2",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 3",
+        "why": "is another game in the Bloons Tower Defense series."
+      }
+    ],
+    "creator": "Bloons Tower Defense was created by Ninja Kiwi."
+  },
+  "BTD 5": {
+    "tags": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "intro": [
+      "Bloons Tower Defense is the series where you stop waves of colored balloons, called bloons, from reaching the end of a track. You place monkey towers along the path, earn cash for every bloon you pop, and spend it on more towers and upgrades before the next wave arrives.",
+      "BTD 5 is the deepest of the Flash-era games, with a wide range of towers, strong upgrade paths and plenty of maps and modes. It was made by Ninja Kiwi."
+    ],
+    "howTo": "Place cheap towers early at spots where they can see a long stretch of track, then save for upgrades instead of spreading your money across lots of weak towers. Check what the next wave contains, because some bloons need a specific kind of tower.",
+    "controls": "Desktop: Use the mouse to pick a tower, click to place it, and click a placed tower to upgrade it. Press the start button to begin each round. Touch screens: tap.",
+    "similar": [
+      {
+        "name": "BTD 1",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 2",
+        "why": "is another game in the Bloons Tower Defense series."
+      },
+      {
+        "name": "BTD 3",
+        "why": "is another game in the Bloons Tower Defense series."
+      }
+    ],
+    "creator": "Bloons Tower Defense was created by Ninja Kiwi."
+  },
+  "Pixel Panic": {
+    "tags": [
+      "Racing",
+      "Arcade"
+    ],
+    "intro": [
+      "Pixel Panic is a fast-paced, retro-style racing and arcade game. You dodge obstacles, upgrade your car and race for the finish line, with pixel-art graphics that bring back the look of classic arcade racers.",
+      "It has two ways to play. Endless 3D mode sends you down procedurally generated roads full of hazards, while the mini 2D arcade mode is a more traditional pixel racing game. Between runs you can spend your earnings in the garage on traction, armor and nitro boosts, and a custom map builder lets you design your own tracks and share them."
+    ],
+    "howTo": "Don't hold the throttle down the whole time in endless mode. Steer early, since hazards are easier to avoid with small corrections than with last-second swerves. Save your nitro for clear stretches of road, and put your first earnings into traction and armor so mistakes cost you less.",
+    "controls": "Desktop: W to accelerate, S to brake or reverse, A and D to steer, and Shift for a nitro boost.",
+    "similar": [
+      {
+        "name": "Drift Hunters",
+        "why": "is a 3D driving game built around handling and car upgrades."
+      },
+      {
+        "name": "Polytrack",
+        "why": "is a low-poly racer with a track editor of its own."
+      },
+      {
+        "name": "Slope",
+        "why": "is a fast, obstacle-dodging game where speed keeps climbing."
+      }
+    ],
+    "creator": "Pixel Panic was created by Want-to-beAcoder1556, with development and testing by LEBRONGOAT2323.",
+    "creatorLinks": [
+      {
+        "name": "Want-to-beAcoder1556",
+        "url": "https://github.com/Want-to-beAcoder1556"
+      },
+      {
+        "name": "LEBRONGOAT2323",
+        "url": "https://github.com/LEBRONGOAT2323"
+      }
+    ]
+  },
+  "TrollPulse": {
+    "tags": [
+      "Casual"
+    ],
+    "intro": [
+      "TrollPulse is a retro, glitchy CRT-style loading screen built to troll you. It imitates a vintage terminal, complete with a glowing progress bar, a percentage counter, flickering visuals and quirky loading messages, and then never finishes loading.",
+      "The longer you watch, the stranger it gets. Jitter, burn-in and screen-drop effects build as the bar creeps toward completion, and the system integrity warning keeps corrupting itself with random characters. There is nothing to click, because the joke is that you keep waiting."
+    ],
+    "howTo": "There is nothing to win here, and that is the point. Sit back and watch the bar climb, read the loading messages, and see how long you can wait for it to finish. It won't. Try showing it to a friend and see how long they wait before they realize.",
+    "controls": "None. TrollPulse needs no input, since it is just a loading animation to watch.",
+    "similar": [
+      {
+        "name": "Level Devil",
+        "why": "is another game that likes to trick you."
+      },
+      {
+        "name": "wbwwb",
+        "why": "is a short experience that plays out on its own terms."
+      },
+      {
+        "name": "Cookie Clicker",
+        "why": "is another game about watching numbers climb."
+      }
+    ],
+    "creator": "TrollPulse was created by LEBRONGOAT2323.",
+    "creatorLinks": [
+      {
+        "name": "LEBRONGOAT2323",
+        "url": "https://github.com/LEBRONGOAT2323"
+      }
+    ]
+  },
+  "Granny": {
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "intro": [
+      "Granny is a horror escape game. You wake up locked in a house with Granny, who is nearby and listens for any sound. You have five days to find the keys and items needed to open the door and escape, and if she catches you the day is over.",
+      "Everything makes noise. Dropping an item, bumping a board or opening a door can bring her over, so the game is about moving carefully and using hiding spots. Granny was created by DVloper in 2017."
+    ],
+    "howTo": "Move slowly, listen for where she is, and hide when you hear her coming. Find the items in the order the puzzles need and try not to drop anything noisy.",
+    "controls": "Desktop: WASD to move, mouse to look, and click to pick up and use items. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Granny 2",
+        "why": "is the sequel, with a second character to avoid."
+      },
+      {
+        "name": "Baldi's Basics plus",
+        "why": "is another game about escaping a character that is hunting you."
+      },
+      {
+        "name": "Dreader",
+        "why": "is another tense game about staying hidden."
+      }
+    ],
+    "creator": "Granny was created by DVloper."
+  },
+  "Granny 2": {
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "intro": [
+      "Granny 2 keeps the idea of the original: you are trapped, and you must find items and solve puzzles to escape in five days. This time you are not alone with Granny, because Grandpa is also in the house, and both of them react to what they hear.",
+      "That doubles the pressure, since you have to track two sources of danger at once. Granny 2 was created by DVloper and released in 2019."
+    ],
+    "howTo": "Learn where each of them patrols, use hiding spots early, and keep your movement quiet. Plan your route around the items you need so you don't wander in the open.",
+    "controls": "Desktop: WASD to move, mouse to look, and click to pick up and use items. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Granny",
+        "why": "is the original game that started the series."
+      },
+      {
+        "name": "Baldi's Basics plus",
+        "why": "is another game about escaping a character that is hunting you."
+      },
+      {
+        "name": "Dreader",
+        "why": "is another tense game about staying hidden."
+      }
+    ],
+    "creator": "Granny 2 was created by DVloper."
+  },
+  "Baldi's Basics plus": {
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "intro": [
+      "Baldi's Basics Plus is a horror-comedy game set in a school with bright colors and crude graphics that hide a real threat. You collect notebooks while Baldi, the teacher, chases you, and every mistake makes him faster.",
+      "It is an expanded version of the original Baldi's Basics in Education and Learning, made by Basically Games, with more items, characters and ways to play. The jokes are part of the fun, but the chase is real."
+    ],
+    "howTo": "Collect notebooks while keeping track of where Baldi is, and use your items to slow him down or block him. Don't run into dead ends, and learn the layout so you always have an exit.",
+    "controls": "Desktop: WASD to move, Shift to run, mouse to look, and click to use items. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Granny",
+        "why": "is another game about escaping from a house with a character that hears you."
+      },
+      {
+        "name": "Granny 2",
+        "why": "adds a second character to avoid."
+      },
+      {
+        "name": "Dreader",
+        "why": "is another tense game about staying hidden."
+      }
+    ],
+    "creator": "Baldi's Basics Plus was created by Basically Games, based on the original Baldi's Basics by Micah McGonigal."
+  },
+  "Super Hot": {
+    "tags": [
+      "Shooting",
+      "Action"
+    ],
+    "intro": [
+      "SUPERHOT is a first-person shooter with a single rule: time only moves when you do. Stand still and the bullets hang in the air; take a step and everything speeds up. Every fight becomes a puzzle about how to move, dodge and shoot with as little motion as possible.",
+      "The game started as a prototype for a game jam in 2013 and was later turned into a full release by the SUPERHOT Team. Enemies go down in one hit, and so do you, so every move counts."
+    ],
+    "howTo": "Plan each fight before you act. Moving the camera counts as time passing, so look around before you commit to a move, and use thrown objects as weapons when you are out of ammo.",
+    "controls": "Desktop: WASD to move, mouse to look, and left click to shoot. Right click is used for melee or throwing in some versions.",
+    "similar": [
+      {
+        "name": "1v1 Lol",
+        "why": "is a fast shooter built around quick decisions."
+      },
+      {
+        "name": "Ragdoll Hit",
+        "why": "is a short physics shooter."
+      },
+      {
+        "name": "Gunspin",
+        "why": "is a shooter where recoil is the main mechanic."
+      }
+    ],
+    "creator": "SUPERHOT was created by the SUPERHOT Team (Piotr Iwanicki)."
+  },
+  "Dreader": {
+    "tags": [
+      "Action",
+      "Horror"
+    ],
+    "intro": [
+      "Dreader is a tense game where staying out of sight and keeping calm matters more than speed. You move carefully, watch for danger, and try to make it through each area without being caught.",
+      "Short sessions are enough to feel the tension, and learning where danger comes from makes every next attempt better."
+    ],
+    "howTo": "Move slowly, listen, and don't rush into new areas. Keep track of where you have been so you can run back if you need to.",
+    "controls": "Desktop: Use WASD or the arrow keys to move and the mouse to look or interact. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Granny",
+        "why": "is a horror escape game built around silence and hiding."
+      },
+      {
+        "name": "Granny 2",
+        "why": "adds a second character to avoid."
+      },
+      {
+        "name": "FNAF",
+        "why": "is a tense survival game built around watching and waiting."
+      }
+    ]
+  },
+  "Glahdihoppers": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Gladihoppers is a physics-based gladiator brawler. Your fighters hop and swing across the arena, and winning depends on balance and timing as much as on hitting your opponent. The ragdoll physics make every fight a bit unpredictable.",
+      "Between fights you earn rewards to improve your gladiators and take on tougher opponents. Matches are short and funny, so it is easy to keep playing."
+    ],
+    "howTo": "Don't swing wildly, because missing leaves you off balance. Wait for your opponent to commit and then strike, and use your upgrades on the stats that keep you standing.",
+    "controls": "Desktop: Use the keys or mouse shown in the game to move and attack. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Stick Fighter",
+        "why": "is another fighting game with a loose, physics-driven feel."
+      },
+      {
+        "name": "Ragdoll Archers",
+        "why": "is a duel game where aiming decides the round."
+      },
+      {
+        "name": "Happy Wheels",
+        "why": "is a ragdoll physics game built on chaos and trial and error."
+      }
+    ],
+    "displayName": "Gladihoppers"
+  },
+  "Deadly Descent": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Deadly Descent is an action game about going down: you move deeper with each stage, and the farther you go the more dangerous it gets. Every run teaches you something new about what is waiting below.",
+      "Runs are short and restarts are instant, so improving is a matter of repeated attempts and learning from each fall."
+    ],
+    "howTo": "Take the first few runs to learn what the hazards look like, then go for distance. Don't rush, since most mistakes come from moving before you know where the danger is.",
+    "controls": "Desktop: Use the arrow keys or WASD to move. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Space Waves",
+        "why": "is a one-input game where timing keeps you alive."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a maze game where each move has to be planned."
+      },
+      {
+        "name": "Cluster Rush",
+        "why": "is a fast action game built around quick decisions."
+      }
+    ]
+  },
+  "Happy Wheels": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Happy Wheels is a ragdoll physics game where you pick a character and a vehicle and try to reach the finish of an obstacle course. Each level is full of spikes, ramps, rotating blades and traps, and each character plays differently, from a person on a Segway to a pogo-stick rider.",
+      "It was created by Jim Bonacci of Fancy Force in 2010 and became famous for its cartoon violence and dark humor, with thousands of levels made by players. Expect to fail often and laugh about it; it is not meant for younger players."
+    ],
+    "howTo": "Don't push for speed on your first run. Look at the level and learn where the traps are, and use lean controls to keep your character upright. Each character has different strengths, so try a few.",
+    "controls": "Desktop: Arrow keys or WASD to drive and lean. Space, Shift and Ctrl trigger special actions, which vary depending on the character.",
+    "similar": [
+      {
+        "name": "Drive Mad",
+        "why": "is another physics game built around flipping vehicles."
+      },
+      {
+        "name": "Moto X3M",
+        "why": "is a stunt game where small mistakes flip you over."
+      },
+      {
+        "name": "Hill Climb Racing",
+        "why": "is a physics driving game built around balance and fuel."
+      }
+    ],
+    "creator": "Happy Wheels was created by Jim Bonacci of Fancy Force."
+  },
+  "Cluster Rush": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Cluster Rush is a fast first-person game set on a highway full of moving trucks. You run and jump from one truck to the next, crossing the roofs and cargo while the trucks swerve and the road never stops.",
+      "Every level has a different layout of trucks and obstacles, and the goal is to reach the front without falling off. The pace is quick, so levels are short and replays are easy."
+    ],
+    "howTo": "Look ahead of the truck you are on instead of down at your feet. Jump early, keep moving forward, and don't waste time on tricky jumps when an easier route is open.",
+    "controls": "Desktop: WASD to move, Space to jump, and mouse to look. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "Run 3",
+        "why": "is a momentum-based runner where route reading matters."
+      },
+      {
+        "name": "Subway Surfers",
+        "why": "is the endless runner that made lane-dodging popular."
+      },
+      {
+        "name": "Pixel Panic",
+        "why": "is a fast action game built around quick reactions."
+      }
+    ]
+  },
+  "Stick Fighter": {
+    "tags": [
+      "Action"
+    ],
+    "intro": [
+      "Stick Fighter is a stickman fighting game where you take on opponents in short, fast matches. The simple art style keeps the focus on timing and spacing, because a well-timed hit wins the round.",
+      "Matches are quick, so it is easy to play a few rounds and try a different approach each time."
+    ],
+    "howTo": "Don't chase your opponent. Wait for them to attack, dodge, and counter, and keep some distance so you can react. Watch their patterns and use them against them.",
+    "controls": "Desktop: Use the keys shown in the game to move, jump and attack. Touch screens: use the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Gladihoppers",
+        "why": "is a physics-based arena brawler."
+      },
+      {
+        "name": "Ragdoll Archers",
+        "why": "is a duel game where aiming decides the round."
+      },
+      {
+        "name": "Ragdoll Hit",
+        "why": "is a short shooter with ragdoll physics."
+      }
+    ]
+  },
+  "Level Devil": {
+    "tags": [
+      "Arcade",
+      "Platformer"
+    ],
+    "intro": [
+      "Level Devil is a troll platformer, which means the game is lying to you. Floors vanish, spikes appear where the path looked safe, and exits move just as you reach them. The only way to beat a level is to fail, learn the trick, and try again.",
+      "That makes it more of a puzzle than a test of reflexes. Each level has a trick, and finding it is the whole game."
+    ],
+    "howTo": "Assume nothing is safe. When a section looks too easy, expect a trap, and treat each death as information about what the level is hiding.",
+    "controls": "Desktop: Use the left and right arrow keys or A and D to move, and Up or W to jump. Touch screens: use the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Run 3",
+        "why": "is a platformer built around reading the route ahead."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a maze game where each move has to be planned."
+      },
+      {
+        "name": "TrollPulse",
+        "why": "is another game that likes to catch you out."
+      }
+    ]
+  },
+  "Moto X3M": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Moto X3M is a physics-based motorbike stunt game. You race through side-scrolling levels full of ramps, loops, explosives and traps, and the goal is to reach the end as fast as you can without crashing. Faster times earn more stars.",
+      "Levels reward flips as well as speed, since doing a stunt in the air can shave time off your run. Moto X3M was made by the Ukraine-based studio MadPuffers and has several sequels with different themes."
+    ],
+    "howTo": "Use the lean controls in the air so you land on both wheels. Don't hold the gas the whole time, since speed into a bad landing ends the run. Replay levels to learn where you can save time.",
+    "controls": "Desktop: Use the Up and Down arrow keys to accelerate and brake, and Left and Right to lean. Touch screens: use the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Drive Mad",
+        "why": "is a physics driving game built around flipping and balance."
+      },
+      {
+        "name": "Hill Climb Racing",
+        "why": "is a classic physics driving game."
+      },
+      {
+        "name": "Happy Wheels",
+        "why": "is a ragdoll physics game full of traps."
+      }
+    ],
+    "creator": "Moto X3M was created by MadPuffers."
+  },
+  "Neon Warp": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Neon Warp is a fast-paced, arcade-style tunnel runner. You pilot a ship through a glowing neon wormhole, dodging obstacles, grabbing boost orbs and taking down bosses to earn permanent upgrades. Your score climbs continuously, and the tunnel keeps speeding up the longer you survive.",
+      "The red cubes are what you have to avoid, since hitting one ends your run. Golden orbs trigger Overdrive, which doubles your speed and makes you invincible to obstacles for a few seconds, and any cubes you plow through are destroyed. Every 5,000 points a warning flashes and a giant wireframe guardian approaches; your auto-cannons fire and you have to shoot it down before it reaches you.",
+      "Each boss you beat gives you a 2,000-point bonus and a level-up, letting you pick a permanent upgrade for the rest of the run: Cannons for a 20% faster fire rate, or Engines for 15% more base speed. Before you start you can choose one of three ships, and one of three color themes."
+    ],
+    "howTo": "Keep your ship in the open lanes and look well ahead, since the tunnel gets faster over time. Save your reactions for the cubes and head for golden orbs when it is safe, because Overdrive lets you clear a crowded stretch. Don't collide with a boss unless Overdrive is active; stay clear of it and let your auto-cannons do the work. For ships, Stinger steers fastest, Vanguard can absorb one obstacle hit, and Spectre has 50% longer Overdrive.",
+    "controls": "Desktop: Move the mouse to steer the ship. Touch screens: drag your finger to steer. Weapons fire automatically during boss fights. Click Initiate Warp to start.",
+    "unblockedTitle": "Play Neon Warp unblocked",
+    "similar": [
+      {
+        "name": "Space Waves",
+        "why": "is another neon one-input game built around precision."
+      },
+      {
+        "name": "Slope",
+        "why": "is a fast downhill runner where speed keeps climbing."
+      },
+      {
+        "name": "Geometry Dash",
+        "why": "is the rhythm platformer built on memorizing a course."
+      }
+    ],
+    "creator": "Neon Warp was created by LEBRONGOAT2323.",
+    "creatorLinks": [
+      {
+        "name": "LEBRONGOAT2323",
+        "url": "https://github.com/LEBRONGOAT2323"
+      }
+    ],
+    "devices": "Yes. Neon Warp supports both mouse and touch, so you can steer with a cursor on desktop or by dragging a finger on a phone or tablet. It needs a browser with WebGL, which all current browsers have."
+  },
+  "Crossy Road": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Crossy Road is an endless arcade hopper. Your character moves one step at a time across roads, rivers and train tracks, dodging cars, riding logs and avoiding trains, and your score rises with each step forward. There is no finish line, only the run.",
+      "It was created by Hipster Whale (Matt Hall and Andy Sum) in 2014 and was inspired by the classic arcade game Frogger. Collectible characters add variety, but the challenge stays the same."
+    ],
+    "howTo": "Don't stand still for too long, because an eagle will swoop in if you stall. Watch the gaps in traffic before you move, and take a safe step back if needed.",
+    "controls": "Desktop: Arrow keys or WASD to hop forward, back and sideways. Touch screens: tap to hop forward and swipe to move sideways.",
+    "similar": [
+      {
+        "name": "Subway Surfers",
+        "why": "is the endless runner that made lane-dodging popular."
+      },
+      {
+        "name": "Run 3",
+        "why": "is a momentum runner built around reading what is ahead."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a short-round arcade game where each move matters."
+      }
+    ],
+    "creator": "Crossy Road was created by Hipster Whale (Matt Hall and Andy Sum)."
+  },
+  "Fruit Ninja": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Fruit Ninja is a swipe-based arcade game. Fruit flies up from the bottom of the screen, and you slice it by dragging across it. Slice several at once for combos, and avoid the bombs that mix in with the fruit.",
+      "Depending on the version, modes range from classic play where misses cost you lives to timed rounds and relaxed play without bombs. Fruit Ninja was created by Halfbrick Studios and released in 2010."
+    ],
+    "howTo": "Slice with long, smooth swipes so you can hit several fruit in one motion, and keep an eye out for bombs before you swing. Don't miss fruit while chasing a combo, since misses add up.",
+    "controls": "Desktop: Click and drag the mouse across the fruit to slice it. Touch screens: swipe your finger across the screen.",
+    "similar": [
+      {
+        "name": "Stickman Hook",
+        "why": "is another one-input arcade game built around timing."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a short-round arcade game where each move matters."
+      },
+      {
+        "name": "Block Blast",
+        "why": "is a puzzle game that rewards planning ahead."
+      }
+    ],
+    "creator": "Fruit Ninja was created by Halfbrick Studios in 2010."
+  },
+  "Geometry Dash": {
+    "tags": [
+      "Arcade",
+      "Platformer"
+    ],
+    "intro": [
+      "Geometry Dash is a rhythm-based platformer. Your cube moves forward on its own across a course built to the beat of the music, and you jump over spikes, gaps and traps by tapping at exactly the right moment. One mistake sends you back to the start.",
+      "That repetition is the point. You learn each course by memory and by ear, and clearing a level after dozens of tries feels earned. Geometry Dash was created by RobTop Games and released in 2013."
+    ],
+    "howTo": "Use the music as a timing guide, and practice one section at a time. Don't tap constantly; short, deliberate inputs are easier to repeat than panicked ones.",
+    "controls": "Desktop: Press Space, Up or click to jump. Touch screens: tap the screen.",
+    "similar": [
+      {
+        "name": "Space Waves",
+        "why": "is a wave-style game built around holding and releasing."
+      },
+      {
+        "name": "Level Devil",
+        "why": "is a platformer that tricks you until you learn its rules."
+      },
+      {
+        "name": "Neon Warp",
+        "why": "is a neon arcade game built for quick runs."
+      }
+    ],
+    "creator": "Geometry Dash was created by RobTop Games in 2013."
+  },
+  "Space Waves": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Space Waves is a one-input arcade game in the style of Geometry Dash's wave mode. You control a small arrow that moves diagonally: hold to go up, release to go down, and you weave through a tunnel of gaps and obstacles without touching a wall.",
+      "Because there is only one control, the challenge comes from precision. Shorter, steady taps keep the arrow in a narrow gap, and the speed keeps climbing."
+    ],
+    "howTo": "Use short, even taps instead of long holds, and look ahead at the shape of the next gap. Stay calm in narrow sections, since overcorrecting is how most runs end.",
+    "controls": "Desktop: Hold the mouse button, Space or the Up arrow to go up, and release to go down. Touch screens: press and hold the screen.",
+    "similar": [
+      {
+        "name": "Geometry Dash",
+        "why": "is the rhythm platformer built on memorizing a course."
+      },
+      {
+        "name": "Neon Warp",
+        "why": "is a neon arcade game built for quick runs."
+      },
+      {
+        "name": "Stickman Hook",
+        "why": "is another one-input game where timing is everything."
+      }
+    ]
+  },
+  "Tomb of the Mask": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Tomb of the Mask is a maze arcade game. You control a masked character who dashes in a straight line until it hits a wall, so every move is a decision about where you will stop. You collect dots and coins on the way and avoid traps, bats and rising dangers.",
+      "It was made by Playgendary, and it works because the rules are so simple. The challenge is planning a route through a tricky maze before you move."
+    ],
+    "howTo": "Plan two or three moves ahead, since you can't stop mid-dash. Look for the safe path before you commit, and don't rush when the screen starts to fill with traps.",
+    "controls": "Desktop: Use the arrow keys or WASD to dash in a direction. Touch screens: swipe in the direction you want to go.",
+    "similar": [
+      {
+        "name": "Crossy Road",
+        "why": "is another arcade game built on careful movement."
+      },
+      {
+        "name": "Level Devil",
+        "why": "is a platformer that tricks you until you learn its rules."
+      },
+      {
+        "name": "Stickman Hook",
+        "why": "is a one-input arcade game where timing is everything."
+      }
+    ],
+    "creator": "Tomb of the Mask was created by Playgendary."
+  },
+  "Stickman Hook": {
+    "tags": [
+      "Arcade"
+    ],
+    "intro": [
+      "Stickman Hook is a one-input swinging game. Your stickman hangs from a hook on the ceiling, and you press and hold to latch on and swing, then release to launch yourself toward the next hook. Reaching the end of each level is about rhythm and timing.",
+      "It was made by Madbox, and the physics are what make it satisfying. A well-timed release carries you across the level in a smooth arc, while a bad one sends you crashing."
+    ],
+    "howTo": "Release at the top of the swing for the longest launch, and don't hold the next hook too early. Watch the rhythm of the swing instead of reacting at the last second.",
+    "controls": "Desktop: Click and hold to attach to a hook, and release to let go. Touch screens: press and hold the screen.",
+    "similar": [
+      {
+        "name": "Space Waves",
+        "why": "is another one-input game built around timing."
+      },
+      {
+        "name": "Tomb of the Mask",
+        "why": "is a short-round arcade game where each move matters."
+      },
+      {
+        "name": "Sausage Flip",
+        "why": "is a physics game built around timing flips."
+      }
+    ],
+    "creator": "Stickman Hook was created by Madbox."
+  },
+  "Escape Road": {
+    "tags": [
+      "Racing",
+      "Action"
+    ],
+    "intro": [
+      "Escape Road is a getaway driving game. You have just pulled off a heist and the police are on your tail, so the streets become a chase. Your car moves forward on its own, so the challenge is steering around buildings, traffic and obstacles while the police close in from all sides.",
+      "Cash you collect during a run pays for faster cars, and if the police pin you in or you crash into water, the escape is over. Escape Road was made by AZ Games and released in 2025."
+    ],
+    "howTo": "Avoid crowded areas and use sharp turns to shake the police. Don't hug walls, since getting trapped in a tight spot ends a run quickly, and collect cash when it is safe to do so.",
+    "controls": "Desktop: Use the A and D keys or the left and right arrow keys to steer.",
+    "similar": [
+      {
+        "name": "Escape Road 2",
+        "why": "is the sequel, with new cars and chases."
+      },
+      {
+        "name": "Escape Road 3",
+        "why": "is the biggest entry in the series, with boats, planes and mini-games."
+      },
+      {
+        "name": "Drift Boss",
+        "why": "is another one-button game built around steering."
+      }
+    ],
+    "creator": "Escape Road was created by AZ Games."
+  },
+  "Escape Road 2": {
+    "tags": [
+      "Racing",
+      "Action"
+    ],
+    "intro": [
+      "Escape Road 2 starts with a bank robber sprinting out of the bank and jumping into your car. From that moment on you are the getaway driver, trying to outsmart the police and make a clean escape through the city. Once helicopters join the chase, the pressure ramps up fast.",
+      "You can reverse out of tight spots, and in some situations you can leave the car and keep going on foot. Cash collected during a run unlocks a large collection of vehicles. Escape Road 2 was made by AZ Games and released in 2025."
+    ],
+    "howTo": "Keep your speed steady, avoid being boxed in, and reverse out of trouble before the police surround you. Plan your path a few seconds ahead, not just to the next corner.",
+    "controls": "Desktop: Use the A, S and D keys or the arrow keys to drive, and press Space to leave the vehicle.",
+    "similar": [
+      {
+        "name": "Escape Road",
+        "why": "is the original getaway game."
+      },
+      {
+        "name": "Escape Road 3",
+        "why": "is the biggest entry in the series, with boats, planes and mini-games."
+      },
+      {
+        "name": "Drift Hunters",
+        "why": "is a driving game built around handling and upgrades."
+      }
+    ],
+    "creator": "Escape Road 2 was created by AZ Games."
+  },
+  "Escape Road 3": {
+    "tags": [
+      "Racing",
+      "Action"
+    ],
+    "intro": [
+      "Escape Road 3 takes the getaway chase to a bigger scale. You outrun relentless police across cities, deserts, suburban streets and even oceans, switching between cars, boats, planes and gliders to keep the escape going.",
+      "More than thirty characters can be unlocked, along with powerful cars and support items that improve your odds. Between chases there are mini-games such as F1 racing, zombie battles, treasure hunting and alien invasions. Escape Road 3 was made by AZ Games and released in 2026."
+    ],
+    "howTo": "Use support items when the chase gets chaotic, not as soon as you have them. Switch vehicles when yours gets stuck, and don't try to clear every hazard; sometimes the better move is to turn away.",
+    "controls": "Desktop: A, S and D or the arrow keys to move, Space to enter or leave a vehicle, F to use power-ups, and Tab to pause. After picking up a handgun, right click to aim and left click to shoot.",
+    "similar": [
+      {
+        "name": "Escape Road",
+        "why": "is the original getaway game."
+      },
+      {
+        "name": "Escape Road 2",
+        "why": "adds helicopters and a big vehicle collection."
+      },
+      {
+        "name": "Snow Rider",
+        "why": "is another fast downhill run built around steering."
+      }
+    ],
+    "creator": "Escape Road 3 was created by AZ Games."
+  },
+  "Snow Rider": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Snow Rider 3D is a downhill sledding game. You steer a sled down an endless snowy slope, picking up gifts and weaving between trees, rocks and other obstacles. The run ends as soon as you hit something.",
+      "Speed builds as you go, so the same gap you cleared easily early on becomes a quick decision later. Snow Rider 3D was made by Lagged."
+    ],
+    "howTo": "Steer early and with small movements, since sudden turns at speed are how most sleds end up in trees. Look ahead of the sled, and don't swerve for every gift.",
+    "controls": "Desktop: Use the left and right arrow keys or A and D to steer. Touch screens: tap or swipe left and right.",
+    "similar": [
+      {
+        "name": "Slope",
+        "why": "is another downhill game where speed keeps climbing."
+      },
+      {
+        "name": "Drift Boss",
+        "why": "is a one-button game built around steering."
+      },
+      {
+        "name": "Escape Road",
+        "why": "is a chase game built around steering."
+      }
+    ],
+    "creator": "Snow Rider 3D was created by Lagged."
+  },
+  "Drift Hunters": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Drift Hunters is a 3D drifting game. You drive through a set of tracks, link long slides through corners to build your score, and spend your earnings on new cars and upgrades. The scoring rewards style, so the best runs are long, smooth drifts.",
+      "Each car handles differently, which is part of the fun, and tuning your car lets you push a little harder each time. Drift Hunters was created by Ilya Kaminetsky."
+    ],
+    "howTo": "Don't hold the gas the whole way through a corner. Brake lightly, use the handbrake to start a slide, and then steer into it. Upgrade power and handling in balance, since a car that is too powerful is hard to control.",
+    "controls": "Desktop: Use the arrow keys or WASD to drive and Space for the handbrake.",
+    "similar": [
+      {
+        "name": "Drift Boss",
+        "why": "is a one-button drifting game that rewards timing."
+      },
+      {
+        "name": "Polytrack",
+        "why": "is a time-trial racer built around clean lines."
+      },
+      {
+        "name": "Slow Roads",
+        "why": "is a relaxed driving game with no pressure."
+      }
+    ],
+    "creator": "Drift Hunters was created by Ilya Kaminetsky."
+  },
+  "Drift Boss": {
+    "tags": [
+      "Racing",
+      "Arcade"
+    ],
+    "intro": [
+      "Drift Boss is a one-click driving game. Your car drives forward on a track with no guardrails and very tricky corners, and you steer by holding to turn one way and releasing to turn the other, so there is no easy way to go straight.",
+      "The track keeps going until you fall off, so it is an endless game about staying on the platform. Coins you earn can unlock new cars, and the retro look is reminiscent of 80s arcade games."
+    ],
+    "howTo": "Look ahead, not at the car. Tap in short, steady bursts and prepare for bumps and ramps before you reach them. Narrow platforms need exact timing, so slow down your inputs instead of rushing.",
+    "controls": "Desktop: Hold the mouse button to turn right and release to turn left. Touch screens: press and hold the screen.",
+    "similar": [
+      {
+        "name": "Slope",
+        "why": "is another game where steering and timing keep you alive."
+      },
+      {
+        "name": "Space Waves",
+        "why": "is a one-input game built around holding and releasing."
+      },
+      {
+        "name": "Drift Hunters",
+        "why": "is a full 3D drifting game with upgrades."
+      }
+    ]
+  },
+  "Monster Tracks": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Monster Tracks is a physics driving game in the same family as Drive Mad. It uses the same two inputs: accelerate and brake. Each course is built to flip your truck, so success depends on throttle control rather than on speed.",
+      "Courses are short and full of gadgets such as ramps and obstacles, and restarts are instant, so every attempt teaches you something about how the truck handles."
+    ],
+    "howTo": "Feather the accelerator instead of holding it down, and use the brake to bring the nose down if you tip backwards. Take a moment to look at each obstacle before you commit.",
+    "controls": "Desktop: Right arrow or D to accelerate, left arrow or A to brake and reverse. Touch screens: tap and hold the right or left side of the screen.",
+    "similar": [
+      {
+        "name": "DRIVE MAD",
+        "why": "is the physics driving game with the same two inputs."
+      },
+      {
+        "name": "Hill Climb Racing",
+        "why": "is the classic gas-and-brake hill physics game."
+      },
+      {
+        "name": "Moto X3M",
+        "why": "is a stunt game where small mistakes flip you over."
+      }
+    ]
+  },
+  "Polytrack": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Polytrack is a low-poly time-trial racing game. You race against the clock on a track, trying to set the fastest lap, and you can race against your own ghost to see exactly where you gained or lost time. A track editor is included for building your own courses.",
+      "It was made by Kodub. The handling is tight and restarts are instant, so improving a lap time is a matter of small changes to your line."
+    ],
+    "howTo": "Brake before the corner, not in it, and aim for the inside of each turn. Use the ghost to compare your line, and restart as soon as a lap is ruined instead of finishing it.",
+    "controls": "Desktop: Use the arrow keys or WASD to steer and accelerate, and press R to restart.",
+    "similar": [
+      {
+        "name": "Drift Hunters",
+        "why": "is a driving game built around handling and upgrades."
+      },
+      {
+        "name": "Slow Roads",
+        "why": "is a relaxed driving game with no timer."
+      },
+      {
+        "name": "Drift Boss",
+        "why": "is a one-button driving game that rewards timing."
+      }
+    ],
+    "creator": "Polytrack was created by Kodub."
+  },
+  "Slow Roads": {
+    "tags": [
+      "Racing",
+      "Casual"
+    ],
+    "intro": [
+      "Slow Roads is a relaxed driving game. There is no finish line and no timer, just an endless road through landscapes that are generated as you go, with hills, forests and changing weather. The idea is to cruise and enjoy the scenery.",
+      "It is a good game for a short break, since there is nothing to fail. You can drive carefully or push the car a little, and settings let you adjust the car and the view."
+    ],
+    "howTo": "Treat it like a drive, not a race. Keep your speed steady, take corners smoothly and enjoy the view. If you want a challenge, try keeping the car on the road without braking.",
+    "controls": "Desktop: Use the arrow keys or WASD to drive.",
+    "similar": [
+      {
+        "name": "Drift Hunters",
+        "why": "is a more challenging driving game built around handling."
+      },
+      {
+        "name": "Polytrack",
+        "why": "is a time-trial racer built around clean lines."
+      },
+      {
+        "name": "Hill Climb Racing",
+        "why": "is a driving game built around balance and fuel."
+      }
+    ]
+  },
+  "Hill Climb Racing": {
+    "tags": [
+      "Racing"
+    ],
+    "intro": [
+      "Hill Climb Racing is a physics driving game. You drive a vehicle up and over hilly terrain, collecting coins and fuel along the way. The run ends when you run out of fuel or flip your driver's head into the ground.",
+      "Coins buy upgrades for engine, suspension, tires and 4WD, and new vehicles and stages unlock as you go. It was made by Fingersoft and released in 2012, and the balance between gas and brake is what makes it addictive."
+    ],
+    "howTo": "Tap the gas gently on bumps, and use the lean controls in the air to land flat. Don't skip fuel pickups to chase coins, and upgrade suspension and tires before engine power.",
+    "controls": "Desktop: Right arrow to accelerate, left arrow to brake and reverse, and up and down to tilt the vehicle in the air. Touch screens: use the pedals on screen.",
+    "similar": [
+      {
+        "name": "DRIVE MAD",
+        "why": "is another physics driving game built around throttle control."
+      },
+      {
+        "name": "Moto X3M",
+        "why": "is a stunt game with tight physics."
+      },
+      {
+        "name": "Monster Tracks",
+        "why": "is a monster-truck physics game with two inputs."
+      }
+    ],
+    "creator": "Hill Climb Racing was created by Fingersoft in 2012."
+  },
+  "Ragdoll Archers": {
+    "tags": [
+      "Shooting"
+    ],
+    "intro": [
+      "Ragdoll Archers is a duel game with ragdoll physics. Two archers face each other across the screen, and you pull back on the bow and release to fire. Arrows can hit anywhere, and a shot to the head is worth far more than one to the body.",
+      "The ragdoll physics make every hit look different, and the rounds are short, so it is a great game for quick matches against the computer or a friend."
+    ],
+    "howTo": "Take a moment to judge the distance and angle before you shoot, and adjust a little after each miss instead of changing everything. Aim for the head when you can, and take cover if the game offers it.",
+    "controls": "Desktop: Click and drag back to aim and release to fire. Touch screens: drag your finger and let go.",
+    "similar": [
+      {
+        "name": "Ragdoll Hit",
+        "why": "is a short shooter with ragdoll physics."
+      },
+      {
+        "name": "1v1 Lol",
+        "why": "is a fast shooter built around quick decisions."
+      },
+      {
+        "name": "Gunspin",
+        "why": "is a shooter where recoil is the main mechanic."
+      }
+    ]
+  },
+  "Ragdoll Hit": {
+    "tags": [
+      "Shooting"
+    ],
+    "intro": [
+      "Ragdoll Hit is a short physics shooter. You aim and fire at ragdoll enemies, and every hit sends them flying in a different way. The levels are quick, so the fun is in lining up a good shot.",
+      "Rounds are short and restarts are instant, which makes it easy to try again with a slightly different approach."
+    ],
+    "howTo": "Take a second to line up each shot, and use the environment to your advantage. Aim for targets that will knock others over to get several in one shot.",
+    "controls": "Desktop: Move the mouse to aim and click to shoot. Touch screens: drag to aim and tap to shoot.",
+    "similar": [
+      {
+        "name": "Ragdoll Archers",
+        "why": "is a duel game with ragdoll physics."
+      },
+      {
+        "name": "Gunspin",
+        "why": "is a shooter where recoil is the main mechanic."
+      },
+      {
+        "name": "Super Hot",
+        "why": "is a shooter where time moves only when you do."
+      }
+    ]
+  },
+  "Gunspin": {
+    "tags": [
+      "Shooting"
+    ],
+    "intro": [
+      "Gunspin is a physics shooter where the recoil of each shot is the main mechanic. Firing your gun pushes it in the opposite direction, so you aim not just to hit targets but to control where your gun ends up.",
+      "That makes every shot a decision about movement as well as aim. Short levels and instant restarts keep the game moving."
+    ],
+    "howTo": "Learn how each shot pushes the gun, and use short bursts to stay in control. Don't hold fire when you can't see where you will end up.",
+    "controls": "Desktop: Click to fire, and use the mouse as the game shows to control direction. Touch screens: tap to fire.",
+    "similar": [
+      {
+        "name": "Ragdoll Hit",
+        "why": "is a short shooter with ragdoll physics."
+      },
+      {
+        "name": "Ragdoll Archers",
+        "why": "is a duel game where aiming decides the round."
+      },
+      {
+        "name": "1v1 Lol",
+        "why": "is a fast shooter built around quick decisions."
+      }
+    ]
+  },
+  "Retro Bowl": {
+    "tags": [
+      "Sports"
+    ],
+    "intro": [
+      "Retro Bowl is a pixel-art American football game where you are both the quarterback and the head coach. Games are short and focus on the passing game, while between games you manage your roster, your salary cap, your facilities and the mood of both players and fans.",
+      "It was made by New Star Games and released in 2020. The mix of quick matches and season-long management is what keeps people coming back."
+    ],
+    "howTo": "Read the defense before the snap and throw before the pass rush gets to you. Keep players happy and the salary cap in order, and don't forget to draft and develop younger players.",
+    "controls": "Desktop: Click on a receiver to throw to him, and drag to run with the ball. Touch screens: tap a receiver to throw, and swipe to run.",
+    "similar": [
+      {
+        "name": "Retro Bowl College",
+        "why": "is the college version of the same game."
+      },
+      {
+        "name": "Basketball Stars",
+        "why": "is another quick sports game built around skill."
+      },
+      {
+        "name": "Basket Random",
+        "why": "is a chaotic physics sports game for two players."
+      }
+    ],
+    "creator": "Retro Bowl was created by New Star Games."
+  },
+  "Retro Bowl College": {
+    "tags": [
+      "Sports"
+    ],
+    "intro": [
+      "Retro Bowl College takes the Retro Bowl formula to the college game. You still call the plays and throw the passes, but now you build a program: recruiting players, keeping your team together and trying to lead your school to a title.",
+      "Games remain short and focused on the passing game, with the long-term management on the side. It was made by New Star Games."
+    ],
+    "howTo": "Recruit for the positions you need most, and keep your quarterback protected. Balance short-term wins with long-term development so your team stays strong over multiple seasons.",
+    "controls": "Desktop: Click on a receiver to throw to him, and drag to run with the ball. Touch screens: tap a receiver to throw, and swipe to run.",
+    "similar": [
+      {
+        "name": "Retro Bowl",
+        "why": "is the original pro football version."
+      },
+      {
+        "name": "Basketball Stars",
+        "why": "is another quick sports game built around skill."
+      },
+      {
+        "name": "Soccer Random",
+        "why": "is a chaotic physics sports game for two players."
+      }
+    ],
+    "creator": "Retro Bowl College was created by New Star Games."
+  },
+  "Basket Random": {
+    "tags": [
+      "Sports",
+      "Multiplayer"
+    ],
+    "intro": [
+      "Basket Random is a chaotic two-player basketball game with one-button controls. Press a key and your player jumps and swings, and getting the ball into the basket is much harder and much funnier than it sounds. The first player to score five points wins.",
+      "After each basket the court, the characters and even the physics change, so no two rounds play the same way. You can play against the computer or share a keyboard with a friend. It was made by RHM Interactive and released in 2020."
+    ],
+    "howTo": "Don't mash the button. Time your jumps and let the ball come to you, since the physics change every round. Stay near your own basket when you are ahead.",
+    "controls": "Desktop: Player 1 presses W, and Player 2 presses the Up arrow. Touch screens: tap the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Soccer Random",
+        "why": "uses the same one-button physics for soccer."
+      },
+      {
+        "name": "Volley Random",
+        "why": "applies the same chaos to volleyball."
+      },
+      {
+        "name": "Boxing Random",
+        "why": "is the boxing version of the series."
+      }
+    ],
+    "creator": "Basket Random was created by RHM Interactive."
+  },
+  "Soccer Random": {
+    "tags": [
+      "Sports",
+      "Multiplayer"
+    ],
+    "intro": [
+      "Soccer Random is a two-player soccer game with one-button controls and unpredictable physics. Your players jump and kick with a single input, and the ball does not always go where you expect, which is where the comedy comes from.",
+      "Like the rest of the Random series, the arena and the rules of physics can change from round to round, so you have to adapt on the fly. It was made by RHM Interactive."
+    ],
+    "howTo": "Be patient and let the ball come to you instead of mashing the button. Watch how the physics have changed in each round before committing to a kick.",
+    "controls": "Desktop: Player 1 presses W, and Player 2 presses the Up arrow. Touch screens: tap the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Basket Random",
+        "why": "is the basketball version of the same series."
+      },
+      {
+        "name": "Volley Random",
+        "why": "applies the same chaos to volleyball."
+      },
+      {
+        "name": "Boxing Random",
+        "why": "is the boxing version of the series."
+      }
+    ],
+    "creator": "Soccer Random was created by RHM Interactive."
+  },
+  "Volley Random": {
+    "tags": [
+      "Sports",
+      "Multiplayer"
+    ],
+    "intro": [
+      "Volley Random is a two-player volleyball game with one-button controls and wacky physics. You jump, spike and scramble to win the point, and every round has a different theme, ball and set of physics.",
+      "You can play against the computer or with a friend on the same keyboard. It was made by RHM Interactive and released in 2021."
+    ],
+    "howTo": "Time your jumps instead of mashing the button, and keep your eye on the ball as the physics change. Try to be in position early so you can spike instead of just returning.",
+    "controls": "Desktop: Player 1 presses W, and Player 2 presses the Up arrow. Touch screens: tap the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Basket Random",
+        "why": "is the basketball version of the same series."
+      },
+      {
+        "name": "Soccer Random",
+        "why": "applies the same chaos to soccer."
+      },
+      {
+        "name": "Boxing Random",
+        "why": "is the boxing version of the series."
+      }
+    ],
+    "creator": "Volley Random was created by RHM Interactive."
+  },
+  "Boxing Random": {
+    "tags": [
+      "Sports",
+      "Multiplayer"
+    ],
+    "intro": [
+      "Boxing Random is a two-player boxing game with one-button controls and unpredictable physics. Your fighter swings with a single input, and the loose, floppy movement makes each fight a bit of a wrestling match with your own character.",
+      "Like the rest of the Random series, the settings change from round to round, so it never plays the same way twice."
+    ],
+    "howTo": "Don't swing constantly. Wait for your opponent to come to you, then time your punch. Watch how your fighter moves and use that to your advantage.",
+    "controls": "Desktop: Player 1 presses W, and Player 2 presses the Up arrow. Touch screens: tap the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Basket Random",
+        "why": "is the basketball version of the same series."
+      },
+      {
+        "name": "Soccer Random",
+        "why": "applies the same chaos to soccer."
+      },
+      {
+        "name": "Volley Random",
+        "why": "applies the same chaos to volleyball."
+      }
+    ],
+    "creator": "Boxing Random belongs to the same Random series as Basket Random and Volley Random, which were made by RHM Interactive."
+  },
+  "Basketball Stars": {
+    "tags": [
+      "Sports",
+      "Multiplayer"
+    ],
+    "intro": [
+      "Basketball Stars is a one-on-one basketball game built around timing. You choose a player, dribble, jump and shoot against an opponent, and the quality of your shot depends on how well you time the release. Play against the computer or a friend.",
+      "It was made by MadPuffers, the studio behind Moto X3M and Basketball Legends. Matches are quick, so it is easy to play a few in a row."
+    ],
+    "howTo": "Release your shot at the top of your jump for the best chance, and use fakes to open space. Defend by staying between your opponent and the basket instead of reaching for the ball.",
+    "controls": "Desktop: Use the arrow keys or WASD to move and jump, and the shoot keys shown in the game. Touch screens: use the on-screen buttons.",
+    "similar": [
+      {
+        "name": "Basket Random",
+        "why": "is a chaotic physics version for two players."
+      },
+      {
+        "name": "Retro Bowl",
+        "why": "is another quick sports game built around skill."
+      },
+      {
+        "name": "Soccer Random",
+        "why": "is a chaotic physics sports game for two players."
+      }
+    ],
+    "creator": "Basketball Stars was created by MadPuffers."
+  },
+  "Paper.io 2": {
+    "tags": [
+      "Multiplayer"
+    ],
+    "intro": [
+      "Paper.io 2 is a territory game. You control a small square on a shared board and leave a trail as you move outside your own area; when you return to your territory, the area you enclosed becomes yours. If another player touches your trail before you get back, you are out.",
+      "The tension is in how far you dare to go. A long trail claims a lot of land at once but gives everyone more time to cut you off. Paper.io 2 was made by Voodoo."
+    ],
+    "howTo": "Start with short loops to build a safe area, then take larger bites once you have room to retreat. Watch other players' trails so you can cut them off, and don't wander far from home when a rival is close.",
+    "controls": "Desktop: Use the arrow keys or WASD to steer. Touch screens: swipe in the direction you want to go.",
+    "similar": [
+      {
+        "name": "Hole.io",
+        "why": "is another territory-and-growth game against other players."
+      },
+      {
+        "name": "Slither.io",
+        "why": "is a growth game where every other player is a threat."
+      },
+      {
+        "name": "Snowball.io",
+        "why": "is a growth game where you roll to get bigger."
+      }
+    ],
+    "creator": "Paper.io 2 was created by Voodoo."
+  },
+  "Hole.io": {
+    "tags": [
+      "Multiplayer"
+    ],
+    "intro": [
+      "Hole.io is a growth game where you control a hole in the ground. Move it around the map and swallow anything smaller than you; as you eat, the hole grows and can swallow bigger objects, from small items to whole buildings.",
+      "You compete against other holes in timed rounds, and the one that has swallowed the most when the clock runs out wins. Hole.io was made by Voodoo."
+    ],
+    "howTo": "Start with the small items, then work toward bigger ones as you grow. Stay away from bigger holes and look for smaller ones you can swallow for a big boost.",
+    "controls": "Desktop: Move the mouse to steer the hole. Touch screens: drag your finger on the screen.",
+    "similar": [
+      {
+        "name": "Paper.io 2",
+        "why": "is a territory game against other players."
+      },
+      {
+        "name": "Slither.io",
+        "why": "is a growth game where every other player is a threat."
+      },
+      {
+        "name": "Snowball.io",
+        "why": "is a growth game where you roll to get bigger."
+      }
+    ],
+    "creator": "Hole.io was created by Voodoo."
+  },
+  "Slither.io": {
+    "tags": [
+      "Multiplayer"
+    ],
+    "intro": [
+      "Slither.io is a multiplayer snake game. You control a worm in a huge arena shared with other players, eating glowing dots to grow longer. If your head touches another worm, you die and turn into food for everyone else.",
+      "That makes the game about risk. A long worm is dangerous, and you can trap smaller players by circling them. Slither.io was created by Steve Howse and released in 2016."
+    ],
+    "howTo": "Stay near the edge early on, and grow from the loose dots before moving to the center. Use the speed boost to cut off a smaller worm, and keep a gap when you pass larger ones.",
+    "controls": "Desktop: Move the mouse to steer, and click or hold Space to boost. Touch screens: drag to steer.",
+    "similar": [
+      {
+        "name": "Paper.io 2",
+        "why": "is a territory game against other players."
+      },
+      {
+        "name": "Hole.io",
+        "why": "is a growth game where you swallow things to get bigger."
+      },
+      {
+        "name": "Snowball.io",
+        "why": "is a growth game where you roll to get bigger."
+      }
+    ],
+    "creator": "Slither.io was created by Steve Howse in 2016."
+  },
+  "Snowball.io": {
+    "tags": [
+      "Multiplayer"
+    ],
+    "intro": [
+      "Snowball.io is a multiplayer growth game. You control a snowball that gets bigger as it rolls over snow, and you compete with other players on the same map to be the biggest.",
+      "A bigger snowball can push smaller players around, so the early game is about growing safely and the late game is about staying away from anyone larger than you."
+    ],
+    "howTo": "Grow in the open areas first, and avoid larger players until you are close to their size. If you meet a smaller player, use your size to push them off.",
+    "controls": "Desktop: Move the mouse or use WASD to steer. Touch screens: drag your finger on the screen.",
+    "similar": [
+      {
+        "name": "Hole.io",
+        "why": "is a growth game where you swallow things to get bigger."
+      },
+      {
+        "name": "Slither.io",
+        "why": "is a growth game where every other player is a threat."
+      },
+      {
+        "name": "Paper.io 2",
+        "why": "is a territory game against other players."
+      }
+    ]
+  },
+  "Just Fall.io": {
+    "tags": [
+      "Multiplayer"
+    ],
+    "intro": [
+      "Just Fall.io is a party-style multiplayer game where you compete against other players to be the last one standing. The obstacles and the other players are both in your way, and a single misstep can drop you out.",
+      "Rounds are quick and chaotic, so it is easy to jump back in after a loss. Just Fall was made by JustPlay.LOL, the studio behind 1v1.LOL."
+    ],
+    "howTo": "Stay calm and keep moving. Don't follow the crowd blindly, since the safest route is often away from where most players are. Watch where others fall to learn what to avoid.",
+    "controls": "Desktop: Use WASD or the arrow keys to move and Space to jump. Touch screens: use the on-screen controls.",
+    "similar": [
+      {
+        "name": "1v1 Lol",
+        "why": "is a quick multiplayer shooter from the same studio."
+      },
+      {
+        "name": "Paper.io 2",
+        "why": "is a territory game against other players."
+      },
+      {
+        "name": "Hole.io",
+        "why": "is a growth game against other players."
+      }
+    ],
+    "creator": "Just Fall was created by JustPlay.LOL."
+  },
+  "FNAF": {
+    "tags": [
+      "Horror"
+    ],
+    "intro": [
+      "Five Nights at Freddy's puts you in the seat of a night guard at Freddy Fazbear's Pizza. From 12 AM to 6 AM you watch the security cameras while the animatronics wander the building, and if one reaches your office, the night is over. You can close the doors and turn on the lights, but both use power, and if the power runs out you are on your own.",
+      "The game was created by Scott Cawthon and released in 2014. It is built on tension rather than action, since you can't fight back and every decision about power is a risk."
+    ],
+    "howTo": "Check the cameras sparingly and keep an eye on your power. Close a door only when you need to, and listen for sounds that tell you where the animatronics are.",
+    "controls": "Desktop: Use the mouse to click the door and light buttons and to open the camera monitor.",
+    "similar": [
+      {
+        "name": "FNAF 2",
+        "why": "has no doors and uses a mask instead."
+      },
+      {
+        "name": "FNAF 3",
+        "why": "has a single hunter and a failing office."
+      },
+      {
+        "name": "FNAF 4",
+        "why": "is played in a child's bedroom."
+      }
+    ],
+    "creator": "Five Nights at Freddy's was created by Scott Cawthon."
+  },
+  "FNAF 2": {
+    "tags": [
+      "Horror"
+    ],
+    "intro": [
+      "Five Nights at Freddy's 2 moves you to a new location with a new set of animatronics, and there are no doors to close. Instead, you wear a Freddy Fazbear mask to fool most of them, use a flashlight in the hallway, and wind a music box to keep one particular animatronic asleep.",
+      "It was created by Scott Cawthon and released in 2014. With more animatronics and no easy defenses, it is widely seen as harder than the original."
+    ],
+    "howTo": "Wind the music box regularly and keep an eye on its timer. Put the mask on when you hear an animatronic enter the office, and use the flashlight to check the hallway.",
+    "controls": "Desktop: Use the mouse to open the monitor, wind the music box, put on the mask and use the flashlight.",
+    "similar": [
+      {
+        "name": "FNAF",
+        "why": "is the original game."
+      },
+      {
+        "name": "FNAF 3",
+        "why": "has a single hunter and a failing office."
+      },
+      {
+        "name": "FNAF 4",
+        "why": "is played in a child's bedroom."
+      }
+    ],
+    "creator": "FNAF 2 was created by Scott Cawthon."
+  },
+  "FNAF 3": {
+    "tags": [
+      "Horror"
+    ],
+    "intro": [
+      "Five Nights at Freddy's 3 takes place years later in a horror attraction, and only one animatronic is hunting you: Springtrap. The danger is that you can't see him directly. You watch him on the cameras, use an audio lure to steer him away, and keep the ventilation, cameras and audio systems running as they break down.",
+      "It was created by Scott Cawthon and released in 2015. Hallucinations called Phantoms appear along the way and can disrupt your systems, which makes managing the office as important as watching Springtrap."
+    ],
+    "howTo": "Use the audio lure to pull Springtrap away from your office, and reboot broken systems before they cause problems. Keep an eye on both the cameras and the ventilation, since either failing can end your night.",
+    "controls": "Desktop: Use the mouse to open the monitor, use the audio lure, and reboot the systems.",
+    "similar": [
+      {
+        "name": "FNAF",
+        "why": "is the original game."
+      },
+      {
+        "name": "FNAF 2",
+        "why": "has no doors and uses a mask instead."
+      },
+      {
+        "name": "FNAF 4",
+        "why": "is played in a child's bedroom."
+      }
+    ],
+    "creator": "FNAF 3 was created by Scott Cawthon."
+  },
+  "OvO": {
+  "tags": ["Platformer"],
+  "intro": [
+    "OvO is a fast, minimalist platformer built around one idea: move precisely and move quickly. You control a stickman using parkour skills, jumping, sliding, diving and wall-jumping your way to the exit of each level. The levels start gently and then add increasingly tricky obstacles and traps.",
+    "There are 40 levels, with an easy and a hard mode, and large coins hidden through the levels that you can spend on skins for your character. Because every level is timed and the controls are so tight, OvO has a speedrunning community. It was made by Dedra Games, a solo French developer, and has a sequel called OvO Dimensions."
+  ],
+  "howTo": "Learn each level slowly first, then go back and play it faster. Use the environment, since wall jumps and slides let you keep your speed through sections that would otherwise stop you. When you hit a hard level, replaying earlier ones is a good way to get your timing back before you try again.",
+  "controls": "Desktop: Use the arrow keys or WASD to move and jump. The keys can be changed in the game's options.",
+  "unblockedTitle": "Play OvO unblocked",
+  "similar": [
+    {"name": "Run 3", "why": "is a momentum platformer built around reading the route ahead."},
+    {"name": "Level Devil", "why": "is a platformer that tricks you until you learn its rules."},
+    {"name": "Red Ball 4", "why": "is a physics platformer where speed control decides every jump."}
+  ],
+  "creator": "OvO was created by Dedra Games.",
+  "devices": "OvO runs in your browser on desktop, and some versions also support touch controls on phones and tablets. Mobile support depends on the embedded version, so performance can vary between devices."
+            },
+  "FNAF 4": {
+    "tags": [
+      "Horror"
+    ],
+    "intro": [
+      "Five Nights at Freddy's 4 moves the game into a child's bedroom, and the animatronics are now nightmare versions that come through the doors and closet. You have no cameras, so you rely on sound: you listen at each door for breathing, and close it only when you hear something there.",
+      "It was created by Scott Cawthon and released in 2015. The tension comes from listening carefully and acting at the right moment, and a wrong move can end the night instantly."
+    ],
+    "howTo": "Listen carefully at each door and close it only if you hear breathing. Check the closet and the bed with the flashlight, and don't use it too long.",
+    "controls": "Desktop: Use the arrow keys or the mouse as shown in the game to turn to each door, and use the flashlight to check.",
+    "similar": [
+      {
+        "name": "FNAF",
+        "why": "is the original game."
+      },
+      {
+        "name": "FNAF 2",
+        "why": "has no doors and uses a mask instead."
+      },
+      {
+        "name": "FNAF 3",
+        "why": "has a single hunter and a failing office."
+      }
+    ],
+    "creator": "FNAF 4 was created by Scott Cawthon."
+  },
+  "Sister Location": {
+    "tags": [
+      "Horror"
+    ],
+    "intro": [
+      "Five Nights at Freddy's: Sister Location is a story-driven entry in the series. You work at a new entertainment venue and take on a series of tasks each night, with different gameplay in each one, from short missions to the classic watch-and-wait nights. The animatronics, including Circus Baby, Ballora and Funtime Foxy, play a larger role in the story.",
+      "It was created by Scott Cawthon and released in 2016. Unlike earlier games, you can move around the building, so each night feels different, and a Custom Night lets you set up your own challenge."
+    ],
+    "howTo": "Read the instructions each night carefully, since the rules change. Keep your movements deliberate, and follow what the game tells you, because some nights punish you for rushing.",
+    "controls": "Desktop: Use the mouse and the keys shown in the game to move and interact.",
+    "similar": [
+      {
+        "name": "FNAF",
+        "why": "is the original game."
+      },
+      {
+        "name": "FNAF 2",
+        "why": "has no doors and uses a mask instead."
+      },
+      {
+        "name": "FNAF 3",
+        "why": "has a single hunter and a failing office."
+      }
+    ],
+    "creator": "Sister Location was created by Scott Cawthon."
+  },
+  "Dreadhead Parkour": {
+  "tags": [
+    "Platformer"
+  ],
+  "intro": [
+    "Dreadhead Parkour is a parkour platformer where you play a flashy runner with dreadlocks racing through obstacle courses to the finish. You run, jump, slide and flip your way through each level, using backflips and front flips to clear big gaps while avoiding hazards such as bombs, spikes and circular saws.",
+    "Coins collected along the way unlock new skins, and a star hidden in each level earns extra score. The controls are simple, but the levels keep adding new obstacles, so the challenge comes from timing and learning each course. It has also been released as a mobile app by gametornado."
+  ],
+  "howTo": "Learn each level slowly before you try to go fast. Jump early for big gaps, slide under low hazards instead of jumping over them, and use a flip to get extra distance when you need it. Pick up coins only when it is safe, since one mistake near a saw or bomb sends you back to the start.",
+  "controls": "Desktop: A and D to run left and right, W to jump, and S to slide. Touch screens: use the on-screen buttons.",
+  "unblockedTitle": "Play Dreadhead Parkour unblocked",
+  "similar": [
+    {"name": "OvO", "why": "is a stickman parkour platformer built around precise timing."},
+    {"name": "Run 3", "why": "is a momentum platformer where reading the route ahead matters."},
+    {"name": "Red Ball 4", "why": "is a physics platformer full of traps and checkpoints."}
+  ],
+  "creator": "Dreadhead Parkour was published by gametornado.",
+  "devices": "Dreadhead Parkour runs in your browser on desktop and also has touch controls for phones and tablets. Mobile support depends on the embedded version, so performance and usability can vary between devices."
+},
+"Monkey Mart": {
+  "tags": ["Casual"],
+  "intro": [
+    "Monkey Mart is a store management game where you play a monkey running a small shop. You grow crops, pick up products, stock the shelves and serve customers at the checkout, and the whole game is about not standing still. As the shop grows, the work gets busier and more rewarding.",
+    "Money you earn buys new stock, bigger shelves and monkey workers who take over jobs for you, and the store expands into new marts. There are six marts in total, each with its own layout and product, starting with bananas and moving on to chocolate bars, chocolate muffins, fish, apples and coconut drinks. It was made by the independent developer TinyDobbins."
+  ],
+  "howTo": "Don't let any shelf run empty, because customers leave if they can't find what they want. Spend early earnings on stock and shelf upgrades first, then on workers so your jobs run automatically. Keep moving between crops, shelves and the checkout instead of waiting at one spot.",
+  "controls": "Desktop: Use the arrow keys or WASD to move your monkey, and walk up to crops, shelves and the checkout to work. Touch screens: drag on the screen to move.",
+  "unblockedTitle": "Play Monkey Mart unblocked",
+  "similar": [
+    {"name": "Tiny Fishing", "why": "is a relaxed progression game where every upgrade changes the next run."},
+    {"name": "Cookie Clicker", "why": "is the classic incremental game built around steady growth and upgrades."},
+    {"name": "Idle Ants", "why": "is a calm management game where your colony keeps growing on its own."}
+  ],
+  "creator": "Monkey Mart was created by TinyDobbins.",
+  "devices": "Monkey Mart runs in your browser on desktop and is also available as an app on iOS and Android, so it works well with touch controls on phones and tablets."
+},
+"Eggy Car": {
+  "tags": ["Racing"],
+  "intro": [
+    "Eggy Car is a physics driving game where an egg sits loose on top of your car, and your only job is to drive as far as you can without dropping it. The road is a series of hills, valleys and bumps, and every one of them can send the egg flying. If it breaks, the run is over.",
+    "Speed doesn't help much here. Patience, balance and careful throttle control matter more, and the game has no timer, so you can take your time. Coins you collect unlock new vehicles that handle the egg differently, from the free starter car to heavier ones such as the Eggy Truck, and power-ups like Freeze temporarily hold the egg in place. It was made by Beedo Games."
+  ],
+  "howTo": "Watch the egg, not the car, since the egg shows you what is about to go wrong. Ease off the gas and let gravity carry you down slopes, and use short bursts of throttle to climb. Don't brake suddenly, because a hard stop sends the egg forward.",
+  "controls": "Desktop: Right arrow or D to accelerate, and left arrow or A to brake and reverse. Touch screens: tap the gas pedal on the right or the brake pedal on the left.",
+  "unblockedTitle": "Play Eggy Car unblocked",
+  "similar": [
+    {"name": "DRIVE MAD", "why": "is another throttle-control game where overdriving ends the run."},
+    {"name": "Hill Climb Racing", "why": "is the classic gas-and-brake hill physics game."},
+    {"name": "Monster Tracks", "why": "is a physics driving game with the same two inputs."}
+  ],
+  "creator": "Eggy Car was created by Beedo Games.",
+  "devices": "Eggy Car runs in your browser on desktop and phones, with keyboard controls on a computer and on-screen pedals on touch devices."
+}
+}

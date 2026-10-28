@@ -1,375 +1,82 @@
 [
-  {
-    "name": "Red Ball 4", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/242.png",
-    "url": "g/red-ball-4.html"
-  },
-  {
-    "name": "Subway Surfers", 
-    "img": "https://imglink.cc/cdn/AFJ43ReIug.jpeg",
-    "url": "/g/subway-surfers.html"
-  },
-  {
-    "name": "Slope", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/198.png",
-    "url": "/g/slope.html"
-  },
-  {
-    "name": "Slope 2 Player", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/368.png",
-    "url": "/g/slope-2.html"
-  },
-  {
-    "name": "Slope 3", 
-    "img": "https://slope3.com/storage/website/logo-slope.jpg",
-    "url": "/g/slope3.html" 
-  },
-  {
-    "name": "Run 3",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/177.png",
-    "url": "/g/run3.html"
-  },
-  {
-    "name": "Tetris", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/733.png",
-    "url": "https://shrimplab.vercel.app/projects/tetris/index.html"
-  },
-  {
-    "name": "1v1 Lol", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/58.png",
-    "url": "/g/1v1.html"
-  },
-  {
-    "name": "Minecraft", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/182.png",
-    "url": "/g/minecraft.html"
-  },
-  {
-    "name": "Block Blast",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/6.png",
-    "url": "/g/block-blast.html"
-  },
-  {
-    "name": "Pixel Panic", 
-    "img": "https://imglink.cc/cdn/M_mZJuN9pG.png",
-    "url": "/g/pixel-panic.html"
-  },
-  {
-    "name": "Neon Warp", 
-    "img": "https://imglink.cc/cdn/tjUAy2cqBX.png",
-    "url": "/g/neonwarp.html"
-  },
-  {
-    "name": "Crossy Road", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/24.png",
-    "url": "/g/Crossy-Road.html"
-  },
-  {
-    "name": "Retro Bowl", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/33.png",
-    "url": "/g/Retro_Bowl.html"
-  },
-  {
-    "name": "Retro Bowl College",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/34.png",
-    "url": "/g/Retro_Bowl_College.html"
-  },
-  {
-    "name": "Tiny Fishing", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/108.png",
-    "url": "/g/tiny-fishing.html"
-  },
-  {
-    "name": "Fruit Ninja", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/261.png",
-    "url": "/g/fruit-ninja.html"
-  },
-  {
-    "name": "Paper.io 2", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/102.png",
-    "url": "/g/paper-io-2.html"
-  },
-  {
-    "name": "Basket Random", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/66.png",
-    "url": "/g/basket-random.html"
-  },
-  {
-    "name": "Soccer Random", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/739.png",
-    "url": "/g/soccerrandom.html"
-  },
-  {
-    "name": "Volley Random", 
-    "img": "https://files.catbox.moe/4c91xd.png",
-    "url": "/g/volleyrandom.html"
-  },
-  {
-    "name": "Boxing Random", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/77.png",
-    "url": "/g/boxingrandom.html"
-  },
-  {
-    "name": "BTD 1", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/71.png",
-    "url": "/g/clbloonsTD1.html"
-  },
-  {
-    "name": "BTD 2", 
-    "img": "https://imglink.cc/cdn/dU43OS8Beg.png",
-    "url": "/g/clbloonsTD2.html"
-  },
-  {
-    "name": "BTD 3",
-    "img": "https://imglink.cc/cdn/KnhdKH8Trb.png",
-    "url": "/g/clbloonsTD3.html"
-  },
-  {
-    "name": "BTD 4",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/74.png",
-    "url": "/g/clbloonsTD4.html"
-  },
-  {
-    "name": "BTD 5", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/75.png",
-    "url": "/g/clbloonsTD5.html"
-  },
-  {
-    "name": "TrollPulse",
-    "img": "https://imglink.cc/cdn/dnMCE9X0lB.png",
-    "url": "/g/trollpulse.html"
-  },
-  {
-    "name": "Escape Road",
-    "img": "https://files.catbox.moe/mpahmq",
-    "url": "/g/Escape-Road.html"
-  },
-  {
-    "name": "Escape Road 2",
-    "img": "https://files.catbox.moe/2k0h43.png",
-    "url": "/g/Escape-Road-2.html"
-  },
-  {
-    "name": "Escape Road 3",
-    "img": "https://imglink.cc/cdn/jZ8dQv71jn.jpeg",
-    "url": "/g/escaperoad3.html"
-  },
-  {
-    "name": "Snow Rider", 
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/119.png",
-    "url": "/g/Snow-Rider-3D.html"
-  },
-  {
-    "name": "Bubble Shooter", 
-    "img": "https://files.catbox.moe/91u459.jpg",
-    "url": "/g/bubble-shooter.html"
-  },
-  {
-    "name": "Granny",
-    "img": "https://files.catbox.moe/nr5jcu.png",
-    "url": "/g/granny.html"
-  },
-  {
-    "name": "Granny 2",
-    "img": "https://files.catbox.moe/q1sxm7",
-    "url": "/g/granny2.html"
-  },
-  {
-    "name": "Baldi's Basics plus",
-    "img": "https://files.catbox.moe/0oc44j.png",
-    "url": "/g/baldis-plus.html"
-  },
-  {
-    "name": "Super Hot",
-    "img": "https://files.catbox.moe/0z8kkg.png",
-    "url": "/g/super-hot.html"
-  },
-  {
-    "name": "Drift Hunters",
-    "img": "https://files.catbox.moe/l3yxxi.png",
-    "url": "/g/drift-hunters.html"
-  },
-  {
-    "name": "Drift Boss",
-    "img": "https://files.catbox.moe/yvcb0a",
-    "url": "/g/drift-boss.html"
-  },
-  {
-    "name": "Dreader",
-    "img": "https://files.catbox.moe/dcdggb.jpg",
-    "url": "/g/dreader.html"
-  },
-  {
-    "name": "DRIVE MAD",
-    "img": "https://files.catbox.moe/lybd4x.png",
-    "url": "/g/drive-mad.html"
-  },
-  {
-    "name": "Monster Tracks", 
-    "img": "https://files.catbox.moe/4dw29n.png",
-    "url": "/g/Monster_Tracks.html"
-  },
-  {
-    "name": "wbwwb",
-    "img": "https://files.catbox.moe/drzjlp",
-    "url": "/g/wbwwb.html"
-  },
-  {
-    "name": "Hole.io",
-    "img": "https://files.catbox.moe/jy89of.jpg",
-    "url": "/g/hole-io.html"
-  },
-  {
-    "name": "Geometry Dash",
-    "img": "https://files.catbox.moe/ty93rb.svg",
-    "url": "/g/geometry-dash.html"
-  },
-  {
-    "name": "Basketball Stars",
-    "img": "https://files.catbox.moe/3gfm2l",
-    "url": "/g/basketball-stars.html"
-  },
-  {
-    "name": "Slither.io",
-    "img": "https://files.catbox.moe/za2ki9",
-    "url": "/g/slither-io.html"
-  },
-  {
-    "name": "Snowball.io",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/207.png",
-    "url": "/g/snowball-io.html"
-  },
-  {
-    "name": "Just Fall.io",
-    "img": "https://files.catbox.moe/pnwe5y.png",
-    "url": "/g/just-fall-io.html"
-  },
-  {
-    "name": "Glahdihoppers", 
-    "img": "https://files.catbox.moe/156y2g",
-    "url": "/g/Gladihoppers.html"
-  },
-  {
-    "name": "Tomb of the Mask",
-    "img": "https://imglink.cc/cdn/-ZRZAoT8YQ.jpeg",
-    "url": "/g/tomb-of-the-mask.html"
-  },
-  {
-    "name": "Stickman Hook", 
-    "img": "https://files.catbox.moe/yfv8i8.png",
-    "url": "/g/Stickman_Hook.html"
-  },
-  {
-    "name": "Idle Ants", 
-    "img": "https://imglink.cc/cdn/F2wYUjoN_-.jpeg",
-    "url": "/g/idle-ants-main/"
-  },
-  {
-    "name": "Ragdoll Archers", 
-    "img": "https://imglink.cc/cdn/WlwKx9VCsP.png",
-    "url": "/g/ragdoll-archers.html"
-  },
-  {
-    "name": "Cookie Clicker", 
-    "img": "https://imglink.cc/cdn/cDibrTTyd4.jpeg",
-    "url": "/g/cookie-clicker.html"
-  },
-  {
-    "name": "Level Devil", 
-    "img": "assets/level-devil.png",
-    "url": "/g/level-devil.html"
-  },
-  {
-    "name": "Gunspin ",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/91.png",
-    "url": "/g/gunspin.html"
-  },
-  {
-    "name": "Sandtris",
-    "img": "https://imglink.cc/cdn/C3a7CLkLxu.jpeg",
-    "url": "/g/sandtris.html"
-  },
-  {
-    "name": "Sausage Flip",
-    "img": "https://imglink.cc/cdn/7-VzfaPLQV.png",
-    "url": "/g/sausage-flip.html"
-  },
-  {
-    "name": "Polytrack",
-    "img": "https://imglink.cc/cdn/va-RaT9IzE.png",
-    "url": "/g/polytrack.html"
-  },
-  {
-    "name": "Deadly Descent",
-    "img": "https://imglink.cc/cdn/EfJVFkpcWA.jpeg",
-    "url": "/g/deadly-descent.html"
-  },
-  {
-    "name": "Ragdoll Hit",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/44.png",
-    "url": "/g/ragdoll-hit.html"
-  },
-  {
-    "name": "Happy Wheels",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/624.png",
-    "url": "/g/happy-wheel.html"
-  },
-  {
-    "name": "Cluster Rush",
-    "img": "https://imglink.cc/cdn/sXrgXkW9Io.jpeg",
-    "url": "/g/cluster-rush.html"
-  },
-  {
-    "name": "Bitlife",
-    "img": "https://imglink.cc/cdn/_78cTZ0dhp.jpg",
-    "url": "/g/bitlife.html"
-  },
-  {
-    "name": "Space Waves",
-    "img": "https://imglink.cc/cdn/x0WUjAuR6b.png",
-    "url": "/g/space-waves.html"
-  },
-  {
-    "name": "Slow Roads",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/369.png",
-    "url": "/g/slow-roads.html"
-  },
-  {
-    "name": "Hill Climb Racing",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/157.png",
-    "url": "/g/hill-climb-racing.html"
-  },
-  {
-    "name": "Murder",
-    "img": "assets/murder.png",
-    "url": "/g/murder-story.html"
-  },
-  {
-    "name": "FNAF",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/38.png",
-    "url": "/g/fnaf-1.html"
-  },
-  {
-    "name": "FNAF 3",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/40.png",
-    "url": "/g/fnaf-3.html"
-  },
-  {
-    "name": "FNAF 2",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/39.png",
-    "url": "/g/fnaf-2.html"
-  },
-  {
-    "name": "FNAF 4",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/41.png",
-    "url": "/g/fnaf-4.html"
-  },
-  {
-    "name": "Sister Location",
-    "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/185.png",
-    "url": "/g/sl.html"
-  }
-
-
-  
+  { "name": "Red Ball 4", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/242.png", "category": "action", "url": "/g/red-ball-4.html" },
+  { "name": "Subway Surfers", "img": "https://imglink.cc/cdn/AFJ43ReIug.jpeg", "category": "action", "url": "/g/subway-surfers.html" },
+  { "name": "Slope", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/198.png", "category": "racing", "url": "/g/slope.html" },
+  { "name": "Slope 2 Player", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/368.png", "category": "racing", "url": "/g/slope-2.html" },
+  { "name": "Slope 3", "img": "https://slope3.com/storage/website/logo-slope.jpg", "category": "racing", "url": "/g/slope3.html" },
+  { "name": "Run 3", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/177.png", "category": "platformer", "url": "/g/run3.html" },
+  { "name": "Tetris", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/733.png", "category": "puzzle", "url": "https://shrimplab.vercel.app/projects/tetris/index.html" },
+  { "name": "1v1 Lol", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/58.png", "category": "shooter", "url": "/g/1v1.html" },
+  { "name": "Minecraft", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/182.png", "category": "action", "url": "/g/minecraft.html" },
+  { "name": "Block Blast", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/6.png", "category": "puzzle", "url": "/g/block-blast.html" },
+  { "name": "Pixel Panic", "img": "https://imglink.cc/cdn/zTJkMFR_bQ.png", "category": "racing", "url": "/g/pixel-panic.html" },
+  { "name": "Neon Warp", "img": "https://imglink.cc/cdn/tjUAy2cqBX.png", "category": "arcade", "url": "/g/neonwarp.html" },
+  { "name": "Crossy Road", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/24.png", "category": "arcade", "url": "/g/Crossy-Road.html" },
+  { "name": "Retro Bowl", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/33.png", "category": "sports", "url": "/g/Retro_Bowl.html" },
+  { "name": "Retro Bowl College", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/34.png", "category": "sports", "url": "/g/Retro_Bowl_College.html" },
+  { "name": "Tiny Fishing", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/108.png", "category": "casual", "url": "/g/tiny-fishing.html" },
+  { "name": "Fruit Ninja", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/261.png", "category": "arcade", "url": "/g/fruit-ninja.html" },
+  { "name": "Paper.io 2", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/102.png", "category": "multiplayer", "url": "/g/paper-io-2.html" },
+  { "name": "Basket Random", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/66.png", "category": "sports", "url": "/g/basket-random.html" },
+  { "name": "Soccer Random", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/739.png", "category": "sports", "url": "/g/soccerrandom.html" },
+  { "name": "Volley Random", "img": "https://files.catbox.moe/4c91xd.png", "category": "sports", "url": "/g/volleyrandom.html" },
+  { "name": "Boxing Random", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/77.png", "category": "sports", "url": "/g/boxingrandom.html" },
+  { "name": "BTD 1", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/71.png", "category": "puzzle", "url": "/g/clbloonsTD1.html" },
+  { "name": "BTD 2", "img": "https://imglink.cc/cdn/dU43OS8Beg.png", "category": "puzzle", "url": "/g/clbloonsTD2.html" },
+  { "name": "BTD 3", "img": "https://imglink.cc/cdn/KnhdKH8Trb.png", "category": "puzzle", "url": "/g/clbloonsTD3.html" },
+  { "name": "BTD 4", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/74.png", "category": "puzzle", "url": "/g/clbloonsTD4.html" },
+  { "name": "BTD 5", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/75.png", "category": "puzzle", "url": "/g/clbloonsTD5.html" },
+  { "name": "TrollPulse", "img": "https://imglink.cc/cdn/dnMCE9X0lB.png", "category": "casual", "url": "/g/trollpulse.html" },
+  { "name": "Escape Road", "img": "https://files.catbox.moe/mpahmq", "category": "racing", "url": "/g/Escape-Road.html" },
+  { "name": "Escape Road 2", "img": "https://files.catbox.moe/2k0h43.png", "category": "racing", "url": "/g/Escape-Road-2.html" },
+  { "name": "Escape Road 3", "img": "https://imglink.cc/cdn/jZ8dQv71jn.jpeg", "category": "racing", "url": "/g/escaperoad3.html" },
+  { "name": "Snow Rider", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/119.png", "category": "racing", "url": "/g/Snow-Rider-3D.html" },
+  { "name": "Bubble Shooter", "img": "https://files.catbox.moe/91u459.jpg", "category": "puzzle", "url": "/g/bubble-shooter.html" },
+  { "name": "Granny", "img": "https://files.catbox.moe/nr5jcu.png", "category": "horror", "url": "/g/granny.html" },
+  { "name": "Granny 2", "img": "https://files.catbox.moe/q1sxm7", "category": "horror", "url": "/g/granny2.html" },
+  { "name": "Baldi's Basics plus", "img": "https://files.catbox.moe/0oc44j.png", "category": "action", "url": "/g/baldis-plus.html" },
+  { "name": "Super Hot", "img": "https://files.catbox.moe/0z8kkg.png", "category": "shooter", "url": "/g/super-hot.html" },
+  { "name": "Drift Hunters", "img": "https://files.catbox.moe/l3yxxi.png", "category": "racing", "url": "/g/drift-hunters.html" },
+  { "name": "Drift Boss", "img": "https://files.catbox.moe/yvcb0a", "category": "racing", "url": "/g/drift-boss.html" },
+  { "name": "Dreader", "img": "https://files.catbox.moe/dcdggb.jpg", "category": "action", "url": "/g/dreader.html" },
+  { "name": "DRIVE MAD", "img": "https://files.catbox.moe/lybd4x.png", "category": "racing", "url": "/g/drive-mad.html" },
+  { "name": "Monster Tracks", "img": "https://files.catbox.moe/4dw29n.png", "category": "racing", "url": "/g/Monster_Tracks.html" },
+  { "name": "wbwwb", "img": "https://files.catbox.moe/drzjlp", "category": "casual", "url": "/g/wbwwb.html" },
+  { "name": "Hole.io", "img": "https://files.catbox.moe/jy89of.jpg", "category": "multiplayer", "url": "/g/hole-io.html" },
+  { "name": "Geometry Dash", "img": "https://files.catbox.moe/ty93rb.svg", "category": "arcade", "url": "/g/geometry-dash.html" },
+  { "name": "Basketball Stars", "img": "https://files.catbox.moe/3gfm2l", "category": "sports", "url": "/g/basketball-stars.html" },
+  { "name": "Slither.io", "img": "https://files.catbox.moe/za2ki9", "category": "multiplayer", "url": "/g/slither-io.html" },
+  { "name": "Snowball.io", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/207.png", "category": "multiplayer", "url": "/g/snowball-io.html" },
+  { "name": "Just Fall.io", "img": "https://files.catbox.moe/pnwe5y.png", "category": "multiplayer", "url": "/g/just-fall-io.html" },
+  { "name": "Glahdihoppers", "img": "https://files.catbox.moe/156y2g", "category": "action", "url": "/g/Gladihoppers.html" },
+  { "name": "Tomb of the Mask", "img": "https://imglink.cc/cdn/-ZRZAoT8YQ.jpeg", "category": "arcade", "url": "/g/tomb-of-the-mask.html" },
+  { "name": "Stickman Hook", "img": "https://files.catbox.moe/yfv8i8.png", "category": "arcade", "url": "/g/Stickman_Hook.html" },
+  { "name": "Idle Ants", "img": "https://imglink.cc/cdn/F2wYUjoN_-.jpeg", "category": "casual", "url": "/g/idle-ants-main/" },
+  { "name": "Ragdoll Archers", "img": "https://imglink.cc/cdn/WlwKx9VCsP.png", "category": "shooter", "url": "/g/ragdoll-archers.html" },
+  { "name": "Cookie Clicker", "img": "https://imglink.cc/cdn/cDibrTTyd4.jpeg", "category": "casual", "url": "/g/cookie-clicker.html" },
+  { "name": "Level Devil", "img": "assets/level-devil.png", "category": "arcade", "url": "/g/level-devil.html" },
+  { "name": "Gunspin", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/91.png", "category": "shooter", "url": "/g/gunspin.html" },
+  { "name": "Sandtris", "img": "https://imglink.cc/cdn/C3a7CLkLxu.jpeg", "category": "puzzle", "url": "/g/sandtris.html" },
+  { "name": "Sausage Flip", "img": "https://imglink.cc/cdn/7-VzfaPLQV.png", "category": "casual", "url": "/g/sausage-flip.html" },
+  { "name": "Polytrack", "img": "https://imglink.cc/cdn/va-RaT9IzE.png", "category": "racing", "url": "/g/polytrack.html" },
+  { "name": "Deadly Descent", "img": "https://imglink.cc/cdn/EfJVFkpcWA.jpeg", "category": "action", "url": "/g/deadly-descent.html" },
+  { "name": "Ragdoll Hit", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/44.png", "category": "shooter", "url": "/g/ragdoll-hit.html" },
+  { "name": "Happy Wheels", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/624.png", "category": "action", "url": "/g/happy-wheel.html" },
+  { "name": "Cluster Rush", "img": "https://imglink.cc/cdn/sXrgXkW9Io.jpeg", "category": "action", "url": "/g/cluster-rush.html" },
+  { "name": "Bitlife", "img": "https://imglink.cc/cdn/_78cTZ0dhp.jpg", "category": "casual", "url": "/g/bitlife.html" },
+  { "name": "Space Waves", "img": "https://imglink.cc/cdn/x0WUjAuR6b.png", "category": "arcade", "url": "/g/space-waves.html" },
+  { "name": "Slow Roads", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/369.png", "category": "racing", "url": "/g/slow-roads.html" },
+  { "name": "Hill Climb Racing", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/157.png", "category": "racing", "url": "/g/hill-climb-racing.html" },
+  { "name": "Murder", "img": "assets/murder.png", "category": "casual", "url": "/g/murder-story.html" },
+  { "name": "FNAF", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/38.png", "category": "horror", "url": "/g/fnaf-1.html" },
+  { "name": "FNAF 2", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/39.png", "category": "horror", "url": "/g/fnaf-2.html" },
+  { "name": "FNAF 3", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/40.png", "category": "horror", "url": "/g/fnaf-3.html" },
+  { "name": "FNAF 4", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/41.png", "category": "horror", "url": "/g/fnaf-4.html" },
+  { "name": "Sister Location", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/185.png", "category": "horror", "url": "/g/sl.html" },
+  { "name": "Stick Fighter", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/371.png", "category": "action", "url": "/g/stick-fighter.html" },
+  { "name": "Moto X3M", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/96.png", "category": "racing", "url": "/g/moto-x3m.html" },
+  { "name": "OvO", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/1.png", "category": "platformer", "url": "/g/ovo.html" },
+  { "name": "Dreadhead Parkour", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/310.png", "category": "action", "url": "/g/dreadhead-parkour.html" },
+  { "name": "Monkey Mart", "img": "https://imglink.cc/cdn/LA6Yrc2553.jpeg", "category": "casual", "url": "/g/monkey-mart.html" },
+  { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" }
 ]

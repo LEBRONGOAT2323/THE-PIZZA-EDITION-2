@@ -6,10 +6,12 @@ const CATEGORIES = [
     { slug: 'action',      label: 'Action' },
     { slug: 'arcade',      label: 'Arcade' },
     { slug: 'racing',      label: 'Racing' },
-    { slug: 'shooting',    label: 'Shooting' },
     { slug: 'sports',      label: 'Sports' },
     { slug: 'puzzle',      label: 'Puzzle' },
+    { slug: 'platformer',  label: 'Platformer' },
+    { slug: 'shooter',    label: 'Shooter' },
     { slug: 'multiplayer', label: 'Multiplayer' },
+    { slug: 'horror',      label: 'Horror' },
     { slug: 'casual',      label: 'Casual' }
 ];
 
@@ -58,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
     new ResizeObserver(() => {
         const changed = layoutGrid();
         if (changed && gamesDataset.length) renderGrid();
+        if (IS_PLAY_PAGE) limitMoreGrid();
     }).observe(document.querySelector('main'));
 });
 
@@ -71,6 +74,8 @@ function initPage() {
            class="block w-full px-4 py-2 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10 hover:text-pz-accent transition-colors">
             ${c.label}
         </a>`).join('');
+
+    renderFooterCategories();
 
     if (!IS_CATEGORY_PAGE) return;
 
@@ -91,6 +96,29 @@ function initPage() {
     bar.classList.add('flex');
 
     updateCategoryUI();
+}
+
+// Footer "Popular Categories" list: built from CATEGORIES so new categories show up automatically.
+// Add an entry to FOOTER_LABELS to give a category custom wording; the rest read "<Label> Games".
+const FOOTER_LABELS = {
+    racing:   'Racing Games',
+    sports:   'Sports Matches',
+    action:   'Action & Reflex',
+    shooting: 'Shooting'
+};
+
+function renderFooterCategories() {
+    const heading = Array.from(document.querySelectorAll('footer h5'))
+        .find(h => /popular categories/i.test(h.textContent));
+    const list = heading && heading.nextElementSibling;
+    if (!list || list.tagName !== 'UL') return;
+
+    list.innerHTML = CATEGORIES.map(c => `
+        <li>
+            <button onclick="filterCategory('${c.slug}')" class="text-white/80 hover:text-pz-accent transition-colors">
+                ${escapeHtml(FOOTER_LABELS[c.slug] || c.label + ' Games')}
+            </button>
+        </li>`).join('');
 }
 
 // Highlight the active pill / dropdown item and update the tab title
@@ -197,6 +225,7 @@ async function fetchGamesCatalog() {
 
         if (IS_PLAY_PAGE) {
             await loadPartners();
+            await loadDescriptions();
             renderPlayPage();
         } else {
             renderGrid();
@@ -716,12 +745,12 @@ function renderPlayPage() {
     document.title = `${game.name} - Pizza Edition 2`;
     registerHistoryPlayback(game.id);
 
-    // Related games: same category first, then everything else
-    const others = gamesDataset.filter(g => g.id !== game.id);
-    const related = [
-        ...others.filter(g => g.category === game.category),
-        ...others.filter(g => g.category !== game.category)
-    ];
+    // Other games on the site, in random order (a fresh shuffle on every page load)
+    const related = gamesDataset.filter(g => g.id !== game.id);
+    for (let i = related.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [related[i], related[j]] = [related[j], related[i]];
+    }
 
     // Left column = 14 slots (2 x 7). Partner sites (partners.json) come first,
     // and regular games fill every slot that's left over.
@@ -734,9 +763,11 @@ function renderPlayPage() {
     const RIGHT = 15;
     const right = related.slice(leftGames.length, leftGames.length + RIGHT);
 
-    // Bottom grid: everything not already shown in the side columns on wide screens
-    const shownInSides = leftGames.length + RIGHT;
-    const moreTiles = related.map((g, i) => miniTile(g, i < shownInSides ? 'more-hide-xl' : ''));
+    // Bottom grid: random games that aren't already in the side columns.
+    // Only 3 rows are ever shown (limitMoreGrid() trims it to fit the screen width).
+    const MORE_MAX = 45;
+    const moreStart = leftGames.length + RIGHT;
+    const moreTiles = related.slice(moreStart, moreStart + MORE_MAX).map(g => miniTile(g));
 
     const name = escapeHtml(game.name);
     const byLine = game.author ? 'BY: ' + escapeHtml(game.author) : escapeHtml(game.category);
@@ -748,6 +779,14 @@ function renderPlayPage() {
         : `<div class="absolute inset-0 flex items-center justify-center text-center p-6 text-pz-muted">
                <p>This game doesn't have a URL yet.<br>Add one in <code class="text-pz-accent">games.json</code>.</p>
            </div>`;
+
+    // Description section (never let it break the rest of the page)
+    let infoHtml = '';
+    try {
+        infoHtml = buildGameInfo(game);
+    } catch (e) {
+        console.error('Game description failed to render:', e);
+    }
 
     root.innerHTML = `
         <div class="play-layout">
@@ -802,12 +841,29 @@ function renderPlayPage() {
             </div>
         </div>
 
-        <!-- Everything else. Items already shown in the side columns are hidden on wide screens. -->
+        <!-- Random games under the player: limited to 3 rows -->
         <div class="more-grid mt-6">
             ${moreTiles.join('')}
-        </div>`;
+        </div>
+
+        <!-- Game description (from descriptions.json, or a generic fallback) -->
+        ${infoHtml}`;
 
     updateVoteButtons();
+    limitMoreGrid();
+}
+
+// Show only 3 rows of the bottom grid, however many columns fit at this screen width
+function limitMoreGrid() {
+    const grid = document.querySelector('.more-grid');
+    if (!grid) return;
+
+    const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+    const max = cols * 3;
+
+    Array.from(grid.children).forEach((tile, i) => {
+        tile.style.display = i < max ? '' : 'none';
+    });
 }
 
 function toggleFullscreen() {
@@ -846,6 +902,198 @@ function updateVoteButtons() {
     up.classList.toggle('text-white', vote !== 'up');
     down.classList.toggle('text-pz-hot', vote === 'down');
     down.classList.toggle('text-white', vote !== 'down');
+}
+
+
+// ---------- Game descriptions (descriptions.json) ----------
+// Each game can have an entry in descriptions.json, keyed by its name (not case-sensitive):
+//   "Drive Mad": {
+//     "rating": 4.4, "votes": 4696,            (optional - pill is hidden if missing)
+//     "intro": ["paragraph 1", "paragraph 2"],
+//     "howTo": "...", "controls": "...", "unblocked": "...",
+//     "similar": [{ "name": "Hill Climb Racing", "why": "is the classic ..." }],
+//     "creator": "...", "devices": "..."
+//   }
+// Games without an entry get the generic text below.
+let descriptionsData = {};
+
+async function loadDescriptions() {
+    try {
+        const res = await fetch('descriptions.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const raw = await res.json();
+
+        descriptionsData = {};
+        Object.keys(raw).forEach(k => {
+            descriptionsData[k.trim().toLowerCase()] = raw[k];
+        });
+    } catch (e) {
+        console.warn('descriptions.json not loaded, using generic descriptions:', e);
+        descriptionsData = {};
+    }
+}
+
+const DESC_FALLBACK = {
+    action: {
+        how: 'Stay calm, learn the pattern of each obstacle, and keep moving. Most mistakes come from rushing, so take a few runs to learn the rhythm.',
+        controls: 'Desktop: arrow keys or WASD to move, Space to jump or act. Touch screens: tap or swipe on the screen.'
+    },
+    arcade: {
+        how: 'Short rounds, quick restarts. Focus on beating your own best score and learn from each attempt.',
+        controls: 'Desktop: arrow keys, WASD or the mouse depending on the game. Touch screens: tap or swipe.'
+    },
+    racing: {
+        how: 'Smooth inputs beat flooring it. Ease off before tight turns and ramps, and use your mistakes to learn the track.',
+        controls: 'Desktop: arrow keys or WASD to steer, accelerate and brake. Touch screens: use the on-screen buttons or tap each side of the screen.'
+    },
+    shooting: {
+        how: 'Aim before you fire, keep moving, and pay attention to your ammo and cover.',
+        controls: 'Desktop: mouse to aim and click to shoot, WASD or arrow keys to move. Touch screens: use the on-screen controls.'
+    },
+    sports: {
+        how: 'Learn the timing of each shot, throw or hit, then build on it. Practice a few rounds before going for a win.',
+        controls: 'Desktop: arrow keys or WASD to move and the action keys shown in game. Touch screens: use the on-screen buttons.'
+    },
+    puzzle: {
+        how: "Think a move or two ahead and don't rush. A good plan early makes the later levels much easier.",
+        controls: 'Desktop: mouse to click and drag, or the keys shown in game. Touch screens: tap and drag.'
+    },
+    multiplayer: {
+        how: 'Start small, stay away from bigger players, and grow steadily. Staying alive matters more than a fast start.',
+        controls: 'Desktop: move with the mouse or WASD. Touch screens: drag your finger on the screen.'
+    },
+    casual: {
+        how: "Take it at your own pace. There's no pressure, so experiment and see what works.",
+        controls: 'Desktop: mouse to click, with the keyboard for anything extra. Touch screens: tap.'
+    }
+};
+
+function findGameByName(name) {
+    const n = String(name).trim().toLowerCase();
+    const direct = gamesDataset.find(g => g.name.trim().toLowerCase() === n);
+    if (direct) return direct;
+
+    // also match a game's displayName from descriptions.json (e.g. "Redball 4" -> "Red Ball 4")
+    const key = Object.keys(descriptionsData).find(k =>
+        String(descriptionsData[k].displayName || '').trim().toLowerCase() === n);
+    return key ? gamesDataset.find(g => g.name.trim().toLowerCase() === key) : undefined;
+}
+
+function buildGameInfo(game) {
+    const info = descriptionsData[game.name.trim().toLowerCase()] || {};
+    const plainName = (info.displayName || game.name).trim();   // displayName lets a game use a different spelling in the text
+
+    const name = escapeHtml(plainName);
+    const cat = CATEGORIES.find(c => c.slug === game.category);
+    const catLabel = cat ? cat.label : 'Casual';
+    const fb = DESC_FALLBACK[game.category] || DESC_FALLBACK.casual;
+
+    const toArray = v => (!v ? [] : Array.isArray(v) ? v : [v]);
+
+    const intro = toArray(info.intro).length
+        ? toArray(info.intro)
+        : [`${plainName} is a free ${catLabel.toLowerCase()} game that runs right in your browser. Jump in, learn the basics in a minute, and see how far you can get.`];
+
+    // Tags: shown in the breadcrumb and as pills at the bottom.
+    // Tags matching a category link to it; others (e.g. "Platformer") are plain pills.
+    const tagList = toArray(info.tags).length ? toArray(info.tags) : [catLabel];
+    const tagMatch = t => CATEGORIES.find(c =>
+        c.slug === String(t).toLowerCase() || c.label.toLowerCase() === String(t).toLowerCase());
+    const tagsHtml = tagList.map(t => {
+        const m = tagMatch(t);
+        return m
+            ? `<a class="gi-tag" href="${categoryUrl(m.slug)}">${escapeHtml(m.label)}</a>`
+            : `<span class="gi-tag">${escapeHtml(t)}</span>`;
+    }).join('');
+    const firstMatch = tagMatch(tagList[0]);
+    const crumbCat = firstMatch
+        ? `<a href="${categoryUrl(firstMatch.slug)}">${escapeHtml(firstMatch.label)}</a>`
+        : `<span>${escapeHtml(tagList[0])}</span>`;
+    const unblockedTitle = escapeHtml(info.unblockedTitle || (plainName + ' Unblocked'));
+
+    // Rating pills only show when real numbers are provided
+    let pills = '';
+    if (info.rating) {
+        pills += `<span class="gi-pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>${escapeHtml(info.rating)}/5</span>`;
+    }
+    if (info.votes) {
+        pills += `<span class="gi-pill">${escapeHtml(Number(info.votes).toLocaleString())} VOTES</span>`;
+    }
+
+    // Similar games: from the entry if given, otherwise 3 from the same category
+    let similar = Array.isArray(info.similar) ? info.similar : [];
+    if (!similar.length) {
+        similar = gamesDataset
+            .filter(g => g.id !== game.id && g.category === game.category)
+            .slice(0, 3)
+            .map(g => ({ name: g.name.trim(), why: `is another ${catLabel.toLowerCase()} game on Pizza Edition.` }));
+    }
+
+    const similarItems = similar.map(s => {
+        const match = findGameByName(s.name);
+        const label = escapeHtml(s.name);
+        const nameHtml = match
+            ? `<a href="${playUrl(match)}">${label}</a>`
+            : `<strong>${label}</strong>`;
+        return `<li>${nameHtml} ${escapeHtml(s.why || '')}</li>`;
+    }).join('');
+
+    const howTo = info.howTo || fb.how;
+    const controls = info.controls || fb.controls;
+    const unblocked = info.unblocked ||
+        `${plainName} runs right here in the browser with nothing to install, so it plays on school Chromebooks and other locked-down networks.`;
+    const creator = info.creator ||
+        `${plainName} is hosted on Pizza Edition 2 so you can play it in your browser.`;
+    // Creator line: names listed in "creatorLinks" ([{ "name": "...", "url": "https://..." }]) become links
+    let creatorHtml = escapeHtml(creator);
+    toArray(info.creatorLinks).forEach(l => {
+        if (!l || !l.name || !l.url) return;
+        const n = escapeHtml(l.name);
+        creatorHtml = creatorHtml.split(n).join(
+            `<a class="gi-link" href="${escapeHtml(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${n}</a>`);
+    });
+
+    const devices = info.devices ||
+        `${plainName} runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary between phones, tablets, and computers.`;
+
+    return `
+        <section class="game-info">
+            <nav class="gi-crumbs" aria-label="Breadcrumb">
+                <a href="index.html">Pizza Edition</a><span class="sep">&#9656;</span>
+                ${crumbCat}<span class="sep">&#9656;</span>
+                <span>${name}</span>
+            </nav>
+
+            <h2 class="gi-title">${name} Unblocked</h2>
+            ${pills ? `<div class="gi-pills">${pills}</div>` : ''}
+
+            <img class="gi-cover" src="${game.img}" alt="${name}"
+                 onerror="this.src='https://placehold.co/256x256/1f1f1f/ffffff?text=${encodeURIComponent(plainName)}'">
+
+            <div class="gi-text">
+                ${intro.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+
+                <h3 class="gi-h">How to play ${name}?</h3>
+                <p>${escapeHtml(howTo)}</p>
+
+                <h3 class="gi-h">Controls</h3>
+                <p>${escapeHtml(controls)}</p>
+
+                <h3 class="gi-h">${unblockedTitle}</h3>
+                <p>${escapeHtml(unblocked)}</p>
+
+                <h3 class="gi-h">Similar games on Pizza Edition</h3>
+                <ul class="gi-list">${similarItems}</ul>
+
+                <h3 class="gi-h">Who created ${name}?</h3>
+                <p>${creatorHtml}</p>
+
+                <h3 class="gi-h">Can I play ${name} on mobile devices and desktop?</h3>
+                <p>${escapeHtml(devices)}</p>
+
+                <div class="gi-tags">${tagsHtml}</div>
+            </div>
+        </section>`;
 }
 
 
