@@ -6,10 +6,10 @@
   { "name": "Slope 3", "img": "https://slope3.com/storage/website/logo-slope.jpg", "category": "racing", "url": "/g/slope3.html" },
   { "name": "Run 3", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/177.png", "category": "platformer", "url": "/g/run3.html" },
   { "name": "Tetris", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/733.png", "category": "puzzle", "url": "https://shrimplab.vercel.app/projects/tetris/index.html" },
-  { "name": "1v1 Lol", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/58.png", "category": "shooter", "url": "/g/1v1.html" },
+  { "name": "1v1 Lol", "img": "https://imglink.cc/cdn/Qefj5tOkv4.png", "category": "shooter", "url": "/g/1v1.html" },
   { "name": "Minecraft", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/182.png", "category": "action", "url": "/g/minecraft.html" },
   { "name": "Block Blast", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/6.png", "category": "puzzle", "url": "/g/block-blast.html" },
-  { "name": "Pixel Panic", "img": "https://imglink.cc/cdn/zTJkMFR_bQ.png", "category": "racing", "url": "/g/pixel-panic.html" },
+  { "name": "Pixel Panic", "img": "https://imglink.cc/cdn/7R7j3-LIJy.png", "category": "racing", "url": "/g/pixel-panic.html" },
   { "name": "Neon Warp", "img": "https://imglink.cc/cdn/tjUAy2cqBX.png", "category": "arcade", "url": "/g/neonwarp.html" },
   { "name": "Crossy Road", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/24.png", "category": "arcade", "url": "/g/Crossy-Road.html" },
   { "name": "Retro Bowl", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/33.png", "category": "sports", "url": "/g/Retro_Bowl.html" },
@@ -48,7 +48,7 @@
   { "name": "Slither.io", "img": "https://files.catbox.moe/za2ki9", "category": "multiplayer", "url": "/g/slither-io.html" },
   { "name": "Snowball.io", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/207.png", "category": "multiplayer", "url": "/g/snowball-io.html" },
   { "name": "Just Fall.io", "img": "https://files.catbox.moe/pnwe5y.png", "category": "multiplayer", "url": "/g/just-fall-io.html" },
-  { "name": "Glahdihoppers", "img": "https://files.catbox.moe/156y2g", "category": "action", "url": "/g/Gladihoppers.html" },
+  { "name": "Gladihoppers", "img": "https://files.catbox.moe/156y2g", "category": "action", "url": "/g/Gladihoppers.html" },
   { "name": "Tomb of the Mask", "img": "https://imglink.cc/cdn/-ZRZAoT8YQ.jpeg", "category": "arcade", "url": "/g/tomb-of-the-mask.html" },
   { "name": "Stickman Hook", "img": "https://files.catbox.moe/yfv8i8.png", "category": "arcade", "url": "/g/Stickman_Hook.html" },
   { "name": "Idle Ants", "img": "https://imglink.cc/cdn/F2wYUjoN_-.jpeg", "category": "casual", "url": "/g/idle-ants-main/" },
@@ -78,5 +78,6 @@
   { "name": "OvO", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/1.png", "category": "platformer", "url": "/g/ovo.html" },
   { "name": "Dreadhead Parkour", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/310.png", "category": "action", "url": "/g/dreadhead-parkour.html" },
   { "name": "Monkey Mart", "img": "https://imglink.cc/cdn/LA6Yrc2553.jpeg", "category": "casual", "url": "/g/monkey-mart.html" },
-  { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" }
+  { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" },
+  { "name": "Stacktris", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "puzzle", "url": "/g/stacktris.html" }
 ]

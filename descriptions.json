@@ -2107,5 +2107,22 @@
   ],
   "creator": "Eggy Car was created by Beedo Games.",
   "devices": "Eggy Car runs in your browser on desktop and phones, with keyboard controls on a computer and on-screen pedals on touch devices."
+},
+"Stacktris": {
+      "tags": ["Puzzle"],
+  "intro": [
+    "Stacktris is a physics-based take on Tetris. Instead of dropping blocks into a tidy well and clearing rows, you stack tetrominoes, the same four-square shapes from Tetris, onto a small platform and try to build the tallest tower you can. Nothing disappears, so every piece you place stays in the tower and has to stay balanced.",
+    "That changes the puzzle completely. A piece that looks like a perfect fit can still tip, slide or knock the pieces beneath it, so the challenge is about balance and patience, not speed. Stacktris was made by Fancade, the same creator behind Drive Mad and Monster Tracks, and was released in February 2023."
+  ],
+  "howTo": "Build a wide, flat base first, and place pieces flat side down whenever you can. Avoid leaving gaps that the next piece will rest on unevenly, and use the long pieces to span across, not to build tall and narrow. Take your time, because there is no rush, and it is better to wait for a piece to settle than to add another on top of a wobble.",
+  "controls": "Desktop: Use the mouse or the keys shown in the game to move and rotate each piece, then drop it into place. Touch screens: use the on-screen controls or drag the piece.",
+  "unblockedTitle": "Play Stacktris unblocked",
+  "similar": [
+    {"name": "Tetris", "why": "is the classic falling-block puzzle that Stacktris is built on."},
+    {"name": "Sandtris", "why": "mixes falling blocks with sand that settles."},
+    {"name": "Block Blast", "why": "is a no-timer block puzzle built on planning ahead."}
+  ],
+  "creator": "Stacktris was created by Fancade.",
+  "devices": "Stacktris runs in your browser on desktop and also works on phones and tablets with touch controls."
 }
 }
