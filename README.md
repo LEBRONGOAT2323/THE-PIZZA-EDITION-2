@@ -80,7 +80,6 @@ All games remain the property of their original creators. Credit and source link
 
 - [ ] Search bar
 - [ ] Favorites / recently played
-- [ ] [add your next ideas]
 
 ---
 
