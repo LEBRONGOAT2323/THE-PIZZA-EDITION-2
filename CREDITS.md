@@ -95,7 +95,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 
 ## Notes
 
-- **Red Ball 4:** the `creator` field says FDG, but the intro says it was made by Yohoho Games. One of these should be checked and corrected in `descriptions.json`.
+- **Red Ball 4:** the `creator` field says FDG, but the intro says it was made by Yohoho Games.
 - **Dreadhead Parkour:** the description says it was published by gametornado, not that they created it.
 - **Slope:** the description says it was published by Y8, and its `creator` field credits Y8.
 - Game names and trademarks belong to their respective owners.
