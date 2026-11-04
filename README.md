@@ -4,8 +4,7 @@ A fast, browser-based game hub with a searchable catalog, category pages, and a 
 
 **▶ Live site:** `https://pizza-edition-2.netlify.app`.
 
-![THE PIZZA EDITION 2 screenshot](assets/screenshot.png)
-<!-- TODO: add a real screenshot or GIF of the home page at assets/screenshot.png -->
+![THE PIZZA EDITION 2 Screenshot](assets/Screenshot.png)
 
 > **Status:** 🟢 Actively developed. This is the main project, and it replaces [UNBLEEKED](https://github.com/LEBRONGOAT2323/unbleeked) and [PHANTOM](https://github.com/LEBRONGOAT2323/PHANTOM).
 
@@ -20,7 +19,6 @@ A fast, browser-based game hub with a searchable catalog, category pages, and a 
 - 🤝 **Partners** – a partners list loaded from a data file
 - ⚡ **Lightweight** – plain HTML, CSS, and JavaScript with no build step
 
-<!-- TODO: add any other features (search, favorites, settings, themes, etc.) -->
 
 ## Run it
 
