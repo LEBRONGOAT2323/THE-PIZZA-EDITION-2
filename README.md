@@ -71,6 +71,12 @@ The site is **data-driven**: the content lives in JSON files and `app.js` builds
 2. Add an entry for it in `games.json`.
 3. Add its description in `descriptions.json`.
 
+### What I learned so far
+* A JSON file holding all games is much better than pulling from an external JSON file.
+* Game cards arranged in unique ways catch more attention than boring standard grids.
+* Having categories keeps everything very organized.
+* Having a bunch of different HTML files doesn't mean the project is better.
+
 
 ## Credits and game ownership
 
@@ -78,7 +84,7 @@ All games remain the property of their original creators. Credit and source link
 
 ## Roadmap
 
-- [ ] Search bar
+- [ ] More games
 - [ ] Favorites / recently played
 
 ---
