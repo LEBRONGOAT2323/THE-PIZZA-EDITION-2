@@ -87,6 +87,10 @@ All games remain the property of their original creators. Credit and source link
 - [ ] More games
 - [ ] Favorites / recently played
 
+## License
+
+MIT License © 2026 LEBRONGOAT2323. See LICENSE.
+
 ---
 
 Built by [LEBRONGOAT2323](https://github.com/LEBRONGOAT2323).
