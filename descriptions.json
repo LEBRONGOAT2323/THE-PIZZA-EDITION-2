@@ -2124,5 +2124,23 @@
   ],
   "creator": "Stacktris was created by Fancade.",
   "devices": "Stacktris runs in your browser on desktop and also works on phones and tablets with touch controls."
+},
+"Sandboxels": {
+  "tags": ["Casual"],
+  "intro": [
+    "Sandboxels is a falling-sand simulator that runs in your browser. You pick an element, draw it onto the screen, and watch it behave: sand piles up, water flows, fire spreads, metal conducts electricity and ice melts. There are no levels and no score, so the game is simply a place to experiment and see what happens.",
+    "It has more than 500 elements, from basic powders and liquids to plants, animals and machines, with heat, electricity, density and chemical reactions that all affect each other. You can build an ecosystem, cook with a stove, wire a circuit or blow everything up and see what is left. Sandboxels was made by R74n, first released in December 2021, and supports mods made by the community."
+  ],
+  "howTo": "Start with a few basic elements, such as sand, water and fire, and see how they react when they touch. Try combining heat or electricity with different materials, since many reactions only happen when the right things meet. Use the pause key when you want to place things without the simulation running, and use the element info screen to learn what each material does.",
+  "controls": "Desktop: Left click to draw, right click to erase, and middle click to pick the element under the cursor. Press Space or P to pause the simulation, and hold Shift with the Heat, Cool or Shock tools to make them stronger. Open Settings for more options. Touch screens: tap and drag to draw, though some features work better with a mouse.",
+  "unblockedTitle": "Play Sandboxels unblocked",
+  "similar": [
+    {"name": "Minecraft", "why": "is another open-ended sandbox where you build whatever you like."},
+    {"name": "Tiny Fishing", "why": "is a relaxed game that rewards experimenting with upgrades."},
+    {"name": "Cookie Clicker", "why": "is another game where you can sit back and watch things grow."}
+  ],
+  "creator": "Sandboxels was created by R74nn but this specific version was ported by LEBRONGOAT2323.",
+  "creatorLinks": [{ "name": "R74n", "url": "https://r74n.com/" }, { "name": "LEBRONGOAT2323", "url": "https://github.com/LEBRONGOAT2323" }],
+  "devices": "Sandboxels runs in your browser on desktop and also works on phones and tablets, though touch support is not as smooth as using a mouse. A paid version is also available on Steam."
 }
 }

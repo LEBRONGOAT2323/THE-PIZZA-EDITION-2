@@ -79,5 +79,6 @@
   { "name": "Dreadhead Parkour", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/310.png", "category": "action", "url": "/g/dreadhead-parkour.html" },
   { "name": "Monkey Mart", "img": "https://imglink.cc/cdn/LA6Yrc2553.jpeg", "category": "casual", "url": "/g/monkey-mart.html" },
   { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" },
-  { "name": "Stacktris", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "puzzle", "url": "/g/stacktris.html" }
+  { "name": "Stacktris", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "puzzle", "url": "/g/stacktris.html" },
+  { "name": "Sandboxels", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "casual", "url": "/g/sandboxels/index.html" }
 ]
