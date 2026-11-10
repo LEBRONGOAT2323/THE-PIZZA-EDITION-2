@@ -50,6 +50,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Retro Bowl | New Star Games |
 | Retro Bowl College | New Star Games |
 | Run 3 | Joseph Cloutier |
+| Sandboxels | r74n, ported by LEBRONGOAT2323 |
 | Sister Location | Scott Cawthon |
 | Slither.io | Steve Howse |
 | Slope | Y8 |
