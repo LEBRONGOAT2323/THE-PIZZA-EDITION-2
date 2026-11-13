@@ -2160,5 +2160,23 @@
   "creator": "Ragdoll Fall also known as ragdoll Drop, was created by Ericetto.",
   "creatorLinks": [{ "name": "Ericetto", "url": "https://ericetto.com/" }],
   "devices": "Ragdoll Fall runs directly in your browser on desktop computers, phones and tablets. No download or installation is required."
+},
+"Capybara Clicker": {
+  "tags": ["Casual"],
+  "intro": [
+    "Capybara Clicker is an idle clicking game where your goal is to build the biggest capybara population possible. Start with a single capybara and click to grow your population, earning more capybaras with every tap. As your numbers increase, you can purchase upgrades that make your population grow faster and faster.",
+    "The game features a variety of upgrades, automatic clickers, weather effects and unlockable capybara skins. You can customize your capybara's appearance, change the environment and watch your population grow into the billions and beyond. If you want an even bigger boost, you can use the Ascend feature to restart your progress in exchange for permanent bonuses. Capybara Clicker was developed by Euclides and originally released in November 2022."
+  ],
+  "howTo": "Start by clicking the large capybara to increase your population. Spend your capybaras on upgrades that improve how many you earn per click or generate automatically over time. Keep purchasing upgrades to speed up your progress and unlock new skins and weather effects. Once you've built up enough progress, consider using Ascend to restart with permanent bonuses that make your next run faster.",
+  "controls": "Desktop: Use the left mouse button to click the capybara, purchase upgrades and navigate the menus. Mobile: Tap the capybara to earn more capybaras and tap the upgrade buttons to purchase improvements.",
+  "unblockedTitle": "Play Capybara Clicker unblocked",
+  "similar": [
+    {"name": "Cookie Clicker", "why": "is another addictive incremental game where you click to build an enormous production empire."},
+    {"name": "Planet Clicker", "why": "lets you generate resources, purchase upgrades and expand your production."},
+    {"name": "Tiny Fishing", "why": "features simple gameplay with upgrades and satisfying progression."}
+  ],
+  "creator": "Capybara Clicker was created by Euclides.",
+  "creatorLinks": [{ "name": "Euclides", "url": "https://www.crazygames.com/" }],
+  "devices": "Capybara Clicker runs directly in your browser on desktop computers, phones and tablets. It also has mobile app versions available for iOS and Android."
 }
 }

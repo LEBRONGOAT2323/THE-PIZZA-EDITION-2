@@ -81,5 +81,6 @@
   { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" },
   { "name": "Stacktris", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "puzzle", "url": "/g/stacktris.html" },
   { "name": "Sandboxels", "img": "assets/sandboxels-logo.png", "category": "casual", "url": "/g/sandboxels/" },
-  { "name": "Ragdoll Fall", "img": "assets/ragdoll-fall.jpeg", "category": "action", "url": "/g/ragdoll-fall.html" }
+  { "name": "Ragdoll Fall", "img": "assets/ragdoll-fall.jpeg", "category": "action", "url": "/g/ragdoll-fall.html" },
+  { "name": "Capybara Clicker", "img": "assets/capybara-clicker.png", "category": "casual", "url": "/g/capybara-clicker.html" }
 ]

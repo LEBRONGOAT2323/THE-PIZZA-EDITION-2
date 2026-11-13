@@ -17,6 +17,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | BTD 3 | Ninja Kiwi |
 | BTD 4 | Ninja Kiwi |
 | BTD 5 | Ninja Kiwi |
+| Capybara Clicker | Euclides |
 | Cookie Clicker | Julien "Orteil" Thiennot |
 | Crossy Road | Hipster Whale (Matt Hall and Andy Sum) |
 | Drift Hunters | Ilya Kaminetsky |
