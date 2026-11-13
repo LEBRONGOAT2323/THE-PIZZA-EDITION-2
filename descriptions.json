@@ -2178,5 +2178,74 @@
   "creator": "Capybara Clicker was created by Euclides.",
   "creatorLinks": [{ "name": "Euclides", "url": "https://www.crazygames.com/" }],
   "devices": "Capybara Clicker runs directly in your browser on desktop computers, phones and tablets. It also has mobile app versions available for iOS and Android."
+},
+"Learn to Fly": {
+  "tags": ["Action"],
+  "intro": [
+    "Learn to Fly is a physics-based arcade game where you play as a penguin determined to prove that penguins can fly. After being humiliated by the fact that penguins cannot fly, your goal is to launch yourself off a ramp and travel as far as possible. Each flight earns you money that can be spent on equipment and upgrades to improve your performance.",
+    "The game features a variety of upgrades, including rockets, gliders and other equipment that help you fly farther and faster. You can improve your acceleration, launch angle and flight distance while working toward the ultimate goal of reaching the iceberg. Learn to Fly was developed by Light Bringer Games and originally released in May 2009."
+  ],
+  "howTo": "Start by launching your penguin down the ramp and try to travel as far as possible. Earn money from each attempt and spend it on upgrades such as rockets, gliders and improved equipment. Experiment with different launch angles and equipment combinations to get the most distance out of every flight. Keep upgrading until you finally reach your goal.",
+  "controls": "Desktop: Use the Left and Right Arrow Keys to adjust your flight angle. Press Spacebar to activate rockets. Mobile: Controls depend on the version being played.",
+  "unblockedTitle": "Play Learn to Fly unblocked",
+  "similar": [
+    {"name": "Learn to Fly 2", "why": "continues the penguin's journey with more upgrades, equipment and challenges."},
+    {"name": "Learn to Fly 3", "why": "takes the flying concept into space with customizable rockets and boosters."}
+  ],
+  "creator": "Learn to Fly was created by Light Bringer Games.",
+  "creatorLinks": [{ "name": "Light Bringer Games", "url": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly" }],
+  "devices": "Learn to Fly is a browser-based game originally released as a Flash game. Modern browser versions may use Flash emulation to make it playable on desktop computers."
+},
+"Learn to Fly 2": {
+  "tags": ["Action"],
+  "intro": [
+    "Learn to Fly 2 is a physics-based arcade game that continues the story of the penguin from the original game. After being crushed by an iceberg and having his dreams of flying destroyed, the penguin returns with one goal: revenge. Launch yourself through the air, smash through obstacles and travel as far as possible while earning money for upgrades.",
+    "The sequel introduces several new features, including a story mode with bosses, an arcade mode, a shop filled with different gliders and rockets, and a large collection of achievements. You can customize your equipment, improve your flight performance and complete challenges as you work toward getting your revenge on the iceberg. Learn to Fly 2 was developed by Light Bringer Games and released in June 2011."
+  ],
+  "howTo": "Launch your penguin and use your flight equipment to travel as far as possible. Earn money from each attempt and spend it in the shop on better gliders, rockets, boosts and other equipment. Complete missions and achievements to earn additional rewards. Keep improving your setup until you have enough power to smash through the iceberg.",
+  "controls": "Desktop: Use the Left and Right Arrow Keys or A and D to steer. Press Spacebar to activate boosts. Press any key to activate special sleighs. Controls can also be customized in the options menu. Mobile: Controls depend on the version being played.",
+  "unblockedTitle": "Play Learn to Fly 2 unblocked",
+  "similar": [
+    {"name": "Learn to Fly", "why": "is the original game that started the penguin's journey toward flight."},
+    {"name": "Learn to Fly 3", "why": "expands the series with rocket building and space exploration."}
+  ],
+  "creator": "Learn to Fly 2 was created by Light Bringer Games.",
+  "creatorLinks": [{ "name": "Light Bringer Games", "url": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly-2" }],
+  "devices": "Learn to Fly 2 is a browser-based game originally released as a Flash game. Modern browser versions may use Flash emulation to make it playable on desktop computers."
+},
+"Learn to Fly 3": {
+  "tags": ["Action"],
+  "intro": [
+    "Learn to Fly 3 is a physics-based arcade game where you help a penguin build a rocket capable of reaching outer space. Instead of launching from a ramp like in the previous games, you construct your own spacecraft and send it soaring upward. Each launch earns you money and rewards that can be used to purchase better parts and improve your rocket.",
+    "The game features a huge selection of customizable rocket components, including bodies, engines, boosters, stages and payloads. You can experiment with different combinations, unlock new equipment, complete missions and earn medals as you work toward reaching space and beyond. Learn to Fly 3 was developed by Light Bringer Games and originally released in February 2016."
+  ],
+  "howTo": "Begin by building your rocket using the available components. Launch it and use your steering controls and boosts to travel as high as possible. Earn money and rewards from each attempt, then return to the shop to purchase better engines, boosters and other parts. Experiment with different rocket designs and complete challenges to unlock even more equipment.",
+  "controls": "Desktop: Use A and D or the Left and Right Arrow Keys to steer. Press W or the Up Arrow to activate boosts. Use S or the Down Arrow for certain stage controls. Press 1, 2, 3 or 4 to activate individual boosts. Controls can be customized in the options menu. Mobile: Controls depend on the version being played.",
+  "unblockedTitle": "Play Learn to Fly 3 unblocked",
+  "similar": [
+    {"name": "Learn to Fly 2", "why": "features the same penguin character with launch-based gameplay and tons of upgrades."},
+    {"name": "Learn to Fly", "why": "is the original game that introduced the penguin and its flying ambitions."}
+  ],
+  "creator": "Learn to Fly 3 was created by Light Bringer Games.",
+  "creatorLinks": [{ "name": "Light Bringer Games", "url": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly-3" }],
+  "devices": "Learn to Fly 3 is a browser-based game originally released as a Flash game. Modern browser versions may use Flash emulation to make it playable on desktop computers."
+},
+"Cut the Rope": {
+  "tags": ["Puzzle"],
+  "intro": [
+    "Cut the Rope is a physics-based puzzle game where your goal is to feed candy to a hungry little green monster named Om Nom. Each level places a piece of candy inside a puzzle, suspended by one or more ropes. You must figure out which ropes to cut and when to cut them so the candy swings, falls or moves directly into Om Nom's mouth.",
+    "The game features hundreds of increasingly challenging levels, with three collectible stars hidden throughout each stage. As you progress, new mechanics and obstacles are introduced, including bubbles, air cushions, spiders, moving objects and gravity-changing puzzles. Cut the Rope was developed by ZeptoLab and originally released in October 2010."
+  ],
+  "howTo": "Look at the level and figure out how the candy needs to move to reach Om Nom. Swipe across the ropes to cut them and use gravity, swinging momentum and other objects to guide the candy. Try to collect all three stars before feeding Om Nom. If the candy falls or misses its target, restart the level and try a different combination of cuts.",
+  "controls": "Desktop: Click and drag your mouse across ropes to cut them. Click buttons to interact with menus and restart levels. Mobile: Swipe your finger across ropes to cut them and tap objects to interact with them.",
+  "unblockedTitle": "Play Cut the Rope unblocked",
+  "similar": [
+  {"name": "Sandtris", "why": "is another physics-inspired puzzle game that challenges you to think carefully about how objects interact."},
+  {"name": "Bubble Shooter", "why": "is a casual puzzle game where you must plan your shots and match colors to clear the board."},
+  {"name": "Stacktris", "why": "uses physics and careful placement to create challenging puzzles that require good timing."}
+],
+  "creator": "Cut the Rope was created by ZeptoLab.",
+  "creatorLinks": [{ "name": "ZeptoLab", "url": "https://www.zeptolab.com/" }],
+  "devices": "Cut the Rope is available on desktop browsers and mobile devices. The original game was released for iOS and later expanded to Android and other platforms. Browser availability depends on the version being played."
 }
 }

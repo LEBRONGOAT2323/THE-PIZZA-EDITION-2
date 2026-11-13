@@ -20,6 +20,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Capybara Clicker | Euclides |
 | Cookie Clicker | Julien "Orteil" Thiennot |
 | Crossy Road | Hipster Whale (Matt Hall and Andy Sum) |
+| Cut the Rope | ZeptoLab |
 | Drift Hunters | Ilya Kaminetsky |
 | Drive Mad | Martin Magni (built in Fancade) |
 | Dreadhead Parkour | gametornado (publisher) |
@@ -39,6 +40,9 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Hill Climb Racing | Fingersoft |
 | Hole.io | Voodoo |
 | Just Fall.io | JustPlay.LOL |
+| Learn to Fly | Light Bringer Games |
+| Learn to Fly 2 | Light Bringer Games |
+| Learn to Fly 3 | Light Bringer Games |
 | Minecraft | Markus "Notch" Persson, developed by Mojang Studios |
 | Monkey Mart | TinyDobbins |
 | Moto X3M | MadPuffers |
