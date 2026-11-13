@@ -46,6 +46,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Paper.io 2 | Voodoo |
 | Pixel Panic | Want-to-beAcoder1556, with development and testing by LEBRONGOAT2323 |
 | Polytrack | Kodub |
+| Ragdoll Fall/Drop | Ericetto |
 | Red Ball 4 | FDG (the description also names Yohoho Games; see notes) |
 | Retro Bowl | New Star Games |
 | Retro Bowl College | New Star Games |
