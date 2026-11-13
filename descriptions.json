@@ -2139,8 +2139,26 @@
     {"name": "Tiny Fishing", "why": "is a relaxed game that rewards experimenting with upgrades."},
     {"name": "Cookie Clicker", "why": "is another game where you can sit back and watch things grow."}
   ],
-  "creator": "Sandboxels was created by R74nn but this specific version was ported by LEBRONGOAT2323.",
+  "creator": "Sandboxels was created by R74n but this specific version was ported by LEBRONGOAT2323.",
   "creatorLinks": [{ "name": "R74n", "url": "https://r74n.com/" }, { "name": "LEBRONGOAT2323", "url": "https://github.com/LEBRONGOAT2323" }],
   "devices": "Sandboxels runs in your browser on desktop and also works on phones and tablets, though touch support is not as smooth as using a mouse. A paid version is also available on Steam."
+},
+"Ragdoll Fall/Drop": {
+  "tags": ["Action"],
+  "intro": [
+    "Ragdoll Fall is a physics-based action game where your goal is to launch a floppy ragdoll character into dangerous obstacles and cause as much damage as possible. Send your character flying through traps, walls, ramps and other hazards while watching the unpredictable physics create ridiculous crashes and collisions.",
+    "The game features 15 different levels, each with its own obstacles and challenges. You can experiment with different vehicles, launchers, rockets, grenades, weapons and other objects to create bigger crashes and rack up higher scores. Complete quests, discover secret skins and find new ways to cause chaos. Ragdoll Fall was created by Ericetto and is available to play directly in your browser."
+  ],
+  "howTo": "Choose a level and get your ragdoll ready for the drop. Click or tap to launch your character and watch as they collide with obstacles, bounce off objects and tumble through the level. Try different approaches and use the available objects and hazards to cause as much damage as possible. Complete challenges and earn rewards as you progress through the levels.",
+  "controls": "Desktop: Use your mouse to click and interact with the game. Click to launch your ragdoll and interact with available objects and menus. Mobile: Tap the screen to launch your ragdoll and interact with the game.",
+  "unblockedTitle": "Play Ragdoll Fall unblocked",
+  "similar": [
+    {"name": "Ragdoll Hit", "why": "features similar ragdoll physics with chaotic fights and hilarious animations."},
+    {"name": "Ragdoll Archers", "why": "uses physics-based ragdoll characters in action-packed battles."},
+    {"name": "Happy Wheels", "why": "features ridiculous physics, dangerous obstacles and chaotic crashes."}
+  ],
+  "creator": "Ragdoll Fall also known as ragdoll Drop, was created by Ericetto.",
+  "creatorLinks": [{ "name": "Ericetto", "url": "https://ericetto.com/" }],
+  "devices": "Ragdoll Fall runs directly in your browser on desktop computers, phones and tablets. No download or installation is required."
 }
 }

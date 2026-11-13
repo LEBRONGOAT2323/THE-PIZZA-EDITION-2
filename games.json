@@ -80,5 +80,6 @@
   { "name": "Monkey Mart", "img": "https://imglink.cc/cdn/LA6Yrc2553.jpeg", "category": "casual", "url": "/g/monkey-mart.html" },
   { "name": "Eggy Car", "img": "https://imglink.cc/cdn/SrvYLmeVve.png", "category": "racing", "url": "/g/eggycar.html" },
   { "name": "Stacktris", "img": "https://imglink.cc/cdn/pZVeaL04WB.jpeg", "category": "puzzle", "url": "/g/stacktris.html" },
-  { "name": "Sandboxels", "img": "assets/sandboxels-logo.png", "category": "casual", "url": "/g/sandboxels/" }
+  { "name": "Sandboxels", "img": "assets/sandboxels-logo.png", "category": "casual", "url": "/g/sandboxels/" },
+  { "name": "Ragdoll Fall", "img": "assets/ragdoll-fall.jpeg", "category": "action", "url": "/g/ragdoll-fall.html" }
 ]
