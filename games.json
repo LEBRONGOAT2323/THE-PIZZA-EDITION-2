@@ -86,5 +86,8 @@
   { "name": "Learn to Fly", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/340.png", "category": "action", "url": "/g/learn-to-fly-1.html" },
   { "name": "Learn to Fly 2", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/341.png", "category": "action", "url": "/g/learn-to-fly-2.html" },
   { "name": "Learn to Fly 3", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/342.png", "category": "action", "url": "/g/learn-to-fly-3.html" },
-  { "name": "Cut the Rope", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/85.png", "category": "puzzle", "url": "/g/cut-the-rope.html" }
+  { "name": "Cut the Rope", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/85.png", "category": "puzzle", "url": "/g/cut-the-rope.html" },
+  { "name": "Bloxorz", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/169.png", "category": "casual", "url": "/g/bloxors.html" },
+  { "name": "Duck Life", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/234.png", "category": "casual", "url": "/g/ducklife1.html" },
+  { "name": "Duck Life 2", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/235.png", "category": "casual", "url": "/g/ducklife2.html" }
 ]
