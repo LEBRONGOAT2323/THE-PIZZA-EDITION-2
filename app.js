@@ -772,8 +772,10 @@ function renderPlayPage() {
     const name = escapeHtml(game.name);
     const byLine = game.author ? 'BY: ' + escapeHtml(game.author) : escapeHtml(game.category);
 
+    // jsDelivr serves .html as plain text, so those games are fetched and run via srcdoc (see loadJsdelivrGame)
+    const viaJsdelivr = /^https:\/\/cdn\.jsdelivr\.net\/.+\.html?(\?.*)?$/i.test(game.url || '');
     const stage = game.url && game.url !== '#'
-        ? `<iframe id="playerFrame" src="${game.url}" title="${name}"
+        ? `<iframe id="playerFrame" ${viaJsdelivr ? '' : `src="${game.url}"`} title="${name}"
                    class="absolute inset-0 w-full h-full border-0"
                    allow="autoplay; fullscreen; gamepad; clipboard-write" allowfullscreen></iframe>`
         : `<div class="absolute inset-0 flex items-center justify-center text-center p-6 text-pz-muted">
@@ -851,6 +853,29 @@ function renderPlayPage() {
 
     updateVoteButtons();
     limitMoreGrid();
+    if (viaJsdelivr) loadJsdelivrGame(document.getElementById('playerFrame'), game.url);
+}
+
+// jsDelivr forces HTML to text/plain, so the browser would show the source code.
+// Fetch the HTML ourselves and run it in the iframe with srcdoc. A <base> tag makes the
+// game's relative files (js, css, images, audio) load from jsDelivr, which serves those correctly.
+async function loadJsdelivrGame(frame, url) {
+    if (!frame) return;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        let html = await res.text();
+        const base = url.replace(/[?#].*$/, '').replace(/[^/]*$/, '');
+        const tag = `<base href="${base}">`;
+        html = /<head[^>]*>/i.test(html)
+            ? html.replace(/<head[^>]*>/i, m => m + tag)
+            : tag + html;
+        frame.srcdoc = html;
+    } catch (e) {
+        console.error('Could not load game from jsDelivr:', e);
+        frame.srcdoc = '<body style="margin:0;background:#161616;color:#fff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center">'
+            + '<p>Couldn\'t load this game.<br>Check the jsDelivr link in games.json.</p></body>';
+    }
 }
 
 // Show only 3 rows of the bottom grid, however many columns fit at this screen width
