@@ -29,7 +29,7 @@
   { "name": "TrollPulse", "img": "https://imglink.cc/cdn/dnMCE9X0lB.png", "category": "casual", "url": "/g/trollpulse.html" },
   { "name": "Escape Road", "img": "https://files.catbox.moe/mpahmq", "category": "racing", "url": "/g/Escape-Road.html" },
   { "name": "Escape Road 2", "img": "https://files.catbox.moe/2k0h43.png", "category": "racing", "url": "/g/Escape-Road-2" },
-  { "name": "Escape Road 3", "img": "https://imglink.cc/cdn/jZ8dQv71jn.jpeg", "category": "racing", "url": "/g/escaperoad3.html" },
+  { "name": "Escape Road 3", "img": "https://imglink.cc/cdn/jZ8dQv71jn.jpeg", "category": "racing", "url": "https://cdn.jsdelivr.net/gh/LEBRONGOAT2323/escape-road-3@main/game.html" },
   { "name": "Snow Rider", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/119.png", "category": "racing", "url": "/g/Snow-Rider-3D.html" },
   { "name": "Bubble Shooter", "img": "https://files.catbox.moe/91u459.jpg", "category": "puzzle", "url": "/g/bubble-shooter.html" },
   { "name": "Granny", "img": "https://files.catbox.moe/nr5jcu.png", "category": "horror", "url": "/g/granny.html" },
