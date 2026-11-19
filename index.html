@@ -43,6 +43,208 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- First-visit popup styles -->
+    <style>
+        #welcomeScrim {
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.72);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        #welcomeScrim.is-open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #welcomeModal {
+            position: relative;
+            width: 100%;
+            max-width: 26rem;
+            background: #1f1f1f;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(240, 210, 16, 0.08);
+            overflow: hidden;
+            transform: translateY(18px) scale(0.96);
+            transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.25, 1);
+        }
+        #welcomeScrim.is-open #welcomeModal {
+            transform: translateY(0) scale(1);
+        }
+
+        /* Road strip: the one memorable moment. A pizza rolls in and parks. */
+        .pz-road {
+            position: relative;
+            height: 96px;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+            border-bottom: 3px solid #f0d210;
+        }
+        .pz-road::before {
+            /* dashed centre line */
+            content: "";
+            position: absolute;
+            left: 0;
+            right: -48px;
+            bottom: 12px;
+            height: 4px;
+            background: repeating-linear-gradient(
+                90deg,
+                #f0d210 0 24px,
+                transparent 24px 48px
+            );
+            opacity: 0.85;
+        }
+        #welcomeScrim.is-open .pz-road::before {
+            animation: pz-dash 0.5s linear 3;
+        }
+        @keyframes pz-dash {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-48px); }
+        }
+
+        .pz-wheel {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            width: 72px;
+            height: 72px;
+            margin-left: -36px;
+            transform: translateX(-340px) rotate(-540deg);
+            filter: drop-shadow(0 8px 6px rgba(0, 0, 0, 0.55));
+        }
+        #welcomeScrim.is-open .pz-wheel {
+            animation: pz-roll 1.1s cubic-bezier(0.2, 0.8, 0.25, 1) 0.2s forwards;
+        }
+        @keyframes pz-roll {
+            to { transform: translateX(0) rotate(0deg); }
+        }
+
+        /* Rubber-stamp badge */
+        .pz-stamp {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            padding: 2px 12px 0;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            line-height: 1.35;
+            letter-spacing: 0.06em;
+            color: #fc5849;
+            border: 2px solid #fc5849;
+            border-radius: 6px;
+            background: rgba(22, 22, 22, 0.55);
+            transform: rotate(7deg) scale(1.6);
+            opacity: 0;
+        }
+        #welcomeScrim.is-open .pz-stamp {
+            animation: pz-stamp 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2) 1.2s forwards;
+        }
+        @keyframes pz-stamp {
+            to { transform: rotate(7deg) scale(1); opacity: 1; }
+        }
+
+        /* Torn receipt edge between road and content */
+        .pz-body {
+            padding: 1.75rem 1.75rem 1.5rem;
+            text-align: left;
+        }
+
+        .pz-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.6rem;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            color: #fff;
+        }
+        .pz-title em {
+            font-style: normal;
+            color: #f0d210;
+        }
+
+        .pz-copy {
+            margin-top: 0.75rem;
+            font-family: 'Rubik', sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #a7a7a7;
+            max-width: 34ch;
+        }
+
+        .pz-actions {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 1.5rem;
+        }
+        .pz-btn-primary,
+        .pz-btn-ghost {
+            height: 3rem;
+            border-radius: 9999px;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            cursor: pointer;
+        }
+        .pz-btn-primary {
+            flex: 1;
+            background: #f0d210;
+            color: #161616;
+            border: 2px solid #f0d210;
+        }
+        .pz-btn-primary:hover { background: #fff; border-color: #fff; }
+        .pz-btn-ghost {
+            padding: 0 1.25rem;
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+        .pz-btn-ghost:hover { border-color: rgba(255, 255, 255, 0.4); }
+        .pz-btn-primary:active,
+        .pz-btn-ghost:active { transform: scale(0.96); }
+        .pz-btn-primary:focus-visible,
+        .pz-btn-ghost:focus-visible,
+        .pz-x:focus-visible {
+            outline: 3px solid #fc5849;
+            outline-offset: 3px;
+        }
+
+        .pz-x {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            color: #a7a7a7;
+            background: rgba(255, 255, 255, 0.06);
+            transition: color 0.2s ease, background-color 0.2s ease;
+            cursor: pointer;
+        }
+        .pz-x:hover { color: #161616; background: #f0d210; }
+
+        @media (prefers-reduced-motion: reduce) {
+            #welcomeScrim,
+            #welcomeModal { transition: none; }
+            #welcomeScrim.is-open .pz-road::before { animation: none; }
+            #welcomeScrim.is-open .pz-wheel { animation: none; transform: none; }
+            #welcomeScrim.is-open .pz-stamp { animation: none; transform: rotate(7deg); opacity: 1; }
+        }
+    </style>
 </head>
 
 <body data-page="home" class="antialiased min-h-screen pt-[58px]">
@@ -531,8 +733,148 @@
         </svg>
     </button>
 
+    <!-- First-Visit Popup: Escape Road 2 -->
+    <div id="welcomeScrim" aria-hidden="true">
+        <div
+            id="welcomeModal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="welcomeTitle"
+            aria-describedby="welcomeCopy"
+        >
+            <button id="welcomeXBtn" class="pz-x" type="button" aria-label="Close popup">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <!-- Road with a pizza wheel -->
+            <div class="pz-road" aria-hidden="true">
+                <svg class="pz-wheel" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- crust -->
+                    <circle cx="50" cy="50" r="48" fill="#d9923b"/>
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="#b9721f" stroke-width="2"/>
+                    <!-- sauce -->
+                    <circle cx="50" cy="50" r="40" fill="#fc5849"/>
+                    <!-- cheese -->
+                    <circle cx="50" cy="50" r="36" fill="#f0d210"/>
+                    <path d="M50 14 C58 24 70 22 76 30 C72 40 80 48 84 54 C74 58 72 70 64 78 C56 72 44 76 34 82 C34 70 22 66 16 58 C24 50 20 38 26 28 C38 28 44 22 50 14Z" fill="#f7e24a" opacity="0.7"/>
+                    <!-- pepperoni -->
+                    <circle cx="36" cy="34" r="8" fill="#c2392f"/>
+                    <circle cx="64" cy="38" r="8" fill="#c2392f"/>
+                    <circle cx="50" cy="56" r="8" fill="#c2392f"/>
+                    <circle cx="30" cy="62" r="7" fill="#c2392f"/>
+                    <circle cx="70" cy="66" r="7" fill="#c2392f"/>
+                    <circle cx="36" cy="34" r="3" fill="#a52d25"/>
+                    <circle cx="64" cy="38" r="3" fill="#a52d25"/>
+                    <circle cx="50" cy="56" r="3" fill="#a52d25"/>
+                    <!-- basil -->
+                    <path d="M52 24 q6 -2 8 4 q-6 2 -8 -4z" fill="#3f9b4a"/>
+                    <path d="M22 48 q6 -2 8 4 q-6 2 -8 -4z" fill="#3f9b4a"/>
+                    <path d="M72 52 q6 -2 8 4 q-6 2 -8 -4z" fill="#3f9b4a"/>
+                </svg>
+
+                <span class="pz-stamp">FIXED</span>
+            </div>
+
+            <div class="pz-body">
+                <h2 id="welcomeTitle" class="pz-title">
+                    Escape Road 2 <em>works now</em>
+                </h2>
+                <p id="welcomeCopy" class="pz-copy">
+                    The bugs are gone and the game loads and runs the way it should. Hit the road and get out of there.
+                </p>
+
+                <div class="pz-actions">
+                    <button id="welcomePlayBtn" class="pz-btn-primary" type="button">Play Escape Road 2</button>
+                    <button id="welcomeCloseBtn" class="pz-btn-ghost" type="button">Later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="app.js"></script>
+
+    <!-- First-visit popup logic -->
+    <script>
+        (function () {
+            const KEY = 'pz_seen_escape_road_2_popup';
+
+            const scrim    = document.getElementById('welcomeScrim');
+            const modal    = document.getElementById('welcomeModal');
+            const playBtn  = document.getElementById('welcomePlayBtn');
+            const laterBtn = document.getElementById('welcomeCloseBtn');
+            const xBtn     = document.getElementById('welcomeXBtn');
+
+            if (!scrim || !modal) return;
+
+            // Only show once per browser
+            let seen = false;
+            try { seen = localStorage.getItem(KEY) === '1'; } catch (e) {}
+            if (seen) return;
+
+            let previousFocus = null;
+
+            function openPopup() {
+                previousFocus = document.activeElement;
+                scrim.classList.add('is-open');
+                scrim.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                document.addEventListener('keydown', onKey);
+                playBtn.focus({ preventScroll: true });
+            }
+
+            function closePopup() {
+                scrim.classList.remove('is-open');
+                scrim.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                document.removeEventListener('keydown', onKey);
+                try { localStorage.setItem(KEY, '1'); } catch (e) {}
+                if (previousFocus && previousFocus.focus) previousFocus.focus({ preventScroll: true });
+            }
+
+            function playEscapeRoad() {
+                closePopup();
+                const input = document.getElementById('gameSearch');
+                if (input) {
+                    input.value = 'Escape Road 2';
+                    if (typeof handleSearch === 'function') handleSearch(input.value);
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            function onKey(e) {
+                if (e.key === 'Escape') {
+                    closePopup();
+                    return;
+                }
+                // Keep Tab focus inside the popup
+                if (e.key === 'Tab') {
+                    const focusable = [xBtn, playBtn, laterBtn];
+                    const first = focusable[0];
+                    const last = focusable[focusable.length - 1];
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            }
+
+            playBtn.addEventListener('click', playEscapeRoad);
+            laterBtn.addEventListener('click', closePopup);
+            xBtn.addEventListener('click', closePopup);
+            scrim.addEventListener('click', function (e) {
+                if (e.target === scrim) closePopup();
+            });
+
+            // Small delay so the page paints first
+            setTimeout(openPopup, 600);
+        })();
+    </script>
 
 </body>
 </html>

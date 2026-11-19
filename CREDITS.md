@@ -24,6 +24,11 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Drift Hunters | Ilya Kaminetsky |
 | Drive Mad | Martin Magni (built in Fancade) |
 | Dreadhead Parkour | gametornado (publisher) |
+| Duck Life 1 | Wix Games (originally published by MoFunZone) |
+| Duck Life 2 | Wix Games (originally published by MoFunZone) |
+| Duck Life 3 | Wix Games (originally published by MoFunZone) |
+| Duck Life 4 | Wix Games (originally published by MoFunZone) |
+| Duck Life 5 | Wix Games (originally published by MoFunZone) |
 | Eggy Car | Beedo Games |
 | Escape Road | AZ Games |
 | Escape Road 2 | AZ Games |
@@ -105,4 +110,5 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 - **Red Ball 4:** the `creator` field says FDG, but the intro says it was made by Yohoho Games.
 - **Dreadhead Parkour:** the description says it was published by gametornado, not that they created it.
 - **Slope:** the description says it was published by Y8, and its `creator` field credits Y8.
+- **Duck Life:** the series was created by Wix Games and originally published by MoFunZone.
 - Game names and trademarks belong to their respective owners.

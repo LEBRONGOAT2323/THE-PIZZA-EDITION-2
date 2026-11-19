@@ -2247,5 +2247,90 @@
   "creator": "Cut the Rope was created by ZeptoLab.",
   "creatorLinks": [{ "name": "ZeptoLab", "url": "https://www.zeptolab.com/" }],
   "devices": "Cut the Rope is available on desktop browsers and mobile devices. The original game was released for iOS and later expanded to Android and other platforms. Browser availability depends on the version being played."
+},
+"Duck Life 1": {
+  "tags": ["Casual"],
+  "intro": [
+    "Duck Life is where the series started. You take a young duckling, train it, and enter it in races, with the goal of earning enough prize money to rebuild the family farm. Every point of progress comes from the training you choose, so it is a game about patience and planning more than fast reflexes.",
+    "You train in short mini-games for running, swimming and flying, and each one raises your duck's stats. Between training sessions you manage your duck's energy, because a tired duck can't train, and when you feel ready you enter a race and see how it handles the competition. Duck Life was made by Wix Games and originally published by MoFunZone."
+  ],
+  "howTo": "Pick one skill at a time instead of training everything evenly, and look at what the next race needs before you decide. Keep an eye on your duck's energy and eat before you run out, and don't enter a race until your stats are clearly ahead of your opponents. A duck that is slightly over-trained wins more than one that is rushed.",
+  "controls": "Desktop: Use the mouse to pick training games and enter races. During training and races, the game shows on screen which keys to press, usually the arrow keys. Touch screens: tap to select and follow the on-screen prompts.",
+  "unblockedTitle": "Play Duck Life 1 unblocked",
+  "similar": [
+    {"name": "Duck Life 2", "why": "is the sequel, which adds travel to different countries."},
+    {"name": "Duck Life 3", "why": "adds evolving ducks and a league system."},
+    {"name": "Tiny Fishing", "why": "is another relaxed game where steady upgrades pay off."}
+  ],
+  "creator": "Duck Life was created by Wix Games and originally published by MoFunZone.",
+  "devices": "Duck Life 1 runs in your browser on desktop. A remastered version is also available as a mobile app, but how the browser version handles touch depends on the embedded copy, so it can vary between devices."
+},
+"Duck Life 2": {
+  "tags": ["Casual"],
+  "intro": [
+    "Duck Life 2: World Champion keeps the training-and-racing loop of the original and takes it on the road. Instead of racing locally, your duck now travels to different countries, such as Scotland and Egypt, and competes against champions on their home courses.",
+    "A new Climbing skill joins running, swimming and flying, so your duck needs a wider set of abilities to win. More training games and tougher opponents make it a bigger game than the first, with the same easygoing style. Duck Life 2 was made by Wix Games and originally published by MoFunZone."
+  ],
+  "howTo": "Look at each new country's course before you train, since the terrain decides which skills matter most. Raise your weakest skill before a big race instead of pushing your strongest one further, and keep energy topped up so training never stalls.",
+  "controls": "Desktop: Use the mouse to pick training games, travel and enter races. During training and races, the game shows on screen which keys to press, usually the arrow keys. Touch screens: tap to select and follow the on-screen prompts.",
+  "unblockedTitle": "Play Duck Life 2 unblocked",
+  "similar": [
+    {"name": "Duck Life 1", "why": "is the original game that started the series."},
+    {"name": "Duck Life 3", "why": "is the next entry, with evolving ducks and leagues."},
+    {"name": "Hill Climb Racing", "why": "is a classic game built around upgrades and getting farther each run."}
+  ],
+  "creator": "Duck Life 2: World Champion was created by Wix Games and originally published by MoFunZone.",
+  "devices": "Duck Life 2 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary."
+},
+"Duck Life 3": {
+  "tags": ["Casual"],
+  "intro": [
+    "Duck Life 3: Evolution adds a new idea to the formula: your duck changes as it grows. You begin with one of four basic ducks, each with different starting stats, and when you complete a league your duck evolves into a stronger form.",
+    "The game is split into leagues, and each one has a different look and a new set of training facilities, so the series feels fresher than just racing the same courses. The choice of duck and how you train it shapes how each league plays out. Duck Life 3 was made by Wix Games and originally published by MoFunZone."
+  ],
+  "howTo": "Look at the four starting ducks and pick one that suits the skills you want to build. Train for the league you are about to enter, not the one you just finished, and don't skip training when the first few races feel easy. Evolution gives a big boost, so finishing a league is worth planning for.",
+  "controls": "Desktop: Use the mouse to pick a duck, choose training and enter races. During training and races, the game shows on screen which keys to press, usually the arrow keys. Touch screens: tap to select and follow the on-screen prompts.",
+  "unblockedTitle": "Play Duck Life 3 unblocked",
+  "similar": [
+    {"name": "Duck Life 2", "why": "is the previous entry, with travel to different countries."},
+    {"name": "Duck Life 4", "why": "is the next entry, with a team of ducks to manage."},
+    {"name": "Tiny Fishing", "why": "is a relaxed game where every upgrade changes the next run."}
+  ],
+  "creator": "Duck Life 3: Evolution was created by Wix Games and originally published by MoFunZone.",
+  "devices": "Duck Life 3 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary."
+},
+"Duck Life 4": {
+  "tags": ["Casual"],
+  "intro": [
+    "Duck Life 4 is the biggest game of the Flash era. Instead of raising a single duck, you now manage a whole team of ducks, and you move around a hub world to reach the training areas, shops and races. It plays like a larger, more complete version of the series' training-and-racing formula.",
+    "The story also gets a rival: the Fire Duck, a recurring opponent who first appears here as the final challenge. Training takes longer and the roster is deeper, so you spend more time deciding who trains what. Duck Life 4 was made by Wix Games and originally published by MoFunZone."
+  ],
+  "howTo": "Don't spread your training across every duck at once. Pick a few to focus on and build them up so you always have a strong racer. Explore the hub world early to find new areas and shops, and save your hardest races for when your team is clearly ready.",
+  "controls": "Desktop: Use the mouse to move around the hub world, choose training and enter races. During training and races, the game shows on screen which keys to press, usually the arrow keys. Touch screens: tap to select and follow the on-screen prompts.",
+  "unblockedTitle": "Play Duck Life 4 unblocked",
+  "similar": [
+    {"name": "Duck Life 3", "why": "is the previous entry, with evolving ducks and leagues."},
+    {"name": "Duck Life 5", "why": "is a spin-off that turns the series into a runner."},
+    {"name": "Hill Climb Racing", "why": "is a classic game built around upgrades and getting farther each run."}
+  ],
+  "creator": "Duck Life 4 was created by Wix Games and originally published by MoFunZone.",
+  "devices": "Duck Life 4 runs in your browser on desktop. A remastered version is also available on other platforms, but how the browser version handles touch depends on the embedded copy, so it can vary between devices."
+},
+"Duck Life 5": {
+  "tags": ["Casual"],
+  "intro": [
+    "Duck Life 5: Treasure Hunt breaks from the series' training-and-racing formula. Instead of building a duck for a race, you send it through a cave system in an endless-runner style, collecting coins and treasure while avoiding obstacles.",
+    "The coins you collect go into a shop, where upgrades make your next run go farther, so it keeps the series' sense of steady progress in a faster, more action-focused game. It was made by Wix Games and originally published by MoFunZone."
+  ],
+  "howTo": "Focus on staying alive early and grab coins only when it is safe, since every upgrade you buy makes the next run easier. Spend your first coins on whatever extends your run the most, and don't take risks for a single coin that you can't reach safely.",
+  "controls": "Desktop: Use the mouse to pick upgrades and start a run. During a run, the game shows on screen which keys or clicks control your duck. Touch screens: tap to select and follow the on-screen prompts.",
+  "unblockedTitle": "Play Duck Life 5 unblocked",
+  "similar": [
+    {"name": "Duck Life 4", "why": "is the larger training-and-racing game that came before it."},
+    {"name": "Subway Surfers", "why": "is the endless runner that made lane-dodging popular."},
+    {"name": "Run 3", "why": "is a momentum runner built around reading what is ahead."}
+  ],
+  "creator": "Duck Life 5: Treasure Hunt was created by Wix Games and originally published by MoFunZone.",
+  "devices": "Duck Life 5 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary."
 }
 }
