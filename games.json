@@ -92,5 +92,8 @@
   { "name": "Duck Life 2", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/235.png", "category": "casual", "url": "/g/ducklife2.html" },
   { "name": "Duck Life 3", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/236.png", "category": "casual", "url": "/g/ducklife3.html" },
   { "name": "Duck Life 4", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/237.png", "category": "casual", "url": "/g/ducklife4.html" },
-  { "name": "Duck Life 5", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/238.png", "category": "casual", "url": "/g/ducklife5.html" }
+  { "name": "Duck Life 5", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/238.png", "category": "casual", "url": "/g/ducklife5.html" },
+  { "name": "Ages of Conflict", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/444.png", "category": "casual", "url": "/g/aoc.html" },
+  { "name": "The Man From The Window", "img": "https://cdn.jsdelivr.net/gh/freebuisness/covers@main/459.png", "category": "horror", "url": "/g/tmftw.html" },
+  { "name": "The Man From The Window 2", "img": "https://cdn.jsdelivr.net/gh/wasm-rip/wasmrip@main/img/The_Man_from_the_Window_2_29.webp", "category": "horror", "url": "/g/tmftw2.html" }
 ]

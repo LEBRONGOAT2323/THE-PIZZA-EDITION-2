@@ -2332,5 +2332,59 @@
   ],
   "creator": "Duck Life 5: Treasure Hunt was created by Wix Games and originally published by MoFunZone.",
   "devices": "Duck Life 5 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so performance and usability can vary."
+},
+"Ages of Conflict": {
+  "tags": ["Casual"],
+  "intro": [
+    "Ages of Conflict is a world map simulation where you watch artificial intelligence run the world. Randomly generated nations spawn across the map, form alliances, break treaties, start rebellions and fight over territory, all without a script. You aren't commanding an army so much as watching history play out, and stepping in when you feel like it.",
+    "You can shape the starting setup by choosing how many nations spawn, then nudge events along as the simulation runs. A time-speed control lets whole centuries pass in a few minutes, statistics track how each nation grows and falls, and a map painter lets you build your own worlds. The full version first came out on Steam in early access in February 2023."
+  ],
+  "howTo": "Start a new world with a small number of nations so you can follow what each one is doing, then speed up time once you have a favorite to watch. Click a nation to read its stats and see who its allies and enemies are. Try the same map with different settings, since small changes at the start can lead to very different histories.",
+  "controls": "Desktop: Left click to press buttons and select nations, and use the mouse wheel to zoom in and out. Use the on-screen buttons to pause, play and change the speed of time.",
+  "unblockedTitle": "Play Ages of Conflict unblocked",
+  "similar": [
+    {"name": "Sandboxels", "why": "is another sandbox where you set things up and watch what happens."},
+    {"name": "Cookie Clicker", "why": "is another game where you can sit back and watch numbers grow."},
+    {"name": "Minecraft", "why": "is an open-ended sandbox with no fixed goal."}
+  ],
+  "creator": "Ages of Conflict was created by Jokupelle.",
+  "creatorLinks": [{ "name": "Jokupelle", "url": "https://jokupelle.itch.io/ages-of-conflict" }],
+  "devices": "Ages of Conflict runs in your browser on desktop. It is built around mouse controls, so it is best on a computer, and touch support depends on the embedded version."
+},
+"The Man From the Window": {
+  "tags": ["Horror"],
+  "intro": [
+    "The Man From the Window is a short survival horror game that turns a children's bedtime book into a real threat. You play Mama Rabbit, who comes home late at night to find her son, Junior, scared of a book called The Man From the Window. Before she can calm him down, there is a tapping at the window. The Man is real, and he is looking for a new friend.",
+    "You have about five minutes to find hiding spots for yourself and Junior, and to slow the Man down while he searches the house. He doesn't check the same places every time, so each playthrough can go differently, and there are several endings depending on how the night goes. The game was made by the indie developer Zed_Technician and first appeared on itch.io."
+  ],
+  "howTo": "Use the first few minutes to explore and read the book, since it tells you what he will do. Pick hiding spots for yourself and Junior that are far apart, close the shutters so he can't look in, and use items around the house to delay him. Don't waste time, because there is only a short window before he arrives.",
+  "controls": "Desktop: Use the keyboard to move around the house and the mouse to look, and follow the on-screen prompts to pick things up, hide and interact.",
+  "unblockedTitle": "Play The Man From the Window unblocked",
+  "similar": [
+    {"name": "The Man From the Window 2", "why": "is the sequel, in third person, with a new character to protect."},
+    {"name": "Granny", "why": "is a horror escape game built around silence and hiding."},
+    {"name": "FNAF", "why": "is a tense survival game built around watching and waiting."}
+  ],
+  "creator": "The Man From the Window was created by Zed_Technician.",
+  "creatorLinks": [{ "name": "Zed_Technician", "url": "https://zed-technician.itch.io/" }],
+  "devices": "The Man From the Window runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so it can vary between phones, tablets and computers."
+},
+"The Man From the Window 2": {
+  "tags": ["Horror"],
+  "intro": [
+    "The Man From the Window 2 is the sequel to the short horror game about a monster who comes looking for a new friend. The Man returns as the main threat, and this time the game is played from a third-person view. You have to hide Audrey and keep her out of sight while he searches the house.",
+    "Hiding is no longer about finding a single safe spot. Windows are everywhere, and if you hide Audrey somewhere that can be seen from outside without closing the shutters, the Man may spot her through the glass. There are several endings, and the game adds new mechanics and a few more surprises than the first. It was made by Zed_Technician and released in early 2023."
+  ],
+  "howTo": "Look at where the windows are before choosing a hiding spot, and close the shutters first so nothing can be seen from outside. Don't hide Audrey in the first place that looks safe, since the Man will not check every room in the same order. Replay it to see the other endings.",
+  "controls": "Desktop: Use the keyboard to move around the house and the mouse to look, and follow the on-screen prompts to interact with doors, shutters and hiding spots.",
+  "unblockedTitle": "Play The Man From the Window 2 unblocked",
+  "similar": [
+    {"name": "The Man From the Window", "why": "is the original game, in first person, where Mama Rabbit hides from the Man."},
+    {"name": "Granny 2", "why": "is a horror escape game with two characters to avoid."},
+    {"name": "Dreader", "why": "is another tense game about staying hidden."}
+  ],
+  "creator": "The Man From the Window 2 was created by Zed_Technician and ported by dudeluther1232.",
+  "creatorLinks": [{ "name": "Zed_Technician", "url": "https://zed-technician.itch.io/" }, { "name": "dudeluther1232 (wasm.rip)", "url": "https://wasm.rip/" }],
+  "devices": "The Man From the Window 2 runs in your browser on desktop. Mobile support depends on the embedded version and how well its controls translate to touch devices, so it can vary between phones, tablets and computers."
 }
 }

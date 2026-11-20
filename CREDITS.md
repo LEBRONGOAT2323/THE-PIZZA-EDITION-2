@@ -7,6 +7,7 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Game | Creator |
 | --- | --- |
 | 1v1 Lol | JustPlay.LOL (founded by Boris and Lior Alterman) |
+| Ages of Conflict | JoySpark Games (JokuPelle) |
 | Baldi's Basics Plus | Basically Games, based on the original Baldi's Basics by Micah McGonigal |
 | Basket Random | RHM Interactive |
 | Basketball Stars | MadPuffers |
@@ -17,18 +18,11 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | BTD 3 | Ninja Kiwi |
 | BTD 4 | Ninja Kiwi |
 | BTD 5 | Ninja Kiwi |
-| Capybara Clicker | Euclides |
 | Cookie Clicker | Julien "Orteil" Thiennot |
 | Crossy Road | Hipster Whale (Matt Hall and Andy Sum) |
-| Cut the Rope | ZeptoLab |
 | Drift Hunters | Ilya Kaminetsky |
 | Drive Mad | Martin Magni (built in Fancade) |
 | Dreadhead Parkour | gametornado (publisher) |
-| Duck Life 1 | Wix Games (originally published by MoFunZone) |
-| Duck Life 2 | Wix Games (originally published by MoFunZone) |
-| Duck Life 3 | Wix Games (originally published by MoFunZone) |
-| Duck Life 4 | Wix Games (originally published by MoFunZone) |
-| Duck Life 5 | Wix Games (originally published by MoFunZone) |
 | Eggy Car | Beedo Games |
 | Escape Road | AZ Games |
 | Escape Road 2 | AZ Games |
@@ -45,9 +39,6 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Hill Climb Racing | Fingersoft |
 | Hole.io | Voodoo |
 | Just Fall.io | JustPlay.LOL |
-| Learn to Fly | Light Bringer Games |
-| Learn to Fly 2 | Light Bringer Games |
-| Learn to Fly 3 | Light Bringer Games |
 | Minecraft | Markus "Notch" Persson, developed by Mojang Studios |
 | Monkey Mart | TinyDobbins |
 | Moto X3M | MadPuffers |
@@ -56,12 +47,10 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Paper.io 2 | Voodoo |
 | Pixel Panic | Want-to-beAcoder1556, with development and testing by LEBRONGOAT2323 |
 | Polytrack | Kodub |
-| Ragdoll Fall/Drop | Ericetto |
 | Red Ball 4 | FDG (the description also names Yohoho Games; see notes) |
 | Retro Bowl | New Star Games |
 | Retro Bowl College | New Star Games |
 | Run 3 | Joseph Cloutier |
-| Sandboxels | r74n, ported by LEBRONGOAT2323 |
 | Sister Location | Scott Cawthon |
 | Slither.io | Steve Howse |
 | Slope | Y8 |
@@ -74,6 +63,8 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 | Subway Surfers | SYBO |
 | Super Hot | SUPERHOT Team (Piotr Iwanicki) |
 | Tetris | Alexey Pajitnov |
+| The Man From the Window | Zed_Technician |
+| The Man From the Window 2 | Zed_Technician; ported by dudeluther1232 (retired wasm.rip member) |
 | Tomb of the Mask | Playgendary |
 | TrollPulse | LEBRONGOAT2323 |
 | Volley Random | RHM Interactive |
@@ -107,8 +98,8 @@ Pizza Edition 2 hosts browser versions of games made by many developers. This fi
 
 ## Notes
 
-- **Red Ball 4:** the `creator` field says FDG, but the intro says it was made by Yohoho Games.
+- **Red Ball 4:** the `creator` field says FDG, but the intro says it was made by Yohoho Games. One of these should be checked and corrected in `descriptions.json`.
 - **Dreadhead Parkour:** the description says it was published by gametornado, not that they created it.
 - **Slope:** the description says it was published by Y8, and its `creator` field credits Y8.
-- **Duck Life:** the series was created by Wix Games and originally published by MoFunZone.
+- **Age of Conflict, The Man From the Window and The Man From the Window 2:** these were not in `descriptions.json`, so their creators come from public pages (the game's itch.io and Steam listings, and the TV Tropes entry for The Man From the Window). Zed_Technician as the creator of The Man From the Window 2 comes from a sequel announcement, so confirm it against the version you host.
 - Game names and trademarks belong to their respective owners.
